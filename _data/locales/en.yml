@@ -1,0 +1,48 @@
+tabs:
+  home: Главная
+  categories: Категории
+  tags: Теги
+  archives: Архив
+  about: О сайте
+
+search:
+  hint: Поиск
+  cancel: Отмена
+  no_results: Ничего не найдено.
+
+panel:
+  lastmod: Последние обновления
+  trending_tags: Популярные теги
+  toc: Содержание
+
+copyright:
+  license:
+    template: Этот сайт распространяется по лицензии :LICENSE_NAME.
+    name: CC BY 4.0
+
+post:
+  written_by: Автор
+  posted: Опубликовано
+  updated: Обновлено
+  words: слов
+  pageview_measure: просмотров
+  read_time:
+    unit: мин
+    prompt: чтения
+  relate_posts: Похожие статьи
+  share: Поделиться
+
+categories:
+  category_measure: категорий
+  post_measure: постов
+
+tags:
+  tag_measure: тегов
+  post_measure: постов
+
+archives:
+  post_measure: постов
+
+footer:
+  powered: Работает на
+  theme: Тема
