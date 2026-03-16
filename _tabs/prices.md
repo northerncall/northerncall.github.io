@@ -4,67 +4,40 @@ icon: fas fa-store
 order: 4
 layout: page
 ---
+
 <style>
-.page-status {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 70vh;
-  text-align: center;
-  padding: 50px 20px;
-  font-family: 'Segoe UI', Roboto, sans-serif;
-  background: linear-gradient(135deg, #676f72, #4b4b4b);
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.pdf-container{
+margin-top:20px;
+border-radius:12px;
+overflow:hidden;
+border:1px solid #2c2c2c;
+box-shadow:0 10px 35px rgba(0,0,0,.4);
 }
 
-.page-status:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+.pdf-frame{
+width:100%;
+height:85vh;
+border:none;
 }
 
-.page-status i {
-  font-size: 100px;
-  margin-bottom: 25px;
-  transition: transform 0.3s ease, color 0.3s ease;
+@media (max-width:768px){
+
+.pdf-frame{
+height:80vh;
 }
 
-.page-status:hover i {
-  transform: rotate(15deg) scale(1.1);
-}
-
-.page-status h1 {
-  font-size: 42px;
-  margin-bottom: 15px;
-  color: #fdf6e3;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-}
-
-.page-status p {
-  font-size: 20px;
-  color: #dcdcdc;
-  max-width: 600px;
-  line-height: 1.6;
-}
-
-.status-material i {
-  color: #f39c12;
-}
-
-.status-tech i {
-  color: #3498db;
-}
-
-.status-dev i {
-  color: #9b59b6;
 }
 </style>
 
-<div class="page-status status-dev">
-  <i class="fas fa-cogs"></i>
-  <h1>В процессе разработки</h1>
-  <p>Эта страница еще разрабатывается. Спасибо за терпение!</p>
+
+<div class="pdf-container">
+<iframe 
+class="pdf-frame"
+src="/assets/files/price.pdf">
+</iframe>
 </div>
+
+<p style="margin-top:15px; opacity:.7;">
+Если файл не отображается, 
+<a href="https://drive.google.com/file/d/1zL413PIj83fsWhzz4CSAgTVRglNVorUK/view?usp=sharing" target="_blank">открыть PDF отдельно</a>.
+</p>
