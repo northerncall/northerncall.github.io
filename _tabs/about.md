@@ -20,3 +20,14 @@ order: 6
 🪶 Личный опыт и путь
 
 Если ты чувствуешь зов — оставайся. Тут говорят не умом, а духом.
+
+---
+
+### Полезные ссылки
+
+- [Северный Зов](https://t.me/northern_call)
+- [Лайв канал](https://t.me/+72-vMMqtn2xhMDMy)  
+- [Личные сообщения автору канала](https://t.me/northern_call?direct)  
+- [Анонимный вопрос](https://t.me/letsqbot?start=fsn44)  
+- [Развитие канала](https://t.me/northern_call?direct)  
+- [Условия использования материалов](https://telegra.ph/Usloviya-ispolzovaniya-Severnyj-Zov-03-19)

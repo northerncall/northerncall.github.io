@@ -29,7 +29,10 @@ height:80vh;
 }
 </style>
 
-
+<p style="margin-top:15px; opacity:.7;">
+Если файл не отображается, 
+<a href="https://drive.google.com/file/d/1zL413PIj83fsWhzz4CSAgTVRglNVorUK/view?usp=sharing" target="_blank">открыть PDF отдельно</a>.
+</p>
 <div class="pdf-container">
 <iframe 
 class="pdf-frame"
