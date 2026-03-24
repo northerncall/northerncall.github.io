@@ -152,6 +152,12 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
+languages: ["en", "sv", "ru", "no"]
+default_lang: "ru"
+exclude_from_localization: ["javascript", "images", "css", "public", "sitemap", "CNAME"]
+parallel_localization: true
+url: https://northerncall.github.io/
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
