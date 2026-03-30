@@ -1,4 +1,4 @@
-baseURL = 'https://example.com/'
+baseURL = 'https://northerncall.github.io/'
 theme = "mana"
 defaultContentLanguage = "ru"
 # defaultContentLanguageInSubdir = true
