@@ -1,0 +1,87 @@
+# Alert/Admonition translations
+note = "Примечание"
+tip = "Совет"
+important = "Важно"
+warning = "Предупреждение"
+caution = "Осторожно"
+info = "Информация"
+success = "Успешно"
+question = "Вопрос"
+danger = "Опасно"
+bug = "Ошибка"
+example = "Пример"
+
+# Header & navigation
+menu = "Меню"
+search = "Поиск"
+searchPlaceholder = "Поиск..."
+clearSearch = "Очистить поиск"
+closeSearch = "Закрыть поиск"
+toggleMenu = "Открыть меню"
+closeMenu = "Закрыть меню"
+toggleTheme = "Сменить тему"
+language = "Язык"
+
+# Accessibility
+skipToMain = "Перейти к основному содержимому"
+scrollToTop = "Наверх"
+
+# Home
+home = "Главная"
+recentPosts = "Недавние публикации"
+
+# List & filters
+posts = "Публикации"
+filters = "Фильтры"
+searchTags = "Поиск по тегам..."
+tagsLabel = "Теги"
+yearMonth = "Год и месяц"
+allDates = "Все даты"
+clearFilters = "Сбросить фильтры"
+
+# Pagination
+pageOf = "Страница %s из %s"
+postSingular = "публикация"
+postPlural = "публикации"
+pageSingular = "страница"
+pagePlural = "страницы"
+postsOnThisPage = "на этой странице"
+paginationFirst = "В начало"
+paginationPrev = "Назад"
+paginationNext = "Вперёд"
+paginationLast = "В конец"
+
+# Navigation links
+backToHome = "Вернуться на главную"
+allTags = "Все теги"
+readMore = "Читать далее"
+
+# Archive
+archive = "Архив"
+
+# Single post
+relatedPosts = "Похожие публикации"
+tags = "Теги"
+navPrev = "Предыдущая"
+navNext = "Следующая"
+
+# Post meta
+wordCount = "слов"
+readingTime = "мин"
+
+# Table of contents
+tableOfContents = "Содержание"
+toggleToc = "Показать/скрыть содержание"
+
+# Tags page
+tagsHelp = "Нажмите на любой тег, чтобы увидеть связанные записи"
+searchNoResults = "Ничего не найдено"
+searchNoTagsFound = "Теги не найдены"
+
+# Buy Me a Coffee
+buyMeACoffeeDescription = "Поддержать меня на Buy me a coffee!"
+
+# 404 page
+404Title = "Страница не найдена"
+404DefaultMessage = "К сожалению, страница, которую вы ищете, не существует."
+404ReturnHome = "Вернуться на главную страницу"

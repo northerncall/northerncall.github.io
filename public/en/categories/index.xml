@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Northern Call</title>
+    <link>http://localhost:1313/en/categories/</link>
+    <description>Recent content in Categories on Northern Call</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 15 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scandinavia</title>
+      <link>http://localhost:1313/en/categories/scandinavia/</link>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/categories/scandinavia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Legends</title>
+      <link>http://localhost:1313/en/categories/legends/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/categories/legends/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shamanism</title>
+      <link>http://localhost:1313/en/categories/shamanism/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/categories/shamanism/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

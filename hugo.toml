@@ -1,0 +1,164 @@
+baseURL = 'https://example.com/'
+theme = "mana"
+defaultContentLanguage = "ru"
+# defaultContentLanguageInSubdir = true
+paginate = 5
+
+[pagination]
+  pageSize = 10
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 6
+    ordered = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
+    style = "catppuccin-macchiato"
+
+[module]
+  [[module.mounts]]
+  source = "assets"
+  target = "assets"
+
+  [[module.mounts]]
+  source = "static"
+  target = "assets"
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  favicon = "images/favicon.ico"
+  enableIntegrity = false
+  relatedPostsCount = 3
+  recentPostsCount = 0
+  infiniteScroll = true
+  paginate = 10
+  minify = true
+  darkModeToggle = false
+
+[params.avatar]
+  [params.avatar.home]
+    assetPath = "images/new_logo.png"
+  [params.avatar.about]
+    assetPath = "images/logo.png"
+
+  [params.buyMeACoffee]
+    enabled = false
+    id = "yourwidgetid"
+
+  [params.codeHighlight]
+    darkTheme = "catppuccin-macchiato"
+    lightTheme = "catppuccin-frappe"
+
+  [params.copyright]
+    startYear = 2024
+    owner = "Northern Call"
+
+  [params.admonitions]
+    alertStyle = "favicon"
+
+[languages.en]
+  languageCode = "en-US"
+  languageName = "English"
+  languageDirection = "ltr"
+  contentDir = 'content/en'
+  weight = 1
+  title = "Northern Call"
+
+  [languages.en.params]
+    description = "Immerse yourself in the world of Scandinavian myths, rituals and spiritual practices."
+    heroTitleLine1 = "Northern Call"
+    heroTitleLine2 = "The North is calling. Are you ready to hear?"
+    custom404Message = "Sorry, the page you are looking for could not be found."
+    footerText = "Built with love and faith in Óðinn"
+
+  [[languages.en.menus.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 10
+
+  [[languages.en.menus.main]]
+    name = "Posts"
+    url = "/en/posts/"
+    weight = 20
+
+  # [[languages.en.menus.main]]
+  #   name = "Tags"
+  #   pageRef = "/tags"
+  #   weight = 30
+
+  [[languages.en.menus.main]]
+    name = "Runes"
+    pageRef = "/runes"
+    weight = 30
+
+  [[languages.en.menus.main]]
+    name = "About"
+    url = "/about"
+    weight = 40
+
+[languages.ru]
+  languageCode = "ru-RU"
+  languageName = "Русский"
+  languageDirection = "ltr"
+  contentDir = 'content/ru'
+  weight = 2
+  title = "Северный Зов"
+
+  [languages.ru.params]
+    description = "Погрузитесь в мир скандинавских мифов, ритуалов и духовных практик."
+    heroTitleLine1 = "Северный Зов"
+    heroTitleLine2 = "Север зовёт. Ты готов услышать?"
+    custom404Message = "Извините, страница, которую вы ищете, не найдена."
+    footerText = "Сделано с любовью и верой в Óðinn"
+
+  [[languages.ru.menus.main]]
+    name = "Главная"
+    pageRef = "/"
+    weight = 10
+
+  [[languages.ru.menus.main]]
+    name = "Посты"
+    url = "/posts/"
+    weight = 20
+
+  # [[languages.ru.menus.main]]
+  #   name = "Теги"
+  #   pageRef = "/tags"
+  #   weight = 30
+
+  [[languages.ru.menus.main]]
+    name = "Руны"
+    pageRef = "/runes"
+    weight = 30
+
+  [[languages.ru.menus.main]]
+    name = "Услуги"
+    url = "/price"
+    weight = 40
+
+  # [[languages.ru.menus.main]]
+  #   name = "Магазин"
+  #   pageRef = "/shop"
+  #   weight = 50
+
+  [[languages.ru.menus.main]]
+    name = "О сайте"
+    url = "/about"
+    weight = 50

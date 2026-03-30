@@ -1,0 +1,936 @@
+<!doctype html>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="/css/custom.css">
+<html lang="en-US" class="h-full">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="en-US">
+<meta name="theme-color" content="#BD5FFF">
+<script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+  
+  (function(){var t=sessionStorage.getItem('mana_pt');if(t){document.documentElement.setAttribute('data-page-enter',t);sessionStorage.removeItem('mana_pt');}})();
+  
+  window.MANA_SEARCH_INDEX_URL = '\/en\/index.json';
+  
+  window.MANA_LANG_PREFIXES = ['en','ru'];
+</script>
+<title>Runes of the Elder Futhark | Northern Call</title>
+<meta
+  name="description"
+  content="
+    Study of the Elder Futhark runes, their meanings, power, and practices.
+  
+  ">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/en/runes/">
+
+
+<link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/runes/">
+<link rel="alternate" hreflang="en-US" href="http://localhost:1313/en/runes/"><link rel="alternate" hreflang="x-default" href="http://localhost:1313/en/runes/">
+
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:title" content="Runes of the Elder Futhark | Northern Call">
+<meta property="og:description" content="Study of the Elder Futhark runes, their meanings, power, and practices.">
+<meta property="og:url" content="http://localhost:1313/en/runes/">
+<meta property="og:site_name" content="Northern Call"><meta property="og:image" content="http://localhost:1313/images/runes.jpeg">
+  <meta property="og:image:alt" content="Runes of the Elder Futhark | Northern Call">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630"><meta property="article:published_time" content="2026-03-20T00:00:00Z">
+  <meta
+    property="article:modified_time"
+    content="2026-03-20T00:00:00Z">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Runes of the Elder Futhark | Northern Call">
+<meta name="twitter:description" content="Study of the Elder Futhark runes, their meanings, power, and practices."><meta name="twitter:image" content="http://localhost:1313/images/runes.jpeg">
+  <meta name="twitter:image:alt" content="Runes of the Elder Futhark | Northern Call">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Northern Call"},"dateModified":"2026-03-20T00:00:00Z","datePublished":"2026-03-20T00:00:00Z","description":"Study of the Elder Futhark runes, their meanings, power, and practices.","headline":"Runes of the Elder Futhark","image":"http://localhost:1313/images/runes.jpeg","inLanguage":"en-US","mainEntityOfPage":{"@id":"http://localhost:1313/en/runes/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:1313/images/new_logo.png"},"name":"Northern Call","url":"http://localhost:1313/"},"timeRequired":"PT3M","url":"http://localhost:1313/en/runes/","wordCount":524}</script>
+
+
+
+  
+  
+  
+    
+  
+  
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"http://localhost:1313/en/","name":"Home","position":1},{"@type":"ListItem","item":"http://localhost:1313/en/posts/","name":"Posts","position":2},{"@type":"ListItem","item":"http://localhost:1313/en/runes/","name":"Runes of the Elder Futhark","position":3}]}</script>
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'">
+<noscript>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</noscript>
+
+<link rel="stylesheet" href="/css/theme.min.6a5fa8d765fdf553a676b84d980a78d100a09ff0d3c88e9a062af32a0bbd5cba.css">
+
+
+  <link
+    rel="stylesheet"
+    href="/css/syntax-dark.min.b01037e5609e6260b74d6fcdd6d5131e8dcbc4d46d6ef4bfbe5a60bdfc1a9f30.css"
+    id="syntax-dark-theme"
+    class="syntax-theme">
+  <link
+    rel="stylesheet"
+    href="/css/syntax-light.min.9602bc2fcef52b4c62e05eae14b48ba428e114f116e993e504d83ed5a3aeda98.css"
+    id="syntax-light-theme"
+    class="syntax-theme"
+    disabled><script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+
+    const syntaxDark = document.getElementById("syntax-dark-theme");
+    const syntaxLight = document.getElementById("syntax-light-theme");
+
+    if (theme === "light") {
+      if (syntaxDark) syntaxDark.disabled = true;
+      if (syntaxLight) syntaxLight.disabled = false;
+    } else {
+      if (syntaxDark) syntaxDark.disabled = false;
+      if (syntaxLight) syntaxLight.disabled = true;
+    }
+
+    
+    const observer = new MutationObserver(() => {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      if (currentTheme === "light") {
+        if (syntaxDark) syntaxDark.disabled = true;
+        if (syntaxLight) syntaxLight.disabled = false;
+      } else {
+        if (syntaxDark) syntaxDark.disabled = false;
+        if (syntaxLight) syntaxLight.disabled = true;
+      }
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+  })();
+</script>
+
+
+
+
+<link rel="stylesheet" href="/css/bundle.min.cfc97d2d72342d9a661b7b39afc526936a85272e8b7bce78d8244f53e8791c31.css">
+
+
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+
+
+  
+
+
+
+
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <a href="#main-content" class="skip-to-main" aria-label="Skip to main content"
+      >Skip to main content</a
+    >
+    <header class="sticky-header">
+      <div class="header-container">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+  <div class="header-content">
+    <div class="header-logo">
+      <a href="/en/" class="logo-link" aria-label="Home - Northern Call">
+        Northern Call
+      </a>
+    </div>
+
+    
+    <button 
+      id="mobile-menu-toggle" 
+      class="mobile-menu-toggle" 
+      aria-label="Toggle menu" 
+      aria-expanded="false"
+      type="button">
+      <span class="hamburger-icon">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
+    </button>
+
+    <div class="header-menu">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/en/"
+        class="menu-link ">
+        Home
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/en/posts/"
+        class="menu-link ">
+        Posts
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/en/runes/"
+        class="menu-link active">
+        Runes
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/en/about"
+        class="menu-link ">
+        About
+      </a>
+    </li>
+  
+</ul>
+
+
+      <button id="search-toggle" class="search-toggle" aria-label="Search" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </button>
+
+      
+  
+  
+  
+    <div class="language-switcher">
+      <button
+        class="language-switcher-toggle"
+        type="button"
+        aria-label="Language"
+        aria-expanded="false"
+        aria-haspopup="true">
+        <svg class="language-switcher-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+        </svg>
+        <span class="language-switcher-label">Language</span>
+      </button>
+      <div class="language-switcher-dropdown" aria-hidden="true">
+        <ul class="language-switcher-list" role="listbox">
+          
+            
+              <li role="option">
+                <a href="/runes/" class="language-switcher-link" hreflang="ru">
+                  Русский
+                </a>
+              </li>
+            
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" type="button">
+  <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+  </svg>
+  <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+  </svg>
+</button>
+
+    </div>
+  </div>
+</nav>
+
+      </div>
+      <div class="reading-progress-bar" aria-hidden="true"></div>
+    </header>
+
+    <main id="main-content" class="flex-1" role="main">
+        <div class="bg"></div>
+      
+  <div class="single-post-wrapper">
+    <article class="single-post">
+      
+
+
+
+
+  <div class="post-image-single">
+    <img
+      src="/images/runes.jpeg"
+      alt="
+        Study of the Elder Futhark runes, their meanings, power, and practices.
+      "
+      loading="eager"
+      width="1200"
+      height="630">
+  </div>
+
+
+
+
+      <header class="post-header">
+        
+
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/en/" itemprop="item"><span itemprop="name">Home</span></a>
+      <meta itemprop="position" content="1" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/en/posts/" itemprop="item"><span itemprop="name">Posts</span></a>
+      <meta itemprop="position" content="2" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name" class="breadcrumb-current">Runes of the Elder Futhark</span>
+      <meta itemprop="position" content="3" />
+    </li>
+  </ol>
+</nav>
+
+
+        <h1 class="post-title-main">Runes of the Elder Futhark</h1>
+
+        
+          <p class="post-description-main">Study of the Elder Futhark runes, their meanings, power, and practices.</p>
+        
+
+        <div class="post-meta">
+  <div class="post-meta-info">
+    <time datetime="2026-03-20T00:00:00Z" class="post-date">
+      <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+      </svg>
+      March 20, 2026
+    </time>
+
+    <span class="meta-separator">•</span>
+
+    
+      <span class="post-word-count">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        524 words
+      </span>
+    
+
+    
+      <span class="meta-separator">•</span>
+      <span class="post-reading-time">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        3 min
+      </span>
+    
+  </div>
+
+  
+</div>
+
+      </header>
+
+      <div class="post-content-main">
+        
+
+
+
+
+
+
+
+
+
+
+<div class="alert alert-info" >
+  <div class="alert-header" >
+    <span class="alert-icon">
+      
+      
+      <svg style="width: 1.25em; height: 1.25em; vertical-align: text-bottom; margin-right: 0.2rem;"
+  class="admonition-favicon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
+  stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="10"></circle>
+  <line x1="12" y1="16" x2="12" y2="12"></line>
+  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+</svg>
+      
+      
+    </span>
+    <span class="alert-title">
+      
+      Info
+      
+    </span>
+    
+  </div>
+  <div class="alert-content" id="alert-0" >
+    <p>Last update: 20.03.2026</p>
+  </div>
+</div>
+<h2 id="-contents">📑 Contents</h2>
+<h4 id="1--brief-historical-overview-of-the-elder-futhark">1. 📜 Brief Historical Overview of the Elder Futhark</h4>
+<h4 id="2--brief-mythological-description">2. 🧿 Brief Mythological Description</h4>
+<h4 id="3--principle-of-understanding-runes">3. ⚡ Principle of Understanding Runes</h4>
+<h4 id="4--important-guidance-for-the-practitioner">4. 🜂 Important Guidance for the Practitioner</h4>
+<h4 id="5-ᚠ-fehu">5. ᚠ Fehu</h4>
+<h4 id="6-ᚢ-uruz">6. ᚢ Uruz</h4>
+<h4 id="7-ᚦ-thurisaz">7. ᚦ Thurisaz</h4>
+<h4 id="8-ᚨ-ansuz">8. ᚨ Ansuz</h4>
+<h4 id="9-ᚱ-raidho">9. ᚱ Raidho</h4>
+<h4 id="10-ᚲ-kenaz">10. ᚲ Kenaz</h4>
+<h4 id="11-ᚷ-gebo">11. ᚷ Gebo</h4>
+<h4 id="12-ᚹ-wunjo">12. ᚹ Wunjo</h4>
+<h4 id="13-ᚺ-hagalaz">13. ᚺ Hagalaz</h4>
+<h4 id="14-ᚾ-nauthiz">14. ᚾ Nauthiz</h4>
+<h4 id="15-ᛁ-isa">15. ᛁ Isa</h4>
+<h4 id="16-ᛃ-jera">16. ᛃ Jera</h4>
+<h4 id="17-ᛇ-eihwaz">17. ᛇ Eihwaz</h4>
+<h4 id="18-ᛈ-perthro">18. ᛈ Perthro</h4>
+<h4 id="19-ᛉ-algiz">19. ᛉ Algiz</h4>
+<h4 id="20-ᛋ-sowilo">20. ᛋ Sowilo</h4>
+<h4 id="21-ᛏ-tiwaz">21. ᛏ Tiwaz</h4>
+<h4 id="22-ᛒ-berkano">22. ᛒ Berkano</h4>
+<h4 id="23-ᛖ-ehwaz">23. ᛖ Ehwaz</h4>
+<h4 id="24-ᛗ-mannaz">24. ᛗ Mannaz</h4>
+<h4 id="25-ᛚ-laguz">25. ᛚ Laguz</h4>
+<h4 id="26-ᛜ-ingwaz">26. ᛜ Ingwaz</h4>
+<h4 id="27-ᛞ-dagaz">27. ᛞ Dagaz</h4>
+<h4 id="28-ᛟ-othala">28. ᛟ Othala</h4>
+<hr>
+<h2 id="-brief-historical-overview-of-the-elder-futhark">📜 Brief Historical Overview of the Elder Futhark</h2>
+<p>The Elder Futhark is the oldest runic system, formed approximately in the 2nd–3rd centuries CE in Northern Europe among Germanic tribes. It consists of 24 runes and was used both for everyday purposes (inscriptions, markings) and in sacred practice.</p>
+<p>The name “Futhark” comes from the first six runes: Fehu, Uruz, Thurisaz, Ansuz, Raidho, Kenaz.</p>
+<p>Runes were carved on stone, wood, metal, weapons, and everyday objects. However, it is important to understand: they were not merely letters. Even in the earliest findings, runes already carry symbolic and magical meaning.</p>
+<p>Over time, the Elder Futhark evolved into other systems (Younger Futhark, Anglo-Saxon runes), but it is considered the foundational and most “pure” form of the runic tradition.</p>
+<hr>
+<h2 id="-brief-mythological-description">🧿 Brief Mythological Description</h2>
+<p>According to the Northern tradition, runes were not invented by humans.</p>
+<p>They were revealed through Odin’s sacrifice. For nine days and nights, he hung on the World Tree Yggdrasil, pierced by a spear, without food or water, suspended between life and death. In this state, he “saw” the runes — not as symbols, but as <strong>forces underlying the fabric of reality</strong>.</p>
+<p>Thus, runes are not an alphabet in the conventional sense. They are:</p>
+<ul>
+<li>principles of reality</li>
+<li>energetic structures</li>
+<li>archetypal forces</li>
+</ul>
+<p>Each rune is not a sign, but a <strong>living formula</strong> reflecting a specific aspect of existence: movement, destruction, growth, death, cycle, flow, etc.</p>
+<hr>
+<h2 id="-principle-of-understanding-runes">⚡ Principle of Understanding Runes</h2>
+<p>This page, like any “grimoire” or “description,” is only an <strong>external map</strong>.</p>
+<p>True understanding of runes comes not through reading, but through:</p>
+<ul>
+<li>lived experience</li>
+<li>interaction</li>
+<li>personal practice</li>
+</ul>
+<p>A rune cannot be fully understood logically. It can only be:</p>
+<ul>
+<li>felt</li>
+<li>internalized</li>
+<li>allowed to manifest in consciousness and body</li>
+</ul>
+<hr>
+<h2 id="-important-guidance-for-the-practitioner">🜂 Important Guidance for the Practitioner</h2>
+<p>Each rune must be studied not only intellectually, but also through the “soul” — via one’s own energy.</p>
+<p>This means:</p>
+<ul>
+<li>observing the rune and inner sensations</li>
+<li>embodying its state (e.g., Isa as stillness, Uruz as strength)</li>
+<li>working with breath and body</li>
+<li>tracking how the rune manifests in reality</li>
+</ul>
+<p>Any text, even the most detailed one, is only a <strong>starting point</strong>.</p>
+<p>Real knowledge comes when:</p>
+<ul>
+<li>the rune begins to “respond”</li>
+<li>its state becomes recognizable within</li>
+<li>its power manifests in practice</li>
+</ul>
+<p>The Elder Futhark is not just a symbolic system.</p>
+<p>It is a tool for:</p>
+<ul>
+<li>self-knowledge</li>
+<li>interaction with the world</li>
+<li>transformation of reality</li>
+</ul>
+<p>But only under one condition:</p>
+<p><strong>if the practitioner goes beyond the text and begins to work with runes as living forces.</strong></p>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+<div class="alert alert-warning alert-collapsible" 
+  data-collapsed="false">
+  <div class="alert-header"  style="cursor: pointer;" >
+    <span class="alert-icon">
+      
+      
+      <svg style="width: 1.25em; height: 1.25em; vertical-align: text-bottom; margin-right: 0.2rem;"
+  class="admonition-favicon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
+  stroke-linecap="round" stroke-linejoin="round">
+  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+  <line x1="12" y1="9" x2="12" y2="13"></line>
+  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+</svg>
+      
+      
+    </span>
+    <span class="alert-title">
+      
+      Under development
+      
+    </span>
+    
+    <span class="alert-toggle" id="toggle-alert-1">+</span>
+    
+  </div>
+  <div class="alert-content" id="alert-1"  style="display: none;"
+    >
+    <p>The text is currently being translated.</p>
+  </div>
+</div>
+
+      </div>
+
+      
+
+      
+
+
+
+
+      <nav class="post-navigation" aria-label="Post navigation">
+        
+          <a
+            href="/en/about/"
+            class="nav-link nav-prev"
+            aria-label="Previous post: About">
+            <span class="nav-label">Previous</span>
+            <span class="nav-title">About</span>
+          </a>
+        
+
+        
+      </nav>
+    </article>
+
+    
+  <aside class="post-toc" id="post-toc" aria-label="Table of Contents">
+    <button
+      class="toc-toggle"
+      id="toc-toggle"
+      aria-expanded="true"
+      aria-controls="toc-content"
+      aria-label="Toggle table of contents">
+      <svg
+        class="toc-burger-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <span class="toc-toggle-text">Table of Contents</span>
+      <svg
+        class="toc-chevron-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+    <div class="toc-content" id="toc-content">
+      <nav class="toc-nav" aria-label="Table of Contents">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#-contents">📑 Contents</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#1--brief-historical-overview-of-the-elder-futhark">1. 📜 Brief Historical Overview of the Elder Futhark</a></li>
+                <li><a href="#2--brief-mythological-description">2. 🧿 Brief Mythological Description</a></li>
+                <li><a href="#3--principle-of-understanding-runes">3. ⚡ Principle of Understanding Runes</a></li>
+                <li><a href="#4--important-guidance-for-the-practitioner">4. 🜂 Important Guidance for the Practitioner</a></li>
+                <li><a href="#5-ᚠ-fehu">5. ᚠ Fehu</a></li>
+                <li><a href="#6-ᚢ-uruz">6. ᚢ Uruz</a></li>
+                <li><a href="#7-ᚦ-thurisaz">7. ᚦ Thurisaz</a></li>
+                <li><a href="#8-ᚨ-ansuz">8. ᚨ Ansuz</a></li>
+                <li><a href="#9-ᚱ-raidho">9. ᚱ Raidho</a></li>
+                <li><a href="#10-ᚲ-kenaz">10. ᚲ Kenaz</a></li>
+                <li><a href="#11-ᚷ-gebo">11. ᚷ Gebo</a></li>
+                <li><a href="#12-ᚹ-wunjo">12. ᚹ Wunjo</a></li>
+                <li><a href="#13-ᚺ-hagalaz">13. ᚺ Hagalaz</a></li>
+                <li><a href="#14-ᚾ-nauthiz">14. ᚾ Nauthiz</a></li>
+                <li><a href="#15-ᛁ-isa">15. ᛁ Isa</a></li>
+                <li><a href="#16-ᛃ-jera">16. ᛃ Jera</a></li>
+                <li><a href="#17-ᛇ-eihwaz">17. ᛇ Eihwaz</a></li>
+                <li><a href="#18-ᛈ-perthro">18. ᛈ Perthro</a></li>
+                <li><a href="#19-ᛉ-algiz">19. ᛉ Algiz</a></li>
+                <li><a href="#20-ᛋ-sowilo">20. ᛋ Sowilo</a></li>
+                <li><a href="#21-ᛏ-tiwaz">21. ᛏ Tiwaz</a></li>
+                <li><a href="#22-ᛒ-berkano">22. ᛒ Berkano</a></li>
+                <li><a href="#23-ᛖ-ehwaz">23. ᛖ Ehwaz</a></li>
+                <li><a href="#24-ᛗ-mannaz">24. ᛗ Mannaz</a></li>
+                <li><a href="#25-ᛚ-laguz">25. ᛚ Laguz</a></li>
+                <li><a href="#26-ᛜ-ingwaz">26. ᛜ Ingwaz</a></li>
+                <li><a href="#27-ᛞ-dagaz">27. ᛞ Dagaz</a></li>
+                <li><a href="#28-ᛟ-othala">28. ᛟ Othala</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#-brief-historical-overview-of-the-elder-futhark">📜 Brief Historical Overview of the Elder Futhark</a></li>
+        <li><a href="#-brief-mythological-description">🧿 Brief Mythological Description</a></li>
+        <li><a href="#-principle-of-understanding-runes">⚡ Principle of Understanding Runes</a></li>
+        <li><a href="#-important-guidance-for-the-practitioner">🜂 Important Guidance for the Practitioner</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </nav>
+    </div>
+  </aside>
+
+
+  </div>
+
+    </main>
+
+    <footer>
+      <footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-text">
+      &copy;
+      
+      2024-2026
+      
+      Northern Call.
+      
+        Built with love and faith in Óðinn
+      
+    </p>
+    
+  </div>
+</footer>
+
+    </footer>
+
+    <div id="search-modal" class="search-modal" aria-hidden="true" role="dialog" aria-label="Search" data-no-results="No results found">
+  <div class="search-modal-backdrop" id="search-modal-backdrop"></div>
+  <div class="search-modal-container">
+    <div class="search-input-wrapper">
+      <svg class="search-input-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input"
+        placeholder="Search..."
+        autocomplete="off"
+        aria-label="Search">
+      <button class="search-input-clear" id="search-input-clear" aria-label="Clear search">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+        </svg>
+      </button>
+      <button class="search-modal-close" id="search-modal-close" aria-label="Close search">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+    
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu-content">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-title">Menu</span>
+      <button
+        id="mobile-menu-close"
+        class="mobile-menu-close"
+        aria-label="Close menu"
+        type="button">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile navigation">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/en/"
+        class="menu-link ">
+        Home
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/en/posts/"
+        class="menu-link ">
+        Posts
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/en/runes/"
+        class="menu-link active">
+        Runes
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/en/about"
+        class="menu-link ">
+        About
+      </a>
+    </li>
+  
+</ul>
+
+    </nav>
+    <div class="mobile-menu-footer">
+      <button id="mobile-search-toggle" class="mobile-search-toggle" aria-label="Search" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+        <span>Search</span>
+      </button>
+      
+  
+  
+  
+    <div class="language-switcher">
+      <button
+        class="language-switcher-toggle"
+        type="button"
+        aria-label="Language"
+        aria-expanded="false"
+        aria-haspopup="true">
+        <svg class="language-switcher-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+        </svg>
+        <span class="language-switcher-label">Language</span>
+      </button>
+      <div class="language-switcher-dropdown" aria-hidden="true">
+        <ul class="language-switcher-list" role="listbox">
+          
+            
+              <li role="option">
+                <a href="/runes/" class="language-switcher-link" hreflang="ru">
+                  Русский
+                </a>
+              </li>
+            
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+      <button class="theme-toggle" aria-label="Toggle theme" type="button">
+        <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+        <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+    
+
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top" type="button">
+  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.8cc4b96ac7af9517fd6ad80eeddd46ac956bb6c47f4c0481138642a15b70782f.js" defer></script>
+
+  </body>
+</html>
