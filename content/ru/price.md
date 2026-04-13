@@ -1,6 +1,6 @@
 ---
 title: "Прайс и услуги"
-layout: page
+layout: spec
 date: 2025-01-01
 image: "images/banner.png"
 ---

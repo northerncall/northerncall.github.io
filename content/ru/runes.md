@@ -1,6 +1,6 @@
 ---
 title: "Руны Старшего Футарка"
-layout: page
+layout: runes
 description: "Изучение рун Старшего Футарка, их значения, силы и практики."
 date: 2026-03-20
 image: "images/runes.jpeg"

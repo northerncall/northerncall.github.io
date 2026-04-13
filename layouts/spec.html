@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <article class="about-page">
+    <header class="about-header">
+      <div class="about-page-info">
+        <h1 class="about-page-name">
+          <span class="list-title-line2">{{ .Title | upper }}</span>
+        </h1>
+        {{ if site.Params.social }}
+          <div class="about-page-social">
+            {{ partial "social-links.html" . }}
+          </div>
+        {{ end }}
+      </div>
+    </header>
+
+    <div class="single-post-wrapper">
+    <article class="single-post">
+      <div class="post-content-main">
+        {{ .Content }}
+      </div>
+      </nav>
+    </article>
+  </div>
+
+  </article>
+{{ end }}

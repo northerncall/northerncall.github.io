@@ -1,6 +1,6 @@
 ---
 title: "О нас"
-layout: "page"
+layout: sabout
 image: "images/logo.png"
 ---
 Приветствую **тебя**, путник духа 🔥
@@ -20,11 +20,10 @@ image: "images/logo.png"
 
 ---
 
-### Полезные ссылки
-
-- [Северный Зов](https://t.me/northern_call)
-- [Лайв канал](https://t.me/+72-vMMqtn2xhMDMy)  
-- [Личные сообщения автору канала](https://t.me/northern_call?direct)  
-- [Анонимный вопрос](https://t.me/letsqbot?start=fsn44)  
-- [Развитие канала](https://t.me/northern_call?direct)  
-- [Условия использования материалов](https://telegra.ph/Usloviya-ispolzovaniya-Severnyj-Zov-03-19)
+> [!TIP] Полезные ссылки
+> [Северный Зов](https://t.me/northern_call)<br>
+> [Лайв канал](https://t.me/+72-vMMqtn2xhMDMy)<br>
+> [Личные сообщения автору канала](https://t.me/northern_call?direct)<br>
+> [Анонимный вопрос в TG](https://t.me/letsqbot?start=fsn44)<br>
+> [Донат](https://t.me/northern_call?direct)<br>
+> [Условия использования материалов](https://telegra.ph/Usloviya-ispolzovaniya-Severnyj-Zov-03-19)

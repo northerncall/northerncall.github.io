@@ -1,6 +1,6 @@
 ---
 title: "About"
-layout: "page"
+layout: sabout
 image: "images/logo.png"
 ---
 Greetings, **traveler of spirit** 🔥

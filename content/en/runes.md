@@ -1,6 +1,6 @@
 ---
 title: "Runes of the Elder Futhark"
-layout: page
+layout: runes
 description: "Study of the Elder Futhark runes, their meanings, power, and practices."
 date: 2026-03-20
 image: "images/runes.jpeg"
