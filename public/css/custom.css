@@ -107,3 +107,17 @@
 .theme-toggle {
   display: none !important;
 }
+
+table {
+    display: block !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+@media (max-width: 768px) {
+    td, th {
+        min-width: 120px !important;
+    }
+}

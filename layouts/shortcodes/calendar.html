@@ -1,0 +1,107 @@
+<div class="calendar-wrapper">
+  <div id="calendar-{{ .Get "id" | default "main" }}"></div>
+</div>
+
+<!-- Подключаем локальные файлы -->
+<link href="/lib/fullcalendar/main.css" rel="stylesheet" />
+<script src="/lib/fullcalendar/main.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('FullCalendar загружается...');
+    
+    // Небольшая задержка для полной загрузки
+    setTimeout(async function() {
+      const dataUrl = '{{ .Get "data" | default "/calendar/calendar-events.json" }}';
+      console.log('Загружаю события из:', dataUrl);
+      
+      try {
+        const response = await fetch(dataUrl);
+        const events = await response.json();
+        console.log('Событий загружено:', events.length);
+        
+        var calendarEl = document.getElementById('calendar-{{ .Get "id" | default "main" }}');
+        
+        // Проверяем, что FullCalendar загрузился
+        if (typeof FullCalendar === 'undefined') {
+          console.error('FullCalendar не загрузился!');
+          calendarEl.innerHTML = '<div style="padding: 20px; background: #fee; border: 1px solid #fcc;">Ошибка: не удалось загрузить календарь. Пожалуйста, обновите страницу.</div>';
+          return;
+        }
+        
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          locale: 'ru',
+          firstDay: 1,
+          headerToolbar: {
+            left: 'prevYear,prev,next,nextYear today',
+            center: 'title',
+            right: 'dayGridMonth,dayGridWeek,dayGridDay'
+          },
+          buttonText: {
+            today: 'Сегодня',
+            month: 'Месяц',
+            week: 'Неделя',
+            day: 'День'
+          },
+          events: events,
+          eventClick: function(info) {
+            if (info.event.extendedProps.description) {
+              alert(info.event.title + '\n\n' + info.event.extendedProps.description);
+            }
+          },
+          height: 'auto'
+        });
+        
+        calendar.render();
+        console.log('Календарь успешно отрисован');
+        
+      } catch (error) {
+        console.error('Ошибка загрузки календаря:', error);
+        var calendarEl = document.getElementById('calendar-{{ .Get "id" | default "main" }}');
+        calendarEl.innerHTML = '<div style="padding: 20px; background: #fee; border: 1px solid #fcc;">Ошибка загрузки календаря. Проверьте консоль для деталей.</div>';
+      }
+    }, 100);
+  });
+</script>
+
+<style>
+  .calendar-wrapper {
+    margin: 2rem 0;
+    overflow-x: auto;
+  }
+  
+  #calendar-{{ .Get "id" | default "main" }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 500px;
+  }
+  
+  .fc-event {
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .fc-day-today {
+    background-color: #fef3c7 !important;
+  }
+  
+  @media (max-width: 768px) {
+    .fc .fc-toolbar {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .fc .fc-toolbar-title {
+      font-size: 1.2rem;
+    }
+    
+    .fc .fc-button {
+      padding: 0.3rem 0.5rem;
+      font-size: 0.8rem;
+    }
+  }
+</style>

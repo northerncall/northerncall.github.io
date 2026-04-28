@@ -44,13 +44,15 @@ paginate = 5
 
 [params]
   favicon = "images/favicon.ico"
-  enableIntegrity = false
+  enableIntegrity = true
   relatedPostsCount = 3
   recentPostsCount = 0
   infiniteScroll = true
   paginate = 10
   minify = true
-  darkModeToggle = false
+  darkModeToggle = true
+  responsiveTables = true
+  tableOverflowX = "auto"
 
 [params.avatar]
   [params.avatar.home]
