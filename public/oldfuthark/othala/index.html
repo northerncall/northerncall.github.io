@@ -1,0 +1,737 @@
+<!doctype html>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="/css/custom.css">
+<html lang="ru-RU" class="h-full">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="ru-RU">
+<meta name="theme-color" content="#BD5FFF">
+<script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+  
+  (function(){var t=sessionStorage.getItem('mana_pt');if(t){document.documentElement.setAttribute('data-page-enter',t);sessionStorage.removeItem('mana_pt');}})();
+  
+  window.MANA_SEARCH_INDEX_URL = '\/index.json';
+  
+  window.MANA_LANG_PREFIXES = ['en','ru'];
+</script>
+<title>Othala (Отал) | Северный Зов</title>
+<meta
+  name="description"
+  content="
+     Историческое значение Руна Отал — это последняя, двадцать четвёртая руна Старшего Футарка. Она означает «родовая земля», «наследие», «неотчуждаемое имущество». …
+  
+  ">
+
+
+  <meta name="keywords" content="руны старшего футарка">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/oldfuthark/othala/">
+
+
+<link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/oldfuthark/othala/">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Othala (Отал) | Северный Зов">
+<meta property="og:description" content=" Историческое значение Руна Отал — это последняя, двадцать четвёртая руна Старшего Футарка. Она означает «родовая земля», «наследие», «неотчуждаемое имущество». …">
+<meta property="og:url" content="http://localhost:1313/oldfuthark/othala/">
+<meta property="og:site_name" content="Северный Зов"><meta property="article:published_time" content="2024-01-01T00:00:00Z">
+  <meta
+    property="article:modified_time"
+    content="2024-01-01T00:00:00Z"><meta property="article:section" content="руны старшего футарка"><meta property="article:tag" content="руны старшего футарка">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Othala (Отал) | Северный Зов">
+<meta name="twitter:description" content=" Историческое значение Руна Отал — это последняя, двадцать четвёртая руна Старшего Футарка. Она означает «родовая земля», «наследие», «неотчуждаемое имущество». …">
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'">
+<noscript>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</noscript>
+
+<link rel="stylesheet" href="/css/theme.min.d0bca60e6c836b64f7352464f89fe19f9b9db0eabc5b829f9aa967d8924dd6b4.css" integrity="sha256-0LymDmyDa2T3NSRk&#43;J/hn5udsOq8W4Kfmqln2JJN1rQ=">
+
+
+  <link
+    rel="stylesheet"
+    href="/css/syntax-dark.min.b01037e5609e6260b74d6fcdd6d5131e8dcbc4d46d6ef4bfbe5a60bdfc1a9f30.css"
+    integrity="sha256-sBA35WCeYmC3TW/N1tUTHo3LxNRtbvS/vlpgvfwanzA="
+    id="syntax-dark-theme"
+    class="syntax-theme">
+  <link
+    rel="stylesheet"
+    href="/css/syntax-light.min.9602bc2fcef52b4c62e05eae14b48ba428e114f116e993e504d83ed5a3aeda98.css"
+    integrity="sha256-lgK8L871K0xi4F6uFLSLpCjhFPEW6ZPlBNg&#43;1aOu2pg="
+    id="syntax-light-theme"
+    class="syntax-theme"
+    disabled><script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+
+    const syntaxDark = document.getElementById("syntax-dark-theme");
+    const syntaxLight = document.getElementById("syntax-light-theme");
+
+    if (theme === "light") {
+      if (syntaxDark) syntaxDark.disabled = true;
+      if (syntaxLight) syntaxLight.disabled = false;
+    } else {
+      if (syntaxDark) syntaxDark.disabled = false;
+      if (syntaxLight) syntaxLight.disabled = true;
+    }
+
+    
+    const observer = new MutationObserver(() => {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      if (currentTheme === "light") {
+        if (syntaxDark) syntaxDark.disabled = true;
+        if (syntaxLight) syntaxLight.disabled = false;
+      } else {
+        if (syntaxDark) syntaxDark.disabled = false;
+        if (syntaxLight) syntaxLight.disabled = true;
+      }
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+  })();
+</script>
+
+
+
+
+<link rel="stylesheet" href="/css/bundle.min.6aba317260578ac017656f5b2e8ed1f7c52d1819d1e57ae87b8266ea5620da75.css" integrity="sha256-aroxcmBXisAXZW9bLo7R98UtGBnR5Xroe4Jm6lYg2nU=">
+
+
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+
+
+  
+
+
+
+
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <a href="#main-content" class="skip-to-main" aria-label="Перейти к основному содержимому"
+      >Перейти к основному содержимому</a
+    >
+    <header class="sticky-header">
+      <div class="header-container">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+  <div class="header-content">
+    <div class="header-logo">
+      <a href="/" class="logo-link" aria-label="Home - Северный Зов">
+        Северный Зов
+      </a>
+    </div>
+
+    
+    <button 
+      id="mobile-menu-toggle" 
+      class="mobile-menu-toggle" 
+      aria-label="Открыть меню" 
+      aria-expanded="false"
+      type="button">
+      <span class="hamburger-icon">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
+    </button>
+
+    <div class="header-menu">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+
+      <button id="search-toggle" class="search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </button>
+
+      
+  
+  
+  
+
+
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Сменить тему" type="button">
+  <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+  </svg>
+  <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+  </svg>
+</button>
+
+    </div>
+  </div>
+</nav>
+
+      </div>
+      <div class="reading-progress-bar" aria-hidden="true"></div>
+    </header>
+
+    <main id="main-content" class="flex-1" role="main">
+        <div class="bg"></div>
+      
+  <div class="single-post-wrapper">
+    <article class="single-post">
+      
+
+
+
+
+
+
+
+      <header class="post-header">
+        
+
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/" itemprop="item"><span itemprop="name">Главная</span></a>
+      <meta itemprop="position" content="1" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/posts/" itemprop="item"><span itemprop="name">Публикации</span></a>
+      <meta itemprop="position" content="2" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name" class="breadcrumb-current">Othala (Отал)</span>
+      <meta itemprop="position" content="3" />
+    </li>
+  </ol>
+</nav>
+
+
+        <h1 class="post-title-main">Othala (Отал)</h1>
+
+        
+
+        <div class="post-meta">
+  <div class="post-meta-info">
+    <time datetime="2024-01-01T00:00:00Z" class="post-date">
+      <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+      </svg>
+      1 января 2024 г.
+    </time>
+
+    <span class="meta-separator">•</span>
+
+    
+      <span class="post-word-count">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        1435 слов
+      </span>
+    
+
+    
+      <span class="meta-separator">•</span>
+      <span class="post-reading-time">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        7 мин
+      </span>
+    
+  </div>
+
+  
+    <div class="post-tags">
+      
+        <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+      
+    </div>
+  
+</div>
+
+      </header>
+
+      <div class="post-content-main">
+        <img src="/images/runes/old/24.png" width="512" height="512">
+<h2 id="историческое-значение">Историческое значение</h2>
+<p>Руна Отал — это последняя, двадцать четвёртая руна Старшего Футарка. Она означает «родовая земля», «наследие», «неотчуждаемое имущество». В древней Скандинавии существовало понятие «одаль» — земля, которая передавалась по наследству от отца к сыну и не могла быть продана или подарена чужаку. Отал — это корни. Это то, что держит человека на земле, когда все ветра пытаются его сдуть.</p>
+<p>В отличие от Феху (движимое богатство, скот, деньги), Отал — это недвижимое, постоянное. Скот можно продать, золото — потерять. Землю — нет. Она остаётся. Даже если ты уехал, даже если ты умер, земля помнит твоё имя. Отал — это руна памяти. Памяти земли о человеке и человека о своих предках.</p>
+<p>В древнескандинавском обществе одаль давал человеку права и обязанности. Владелец одаля имел голос на тинге (народном собрании), платил налоги, защищал свою землю с оружием в руках. Но он же кормил своих работников, принимал чужеземцев, жертвовал богам на урожай. Отал — это руна ответственности. Владеть — значит отвечать. За землю, за дом, за семью, за традицию.</p>
+<p>Форма руны — четырёхугольник с двумя выступами, напоминающий участок земли с оградой или дом с крыльями. Это пространство, отгороженное от мира — своё, родное, защищённое. За пределами ограды — чужое, опасное, непонятное. Внутри — безопасность, покой, сила рода.</p>
+<p>Отал — последняя руна футарка. Она завершает систему, начатую Феху. Первая руна — скот (движимое). Последняя — земля (недвижимое). Между ними — весь путь человека: сила, защита, знание, путь, свет, дар, радость, разрушение, нужда, лёд, урожай, ось, тайна, защита, победа, жертва, рост, движение, человечность, поток, потенциал, прорыв. И в конце — возвращение домой. К корням. К земле предков.</p>
+<h2 id="проявление-силы">Проявление силы</h2>
+<p>Отал проявляется тремя основными способами.</p>
+<p>Первое — связь с родом и предками. Отал открывает канал к умершим родственникам — не в мистическом смысле общения (как у Перт), а в практическом: ты начинаешь чувствовать, что твои предки стоят за твоей спиной. Их опыт, их ошибки, их победы — это твой опыт, твои ошибки, твои победы. Отал даёт доступ к родовой памяти не через тайны, а через кровь, через землю, через дом. Человек под действием Отал часто начинает интересоваться генеалогией, историей семьи, старыми фотографиями.</p>
+<p>Второе — защита дома и имущества. Отал создаёт вокруг жилища невидимую ограду, которая не пропускает чужих — физически и энергетически. Это не агрессивная защита (как у Турисаз), а территориальная: здесь моё, сюда не входить. Под действием Отал человек становится более территориальным — он чувствует своё право на пространство, на вещи, на время. Он учится говорить «нет» тем, кто вторгается в его дом без спроса.</p>
+<p>Третье — сохранение традиции. Самый глубокий уровень Отал. Руна помогает передавать знания от старших к младшим — не в формате обучения, а в формате жизни. Дети учатся, глядя на родителей. Ученики — глядя на мастеров. Паства — глядя на жрецов. Отал — это руна, которая хранит культуру, язык, веру, ремёсла, песни, сказки. Всё то, что делает человека частью народа, а не одинокой единицей в толпе.</p>
+<p>Отал также связана с понятием «дом» — не просто здания, а места, где тебя любят и ждут. Человек под действием Отал начинает больше времени проводить дома, заниматься домом, наводить порядок, создавать уют. Дом становится не точкой на карте, а центром вселенной. Местом, куда хочется возвращаться.</p>
+<h2 id="применение-в-ставах">Применение в ставах</h2>
+<p>Отал используется для родовой магии, для защиты дома, для сохранения наследства, для укрепления связей внутри семьи.</p>
+<p>Связка Отал с Альгиз. Это формула защиты рода. Отал даёт связь с предками и территорию, Альгиз — защиту от внешних угроз. Вместе они работают как «родовое гнездо», которое охраняют духи предков. Используется в ставах на защиту дома от воров, на защиту семьи от сглаза, на сохранение имущества при разделах и наследственных спорах.</p>
+<p>Связка Отал с Феху. Это формула родового достатка. Отал даёт землю и дом, Феху — движимое богатство. Вместе они работают как «полная чаша»: деньги текут, но не утекают, дом полон, семья сыта. Используется в ставах на укрепление финансового положения семьи, на покупку недвижимости, на передачу наследства.</p>
+<p>Связка Отал с Йера. Это формула родового процветания из поколения в поколение. Отал даёт землю, Йера — цикл смены поколений, урожай, который собирают дети и внуки. Вместе они работают как «родовое дерево»: корни уходят в прошлое, ветви — в будущее. Используется в ставах на плодородие рода, на здоровое потомство, на передачу ремесла от отца к сыну.</p>
+<p>Связка Отал с Манназ. Это формула родовой идентичности. Отал даёт связь с предками, Манназ — способность осознать себя частью человечества в целом. Вместе они работают как «малая родина»: ты знаешь, кто ты, откуда ты, куда ты идёшь. Используется в ставах на поиск своего места в мире, на принятие себя, на исцеление от родовых травм.</p>
+<p>Важное предупреждение: Отал может вызвать чувство замкнутости, ограниченности, «мещанства». Человек зацикливается на доме, семье, имуществе и перестаёт замечать большой мир. Он становится консервативным, недоверчивым к чужакам, боится перемен. Поэтому Отал нужно балансировать рунами движения (Райдо, Эваз) и связи с миром (Ансуз, Лагуз).</p>
+<h2 id="мантика">Мантика</h2>
+<p>Прямое положение Отал говорит о наследстве, доме, семье, традиции. Руна выпадает в периоды, когда человеку нужно вернуться к корням. Навестить родителей, съездить в деревню предков, разобрать старые фотографии. Там — ответы на вопросы, которые мучают сейчас.</p>
+<p>Прямая Отал также может означать, что человек получит наследство — не обязательно деньги или землю, а скорее знания, реликвии, семейные тайны, которые изменят его жизнь. Будьте открыты к тому, что приходит от старших.</p>
+<p>В раскладах на отношения прямая Отал — знак крепкой семьи, основанной на традиции. Партнёры уважают обычаи друг друга, чтут родителей, планируют детей. Если отношения только начинаются, руна говорит, что у них есть шанс перерасти в нечто серьёзное и долговременное.</p>
+<p>В раскладах на здоровье прямая Отал говорит о том, что болезни могут быть наследственными. Узнайте, чем болели ваши предки — возможно, вы носите ту же программу. Руна советует профилактику, а не лечение.</p>
+<p>Перевёрнутое положение Отал говорит о потере наследства, разрыве с семьёй, утрате дома. Человек оторван от корней — добровольно или вынужденно. Он не знает, кто он и откуда. Перевёрнутая Отал — это руна беженца, изгоя, сироты.</p>
+<p>Перевёрнутая Отал также может означать, что человек слишком зациклен на прошлом. Предки давно умерли, а он всё оглядывается назад, не видя будущего. Руна советует: почти прошлое, положи цветы на могилы, но живи своей жизнью. Ты не твои предки. Ты — ты.</p>
+<h2 id="да--нет">Да / Нет</h2>
+<p>Отал отвечает «Да» на вопросы, связанные с домом, семьёй, наследством. «Вернусь ли я домой?» — Да. «Помирюсь ли я с родителями?» — Да, если ты сделаешь первый шаг. «Достанется ли мне наследство?» — Да, если на то есть законные основания.</p>
+<p>На вопросы, где человек пытается убежать от семьи, Отал отвечает «Нет». «Стоит ли мне порвать все связи с роднёй?» — Нет. «Правильно ли я сделаю, если продам родовой дом?» — Нет, сначала подумай.</p>
+<h2 id="практика-активации">Практика активации</h2>
+<p>Активация Отал требует земли и домашнего очага. Лучше всего проводить её в доме (или на участке), который связан с вашей семьёй. Но можно и в квартире — главное, чтобы было уютно и безопасно.</p>
+<p>Шаг первый. Начертите руну на коричневом, зелёном или чёрном материале. Идеальный носитель — кусок дерева из вашего дома (доска, ветка), камень с вашего участка, глина с места, где живут ваши предки.</p>
+<p>Шаг второй. Сядьте перед очагом (камином, печью, свечой, плитой — любым источником тепла в доме). Положите руну на левую ладонь. Правой рукой прикоснитесь к чему-то, что символизирует ваш род — к старой фотографии, к родовому кольцу, к Библии, которую читала бабушка.</p>
+<p>Шаг третий. Закройте глаза. Почувствуйте тепло очага на лице, на руках, на груди. Почувствуйте, как за вашей спиной встают тени — ваши предки. Молчаливые, добрые, уставшие. Они не говорят, но вы знаете, что они одобряют то, что вы делаете.</p>
+<p>Шаг четвёртый. Проговорите формулу активации тихо, как разговор с ушедшими: «Отал — сила рода во мне».</p>
+<p>Шаг пятый. Визуализируйте, как от руны в землю (под дом) уходит корень. Толстый, старый, крепкий. Он связывает вас с теми, кто жил здесь до вас. Через него вы получаете силу предков — терпение, мудрость, защиту. Через него вы отдаёте долги — поминаете, благодарите, продолжаете их дело.</p>
+<p>Шаг шестой. Побудьте в этом состоянии 5–10 минут. Если приходят образы старых домов, деревенских кладбищ, семейных застолий, незнакомых лиц, которые смотрят на вас с любовью — запомните их. Это ваши предки пришли поздороваться.</p>
+<h2 id="деактивация">Деактивация</h2>
+<p>Деактивация Отал — это оставление дара предкам. Вы заканчиваете работу и выходите из родового канала.</p>
+<p>Шаг первый. Поблагодарите своих предков. Вслух или мысленно: «Спасибо за то, что вы есть. Спасибо за землю и дом. Спасибо за кровь в моих жилах».</p>
+<p>Шаг второй. Произнесите формулу деактивации: «Род чту. Отал возвращается в покой».</p>
+<p>Шаг третий. Физическая деактивация: если руна была на временном носителе (бумага, глина), закопайте её на вашем участке или в цветочном горшке. Если на постоянном (камень, дерево), положите на алтарь предков или в то место дома, где хранятся семейные реликвии.</p>
+<p>Шаг четвёртый. Съешьте что-нибудь, что готовили ваши предки — кашу, хлеб, пирог. Это последний дар, замыкающий круг.</p>
+<p><a href="/runes/" class="btn btn-sm">Вернуться к рунам Старшего Футарка</a></p>
+
+      </div>
+
+      
+        <footer class="post-footer">
+          <div class="post-tags-footer">
+            <span class="tags-label">Теги:</span>
+            
+              <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+            
+          </div>
+        </footer>
+      
+
+      
+
+
+<section class="related-posts" aria-label="Похожие публикации">
+  <h2 class="related-posts-title">Похожие публикации</h2>
+  <ul class="related-posts-list">
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/algiz/" class="related-post-link">
+        <strong>Algiz (Альгиз)</strong>
+        <span> Историческое значение Руна Альгиз — это руна защиты, но не пассивной, не той, которая просто отражает удар. Это живая …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/ansuz/" class="related-post-link">
+        <strong>Ansuz (Ансуз)</strong>
+        <span> Историческое значение Руна Ансуз — это руна богов, прежде всего связанная с Одином как носителем речи, знания и …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/berkano/" class="related-post-link">
+        <strong>Berkano (Беркана)</strong>
+        <span> Историческое значение Руна Беркана означает «берёза» — дерево, которое в древней Скандинавии считалось священным для …</span>
+      </a>
+    </li>
+    
+  </ul>
+</section>
+
+
+
+      <nav class="post-navigation" aria-label="Post navigation">
+        
+          <a
+            href="/oldfuthark/perthro/"
+            class="nav-link nav-prev"
+            aria-label="Previous post: Perthro (Перт)">
+            <span class="nav-label">Предыдущая</span>
+            <span class="nav-title">Perthro (Перт)</span>
+          </a>
+        
+
+        
+          <a
+            href="/oldfuthark/nauthiz/"
+            class="nav-link nav-next"
+            aria-label="Next post: Nauthiz (Наутиз)">
+            <span class="nav-label">Следующая</span>
+            <span class="nav-title">Nauthiz (Наутиз)</span>
+          </a>
+        
+      </nav>
+    </article>
+
+    
+  <aside class="post-toc" id="post-toc" aria-label="Содержание">
+    <button
+      class="toc-toggle"
+      id="toc-toggle"
+      aria-expanded="true"
+      aria-controls="toc-content"
+      aria-label="Показать/скрыть содержание">
+      <svg
+        class="toc-burger-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <span class="toc-toggle-text">Содержание</span>
+      <svg
+        class="toc-chevron-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+    <div class="toc-content" id="toc-content">
+      <nav class="toc-nav" aria-label="Содержание">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#историческое-значение">Историческое значение</a></li>
+        <li><a href="#проявление-силы">Проявление силы</a></li>
+        <li><a href="#применение-в-ставах">Применение в ставах</a></li>
+        <li><a href="#мантика">Мантика</a></li>
+        <li><a href="#да--нет">Да / Нет</a></li>
+        <li><a href="#практика-активации">Практика активации</a></li>
+        <li><a href="#деактивация">Деактивация</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </nav>
+    </div>
+  </aside>
+
+
+  </div>
+
+    </main>
+
+    <footer>
+      <footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-text">
+      &copy;
+      
+      2024-2026
+      
+      Northern Call.
+      
+        Сделано с любовью и верой в Óðinn
+      
+    </p>
+    
+  </div>
+</footer>
+
+    </footer>
+
+    <div id="search-modal" class="search-modal" aria-hidden="true" role="dialog" aria-label="Поиск" data-no-results="Ничего не найдено">
+  <div class="search-modal-backdrop" id="search-modal-backdrop"></div>
+  <div class="search-modal-container">
+    <div class="search-input-wrapper">
+      <svg class="search-input-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input"
+        placeholder="Поиск..."
+        autocomplete="off"
+        aria-label="Поиск">
+      <button class="search-input-clear" id="search-input-clear" aria-label="Очистить поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+        </svg>
+      </button>
+      <button class="search-modal-close" id="search-modal-close" aria-label="Закрыть поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+    
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu-content">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-title">Меню</span>
+      <button
+        id="mobile-menu-close"
+        class="mobile-menu-close"
+        aria-label="Закрыть меню"
+        type="button">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile navigation">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+    </nav>
+    <div class="mobile-menu-footer">
+      <button id="mobile-search-toggle" class="mobile-search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+        <span>Поиск</span>
+      </button>
+      
+  
+  
+  
+
+
+      <button class="theme-toggle" aria-label="Сменить тему" type="button">
+        <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+        <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+    
+
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Наверх" type="button">
+  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.137938305a4255a5ce0531471a42b4448c4adb05e04052a70000719c0704d082.js" defer></script>
+
+  </body>
+</html>

@@ -1,0 +1,741 @@
+<!doctype html>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="/css/custom.css">
+<html lang="ru-RU" class="h-full">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="ru-RU">
+<meta name="theme-color" content="#BD5FFF">
+<script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+  
+  (function(){var t=sessionStorage.getItem('mana_pt');if(t){document.documentElement.setAttribute('data-page-enter',t);sessionStorage.removeItem('mana_pt');}})();
+  
+  window.MANA_SEARCH_INDEX_URL = '\/index.json';
+  
+  window.MANA_LANG_PREFIXES = ['en','ru'];
+</script>
+<title>Eihwaz (Эйваз) | Северный Зов</title>
+<meta
+  name="description"
+  content="
+     Историческое значение Руна Эйваз означает «тис» — дерево, которое в древней Скандинавии считалось священным. Тис — это вечнозелёное дерево, которое живёт до …
+  
+  ">
+
+
+  <meta name="keywords" content="руны старшего футарка">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/oldfuthark/eihwaz/">
+
+
+<link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/oldfuthark/eihwaz/">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Eihwaz (Эйваз) | Северный Зов">
+<meta property="og:description" content=" Историческое значение Руна Эйваз означает «тис» — дерево, которое в древней Скандинавии считалось священным. Тис — это вечнозелёное дерево, которое живёт до …">
+<meta property="og:url" content="http://localhost:1313/oldfuthark/eihwaz/">
+<meta property="og:site_name" content="Северный Зов"><meta property="article:published_time" content="2024-01-01T00:00:00Z">
+  <meta
+    property="article:modified_time"
+    content="2024-01-01T00:00:00Z"><meta property="article:section" content="руны старшего футарка"><meta property="article:tag" content="руны старшего футарка">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Eihwaz (Эйваз) | Северный Зов">
+<meta name="twitter:description" content=" Историческое значение Руна Эйваз означает «тис» — дерево, которое в древней Скандинавии считалось священным. Тис — это вечнозелёное дерево, которое живёт до …">
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'">
+<noscript>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</noscript>
+
+<link rel="stylesheet" href="/css/theme.min.d0bca60e6c836b64f7352464f89fe19f9b9db0eabc5b829f9aa967d8924dd6b4.css" integrity="sha256-0LymDmyDa2T3NSRk&#43;J/hn5udsOq8W4Kfmqln2JJN1rQ=">
+
+
+  <link
+    rel="stylesheet"
+    href="/css/syntax-dark.min.b01037e5609e6260b74d6fcdd6d5131e8dcbc4d46d6ef4bfbe5a60bdfc1a9f30.css"
+    integrity="sha256-sBA35WCeYmC3TW/N1tUTHo3LxNRtbvS/vlpgvfwanzA="
+    id="syntax-dark-theme"
+    class="syntax-theme">
+  <link
+    rel="stylesheet"
+    href="/css/syntax-light.min.9602bc2fcef52b4c62e05eae14b48ba428e114f116e993e504d83ed5a3aeda98.css"
+    integrity="sha256-lgK8L871K0xi4F6uFLSLpCjhFPEW6ZPlBNg&#43;1aOu2pg="
+    id="syntax-light-theme"
+    class="syntax-theme"
+    disabled><script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+
+    const syntaxDark = document.getElementById("syntax-dark-theme");
+    const syntaxLight = document.getElementById("syntax-light-theme");
+
+    if (theme === "light") {
+      if (syntaxDark) syntaxDark.disabled = true;
+      if (syntaxLight) syntaxLight.disabled = false;
+    } else {
+      if (syntaxDark) syntaxDark.disabled = false;
+      if (syntaxLight) syntaxLight.disabled = true;
+    }
+
+    
+    const observer = new MutationObserver(() => {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      if (currentTheme === "light") {
+        if (syntaxDark) syntaxDark.disabled = true;
+        if (syntaxLight) syntaxLight.disabled = false;
+      } else {
+        if (syntaxDark) syntaxDark.disabled = false;
+        if (syntaxLight) syntaxLight.disabled = true;
+      }
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+  })();
+</script>
+
+
+
+
+<link rel="stylesheet" href="/css/bundle.min.6aba317260578ac017656f5b2e8ed1f7c52d1819d1e57ae87b8266ea5620da75.css" integrity="sha256-aroxcmBXisAXZW9bLo7R98UtGBnR5Xroe4Jm6lYg2nU=">
+
+
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+
+
+  
+
+
+
+
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <a href="#main-content" class="skip-to-main" aria-label="Перейти к основному содержимому"
+      >Перейти к основному содержимому</a
+    >
+    <header class="sticky-header">
+      <div class="header-container">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+  <div class="header-content">
+    <div class="header-logo">
+      <a href="/" class="logo-link" aria-label="Home - Северный Зов">
+        Северный Зов
+      </a>
+    </div>
+
+    
+    <button 
+      id="mobile-menu-toggle" 
+      class="mobile-menu-toggle" 
+      aria-label="Открыть меню" 
+      aria-expanded="false"
+      type="button">
+      <span class="hamburger-icon">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
+    </button>
+
+    <div class="header-menu">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+
+      <button id="search-toggle" class="search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </button>
+
+      
+  
+  
+  
+
+
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Сменить тему" type="button">
+  <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+  </svg>
+  <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+  </svg>
+</button>
+
+    </div>
+  </div>
+</nav>
+
+      </div>
+      <div class="reading-progress-bar" aria-hidden="true"></div>
+    </header>
+
+    <main id="main-content" class="flex-1" role="main">
+        <div class="bg"></div>
+      
+  <div class="single-post-wrapper">
+    <article class="single-post">
+      
+
+
+
+
+
+
+
+      <header class="post-header">
+        
+
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/" itemprop="item"><span itemprop="name">Главная</span></a>
+      <meta itemprop="position" content="1" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/posts/" itemprop="item"><span itemprop="name">Публикации</span></a>
+      <meta itemprop="position" content="2" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name" class="breadcrumb-current">Eihwaz (Эйваз)</span>
+      <meta itemprop="position" content="3" />
+    </li>
+  </ol>
+</nav>
+
+
+        <h1 class="post-title-main">Eihwaz (Эйваз)</h1>
+
+        
+
+        <div class="post-meta">
+  <div class="post-meta-info">
+    <time datetime="2024-01-01T00:00:00Z" class="post-date">
+      <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+      </svg>
+      1 января 2024 г.
+    </time>
+
+    <span class="meta-separator">•</span>
+
+    
+      <span class="post-word-count">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        1630 слов
+      </span>
+    
+
+    
+      <span class="meta-separator">•</span>
+      <span class="post-reading-time">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        8 мин
+      </span>
+    
+  </div>
+
+  
+    <div class="post-tags">
+      
+        <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+      
+    </div>
+  
+</div>
+
+      </header>
+
+      <div class="post-content-main">
+        <img src="/images/runes/old/13.png" width="512" height="512">
+<h2 id="историческое-значение">Историческое значение</h2>
+<p>Руна Эйваз означает «тис» — дерево, которое в древней Скандинавии считалось священным. Тис — это вечнозелёное дерево, которое живёт до нескольких тысяч лет. Его древесина не гниёт, она твёрдая, упругая и тяжелее воды. Из тиса делали луки, которые не ломались в бою, и рунические жезлы, которые сохраняли силу десятилетиями. Тис — это символ долголетия, защиты и связи между мирами.</p>
+<p>В мифологии тис связан с мировым древом Иггдрасиль, которое соединяет все девять миров. Считалось, что тис растёт на границе между жизнью и смертью, между миром людей и миром духов. Его корни уходят в Хельхейм, а ветви касаются неба Асгарда. Шаманы использовали тисовые посохи для путешествий между мирами. Тисовая стрела могла убить не только тело, но и душу. Тисовый оберег защищал от любой порчи.</p>
+<p>Эйваз — это руна вертикальной оси мира. Она напоминает человека, стоящего на земле с поднятыми вверх руками, или копьё, воткнутое в землю. Это руна устойчивости в любых обстоятельствах. Даже если вокруг рушатся миры, тот, кто стоит на оси, не падает. Она даёт связь между земным и небесным, между сознательным и бессознательным, между живыми и мёртвыми.</p>
+<p>В рунических надписях Эйваз часто встречается на надгробных камнях и поминальных стелах. Её вырезали на оружии, чтобы оно не подвело в бою. Её использовали в шаманских ритуалах для вызова духов предков. Это руна, которая держит дверь между мирами открытой ровно настолько, насколько это безопасно.</p>
+<p>Эйваз — пятая руна третьего атта. Эйваз — это ворота в духовный мир.</p>
+<h2 id="проявление-силы">Проявление силы</h2>
+<p>Эйваз проявляется тремя основными способами.</p>
+<p>Первое — магическая защита. Эйваз создаёт вокруг человека или предмета невидимый кокон, который отражает магические атаки. Это не пассивный щит (как у Альгиз) и не активный еж (как у Турисаз). Это твёрдое, упругое покрытие, которое не пропускает ничего чужеродного, но при этом позволяет свободно действовать самому человеку. Эйваз не бьёт в ответ, она просто не пускает. Это идеальная защита для тех, кто много работает с духами — она не провоцирует конфликт, но и не позволяет паразитировать на себе.</p>
+<p>Второе — связь между мирами. Эйваз помогает шаману проходить сквозь границы, не теряя себя. Это руна «дороги между мирами» — того пути, по которому идут в верхний или нижний мир во время транса. Без Эйваз шаман может заблудиться, застрять, потерять связь с телом. С Эйваз он всегда знает, где находится ось, за которую можно держаться. Эта руна также помогает в общении с умершими — она открывает канал, но не даёт мёртвым войти в мир живых.</p>
+<p>Третье — устойчивость в любых обстоятельствах. Эйваз даёт человеку внутренний стержень — то, что не гнётся и не ломается. Под давлением обстоятельств он не прогибается. Под ударом судьбы не падает. Он стоит, как тис, который держит корнями землю, даже когда вокруг ураган. Эйваз — это руна достоинства, выдержки, чести. Не той чести, которую можно заслужить или потерять (как у Тейваз), а врождённой чести — сознания того, кто ты есть и что ты не можешь поступиться собой.</p>
+<p>Эйваз также связана с понятием «судьбы как пути» — не линейного, как у Райдо, а вертикального. Есть судьба горизонтальная — события, которые случаются с человеком. И есть судьба вертикальная — глубина, на которой он проживает эти события. Один человек на одной и той же работе может прозябать или расти, прогибаться или стоять. Эйваз — это выбор вертикали. Выбор глубины. Выбор не гнуться.</p>
+<h2 id="применение-в-ставах">Применение в ставах</h2>
+<p>Эйваз используется для защиты, работы с духами и для укрепления духа. Это руна шаманов и воинов.</p>
+<p>Связка Эйваз с Альгиз. Это формула двойной защиты — магической (Эйваз) и ментально-интуитивной (Альгиз). Эйваз не пропускает чужеродное, Альгиз предупреждает об опасности заранее. Вместе они работают как непробиваемая система безопасности: ты и защищён, и предупреждён. Используется в ставах на дом, на рабочее место, на путешествия. Особенно эффективна для тех, кто живёт в «проблемных» местах — с плохой энергетикой, недобрыми соседями, близостью кладбищ.</p>
+<p>Связка Эйваз с Пертро. Это формула шаманского путешествия. Эйваз открывает дверь между мирами и даёт устойчивость в переходе, Пертро — доступ к скрытому знанию, которое находится по ту сторону. Вместе они работают как надёжный канал: ты можешь уйти в нижний мир и вернуться без потерь. Используется в ставах на гадание, на общение с предками, на получение пророческих снов. Важное предупреждение: не используйте эту связку без опыта — выход может быть трудным.</p>
+<p>Связка Эйваз с Лагуз. Это формула интуитивной защиты. Лагуз даёт поток и способность чувствовать, Эйваз — твёрдость и границы. Вместе они работают как интуиция, которая не просто ощущает опасность, но и знает, как от неё защититься. Используется в ставах на развитие ясновидения, на обнаружение магических атак, на работу с водными духами. Хороша для женщин-практиков, которые часто работают с эмоциональными состояниями.</p>
+<p>Связка Эйваз с Тейваз. Это формула воинской чести и победы через стойкость. Эйваз даёт устойчивость, Тейваз — направленную волю. Вместе они работают как «несгибаемый воин»: человек может проиграть битву, но не сломаться. Используется в ставах на судебные процессы, на конфликты с сильным противником, на выход из травмирующих ситуаций. Предупреждение: эта связка не помогает выиграть любой ценой. Она помогает сохранить себя, даже если проиграл. Это высшая победа.</p>
+<p>Важное предупреждение: Эйваз может вызвать у человека ощущение оторванности от мира. Защищённость оборачивается изоляцией, если не добавить рун, которые открывают каналы связи (Ансуз, Вуньо). Человек под действием чистой Эйваз может стать холодным, отстранённым, трудным в общении. Не держите её дольше нескольких недель без социальной «обвязки».</p>
+<h2 id="мантика">Мантика</h2>
+<p>Прямое положение Эйваз говорит о защите, устойчивости, связи с высшими силами. Руна выпадает в моменты, когда человеку нужна помощь не от людей, а от мира духов. Он на границе. Или на грани срыва, или на грани открытия. Эйваз говорит: «Держись. Ось есть. Ты не упадёшь».</p>
+<p>Прямая Эйваз также может означать, что человек получит помощь от неожиданного источника — предков, духов природы, духа-покровителя. Не нужно искать помощи в обычных местах. То, что нужно, придёт оттуда, откуда ты не ждёшь.</p>
+<p>В раскладах на отношения прямая Эйваз — хороший знак для долгосрочных пар. Отношения выдержали испытание временем, как тис. Они не сломались под давлением обстоятельств. Если отношения новые, руна говорит, что они имеют шанс перерасти во что-то серьёзное, если люди будут верны себе.</p>
+<p>В раскладах на здоровье прямая Эйваз говорит о хорошей конституции, крепком иммунитете. Человек редко болеет, и если заболевает — быстро выздоравливает. Если речь о хронической болезни, руна обещает долгую ремиссию.</p>
+<p>Перевёрнутое положение Эйваз говорит о потере опоры, уязвимости, разрыве связи с духами. Человек остался без защиты. Он падает — не физически, а духовно, морально. Его легко обидеть, легко обмануть, легко магически атаковать.</p>
+<p>Перевёрнутая Эйваз также может означать, что человек сам отказался от своей оси. Он предпочёл лёгкость — тяжести стояния. Он согнулся, сломался, ушёл в сторону, лишь бы не чувствовать давления. Руна предупреждает: без оси ты потеряешься. Возвращайся.</p>
+<p>В раскладах на отношения перевёрнутая Эйваз — плохой знак. Один из партнёров потерял внутренний стержень, стал слишком зависимым от другого. Отношения становятся не союзом двух, а жизнью одного за счёт другого. Руна советует восстановить свою вертикаль, прежде чем пытаться спасать отношения.</p>
+<h2 id="да--нет">Да / Нет</h2>
+<p>Эйваз отвечает «Да» на вопросы о защите, устойчивости и связи с духами. «Нужна ли мне защита?» — Да. «Стоит ли мне начать работу с духами?» — Да, если ты готов. «Выстою ли я?» — Да.</p>
+<p>На вопросы об изменениях, движении, активных действиях Эйваз часто отвечает «Нет». «Стоит ли мне уйти с работы?» — Нет, сначала укрепись. «Стоит ли мне порвать отношения?» — Нет, сначала найди опору в себе.</p>
+<p>На вопросы о будущем Эйваз отвечает «Неизвестно» — судьба зависит от того, насколько человек будет верен своей оси.</p>
+<h2 id="практика-активации">Практика активации</h2>
+<p>Активация Эйваз требует вертикали. Лучше всего проводить её стоя, на земле, с прямой спиной. Нельзя активировать лёжа или сидя в расслабленной позе — это убивает смысл руны.</p>
+<p>Шаг первый. Начертите руну на тёмно-зелёном, коричневом или чёрном материале. Идеальный носитель — кора тиса (если есть доступ), дуба, ясеня. Можно использовать камень — гранит или сланец.</p>
+<p>Шаг второй. Выйдите на улицу, в парк или лес. Найдите место, где вас никто не побеспокоит. Встаньте лицом на север. Почувствуйте землю под ногами — плотную, холодную, реальную.</p>
+<p>Шаг третий. Положите руну на землю перед собой (или держите в левой руке, прижав к груди). Выпрямите спину. Представьте, что от вашего позвоночника вниз, в самое ядро земли, уходит корень. А от макушки вверх, в небо, тянется луч. Вы — ось. Мир вращается вокруг вас, а вы стоите неподвижно.</p>
+<p>Шаг четвёртый. Проговорите формулу активации низким, устойчивым голосом: «Эйваз — ось, что соединяет миры. Я стою. Я не падаю».</p>
+<p>Шаг пятый. Визуализируйте тис — могучее дерево, которое растёт на краю обрыва. Его корни обвивают камни, ветви уходят в облака. Его не сломать ни бурей, ни временем. Почувствуйте себя этим деревом. Ваши ноги — корни. Ваша голова — крона. Ваша грудь — ствол, в котором течёт сок жизни.</p>
+<p>Шаг шестой. Побудьте в этом состоянии 5–10 минут. Если пойдёт снег или дождь — хорошо, Эйваз усиливается в непогоду. Если запоют птицы — слушайте, это вестники. Не шевелитесь, сколько можете. Стоять — это акт силы.</p>
+<h2 id="деактивация">Деактивация</h2>
+<p>Деактивация Эйваз — это возвращение в движение. Ось должна остаться на месте, но вы можете сойти с неё.</p>
+<p>Шаг первый. Медленно, очень медленно начните шевелиться — сначала пальцами ног, потом руками, потом поверните голову. Почувствуйте, как энергия, которая была сконцентрирована в вертикали, рассредоточивается по телу.</p>
+<p>Шаг второй. Сделайте несколько шагов в сторону — вправо, влево, вперёд, назад. Вернитесь в центр. Вы больше не привязаны к оси, но вы знаете, где она.</p>
+<p>Шаг третий. Произнесите формулу деактивации: «Ось остаётся. Я возвращаюсь в движение. Эйваз возвращается в покой».</p>
+<p>Шаг четвёртый. Физическая деактивация: если руна была нанесена на временный носитель — закопайте его под деревом (желательно под тисом, дубом или ясенем). Если на постоянный талисман — положите его на подоконник на ночь, чтобы он напитался силой луны.</p>
+<p>Шаг пятый. Пошевелитесь активно — пробегитесь, попрыгайте, помашите руками. Вернитесь из неподвижности в жизнь.</p>
+<p>Признаки неудачной деактивации: чувство скованности в спине, шее, плечах, невозможность расслабиться, желание замереть и ничего не делать. Это значит, ось не отпустила вас. Повторите деактивацию с физической нагрузкой. Хорошо помогает висение на турнике или просто подъём рук вверх — это растягивает позвоночник и «отключает» Эйваз.</p>
+<p><a href="/runes/" class="btn btn-sm">Вернуться к рунам Старшего Футарка</a></p>
+
+      </div>
+
+      
+        <footer class="post-footer">
+          <div class="post-tags-footer">
+            <span class="tags-label">Теги:</span>
+            
+              <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+            
+          </div>
+        </footer>
+      
+
+      
+
+
+<section class="related-posts" aria-label="Похожие публикации">
+  <h2 class="related-posts-title">Похожие публикации</h2>
+  <ul class="related-posts-list">
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/algiz/" class="related-post-link">
+        <strong>Algiz (Альгиз)</strong>
+        <span> Историческое значение Руна Альгиз — это руна защиты, но не пассивной, не той, которая просто отражает удар. Это живая …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/ansuz/" class="related-post-link">
+        <strong>Ansuz (Ансуз)</strong>
+        <span> Историческое значение Руна Ансуз — это руна богов, прежде всего связанная с Одином как носителем речи, знания и …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/berkano/" class="related-post-link">
+        <strong>Berkano (Беркана)</strong>
+        <span> Историческое значение Руна Беркана означает «берёза» — дерево, которое в древней Скандинавии считалось священным для …</span>
+      </a>
+    </li>
+    
+  </ul>
+</section>
+
+
+
+      <nav class="post-navigation" aria-label="Post navigation">
+        
+          <a
+            href="/oldfuthark/fehu/"
+            class="nav-link nav-prev"
+            aria-label="Previous post: Fehu (Феху)">
+            <span class="nav-label">Предыдущая</span>
+            <span class="nav-title">Fehu (Феху)</span>
+          </a>
+        
+
+        
+          <a
+            href="/oldfuthark/ehwaz/"
+            class="nav-link nav-next"
+            aria-label="Next post: Ehwaz (Эваз)">
+            <span class="nav-label">Следующая</span>
+            <span class="nav-title">Ehwaz (Эваз)</span>
+          </a>
+        
+      </nav>
+    </article>
+
+    
+  <aside class="post-toc" id="post-toc" aria-label="Содержание">
+    <button
+      class="toc-toggle"
+      id="toc-toggle"
+      aria-expanded="true"
+      aria-controls="toc-content"
+      aria-label="Показать/скрыть содержание">
+      <svg
+        class="toc-burger-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <span class="toc-toggle-text">Содержание</span>
+      <svg
+        class="toc-chevron-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+    <div class="toc-content" id="toc-content">
+      <nav class="toc-nav" aria-label="Содержание">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#историческое-значение">Историческое значение</a></li>
+        <li><a href="#проявление-силы">Проявление силы</a></li>
+        <li><a href="#применение-в-ставах">Применение в ставах</a></li>
+        <li><a href="#мантика">Мантика</a></li>
+        <li><a href="#да--нет">Да / Нет</a></li>
+        <li><a href="#практика-активации">Практика активации</a></li>
+        <li><a href="#деактивация">Деактивация</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </nav>
+    </div>
+  </aside>
+
+
+  </div>
+
+    </main>
+
+    <footer>
+      <footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-text">
+      &copy;
+      
+      2024-2026
+      
+      Northern Call.
+      
+        Сделано с любовью и верой в Óðinn
+      
+    </p>
+    
+  </div>
+</footer>
+
+    </footer>
+
+    <div id="search-modal" class="search-modal" aria-hidden="true" role="dialog" aria-label="Поиск" data-no-results="Ничего не найдено">
+  <div class="search-modal-backdrop" id="search-modal-backdrop"></div>
+  <div class="search-modal-container">
+    <div class="search-input-wrapper">
+      <svg class="search-input-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input"
+        placeholder="Поиск..."
+        autocomplete="off"
+        aria-label="Поиск">
+      <button class="search-input-clear" id="search-input-clear" aria-label="Очистить поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+        </svg>
+      </button>
+      <button class="search-modal-close" id="search-modal-close" aria-label="Закрыть поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+    
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu-content">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-title">Меню</span>
+      <button
+        id="mobile-menu-close"
+        class="mobile-menu-close"
+        aria-label="Закрыть меню"
+        type="button">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile navigation">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+    </nav>
+    <div class="mobile-menu-footer">
+      <button id="mobile-search-toggle" class="mobile-search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+        <span>Поиск</span>
+      </button>
+      
+  
+  
+  
+
+
+      <button class="theme-toggle" aria-label="Сменить тему" type="button">
+        <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+        <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+    
+
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Наверх" type="button">
+  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.137938305a4255a5ce0531471a42b4448c4adb05e04052a70000719c0704d082.js" defer></script>
+
+  </body>
+</html>

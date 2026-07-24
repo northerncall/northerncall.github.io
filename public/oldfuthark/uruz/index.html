@@ -1,0 +1,738 @@
+<!doctype html>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="/css/custom.css">
+<html lang="ru-RU" class="h-full">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="ru-RU">
+<meta name="theme-color" content="#BD5FFF">
+<script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+  
+  (function(){var t=sessionStorage.getItem('mana_pt');if(t){document.documentElement.setAttribute('data-page-enter',t);sessionStorage.removeItem('mana_pt');}})();
+  
+  window.MANA_SEARCH_INDEX_URL = '\/index.json';
+  
+  window.MANA_LANG_PREFIXES = ['en','ru'];
+</script>
+<title>Uruz (Уруз) | Северный Зов</title>
+<meta
+  name="description"
+  content="
+     Историческое значение Руна Уруз означает «тур» — дикий бык, который водился в древних лесах Северной Европы. Это животное было значительно крупнее и …
+  
+  ">
+
+
+  <meta name="keywords" content="руны старшего футарка">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/oldfuthark/uruz/">
+
+
+<link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/oldfuthark/uruz/">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Uruz (Уруз) | Северный Зов">
+<meta property="og:description" content=" Историческое значение Руна Уруз означает «тур» — дикий бык, который водился в древних лесах Северной Европы. Это животное было значительно крупнее и …">
+<meta property="og:url" content="http://localhost:1313/oldfuthark/uruz/">
+<meta property="og:site_name" content="Северный Зов"><meta property="article:published_time" content="2024-01-01T00:00:00Z">
+  <meta
+    property="article:modified_time"
+    content="2024-01-01T00:00:00Z"><meta property="article:section" content="руны старшего футарка"><meta property="article:tag" content="руны старшего футарка">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Uruz (Уруз) | Северный Зов">
+<meta name="twitter:description" content=" Историческое значение Руна Уруз означает «тур» — дикий бык, который водился в древних лесах Северной Европы. Это животное было значительно крупнее и …">
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'">
+<noscript>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</noscript>
+
+<link rel="stylesheet" href="/css/theme.min.d0bca60e6c836b64f7352464f89fe19f9b9db0eabc5b829f9aa967d8924dd6b4.css" integrity="sha256-0LymDmyDa2T3NSRk&#43;J/hn5udsOq8W4Kfmqln2JJN1rQ=">
+
+
+  <link
+    rel="stylesheet"
+    href="/css/syntax-dark.min.b01037e5609e6260b74d6fcdd6d5131e8dcbc4d46d6ef4bfbe5a60bdfc1a9f30.css"
+    integrity="sha256-sBA35WCeYmC3TW/N1tUTHo3LxNRtbvS/vlpgvfwanzA="
+    id="syntax-dark-theme"
+    class="syntax-theme">
+  <link
+    rel="stylesheet"
+    href="/css/syntax-light.min.9602bc2fcef52b4c62e05eae14b48ba428e114f116e993e504d83ed5a3aeda98.css"
+    integrity="sha256-lgK8L871K0xi4F6uFLSLpCjhFPEW6ZPlBNg&#43;1aOu2pg="
+    id="syntax-light-theme"
+    class="syntax-theme"
+    disabled><script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+
+    const syntaxDark = document.getElementById("syntax-dark-theme");
+    const syntaxLight = document.getElementById("syntax-light-theme");
+
+    if (theme === "light") {
+      if (syntaxDark) syntaxDark.disabled = true;
+      if (syntaxLight) syntaxLight.disabled = false;
+    } else {
+      if (syntaxDark) syntaxDark.disabled = false;
+      if (syntaxLight) syntaxLight.disabled = true;
+    }
+
+    
+    const observer = new MutationObserver(() => {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      if (currentTheme === "light") {
+        if (syntaxDark) syntaxDark.disabled = true;
+        if (syntaxLight) syntaxLight.disabled = false;
+      } else {
+        if (syntaxDark) syntaxDark.disabled = false;
+        if (syntaxLight) syntaxLight.disabled = true;
+      }
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+  })();
+</script>
+
+
+
+
+<link rel="stylesheet" href="/css/bundle.min.6aba317260578ac017656f5b2e8ed1f7c52d1819d1e57ae87b8266ea5620da75.css" integrity="sha256-aroxcmBXisAXZW9bLo7R98UtGBnR5Xroe4Jm6lYg2nU=">
+
+
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+
+
+  
+
+
+
+
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <a href="#main-content" class="skip-to-main" aria-label="Перейти к основному содержимому"
+      >Перейти к основному содержимому</a
+    >
+    <header class="sticky-header">
+      <div class="header-container">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+  <div class="header-content">
+    <div class="header-logo">
+      <a href="/" class="logo-link" aria-label="Home - Северный Зов">
+        Северный Зов
+      </a>
+    </div>
+
+    
+    <button 
+      id="mobile-menu-toggle" 
+      class="mobile-menu-toggle" 
+      aria-label="Открыть меню" 
+      aria-expanded="false"
+      type="button">
+      <span class="hamburger-icon">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
+    </button>
+
+    <div class="header-menu">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+
+      <button id="search-toggle" class="search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </button>
+
+      
+  
+  
+  
+
+
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Сменить тему" type="button">
+  <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+  </svg>
+  <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+  </svg>
+</button>
+
+    </div>
+  </div>
+</nav>
+
+      </div>
+      <div class="reading-progress-bar" aria-hidden="true"></div>
+    </header>
+
+    <main id="main-content" class="flex-1" role="main">
+        <div class="bg"></div>
+      
+  <div class="single-post-wrapper">
+    <article class="single-post">
+      
+
+
+
+
+
+
+
+      <header class="post-header">
+        
+
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/" itemprop="item"><span itemprop="name">Главная</span></a>
+      <meta itemprop="position" content="1" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/posts/" itemprop="item"><span itemprop="name">Публикации</span></a>
+      <meta itemprop="position" content="2" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name" class="breadcrumb-current">Uruz (Уруз)</span>
+      <meta itemprop="position" content="3" />
+    </li>
+  </ol>
+</nav>
+
+
+        <h1 class="post-title-main">Uruz (Уруз)</h1>
+
+        
+
+        <div class="post-meta">
+  <div class="post-meta-info">
+    <time datetime="2024-01-01T00:00:00Z" class="post-date">
+      <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+      </svg>
+      1 января 2024 г.
+    </time>
+
+    <span class="meta-separator">•</span>
+
+    
+      <span class="post-word-count">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        1236 слов
+      </span>
+    
+
+    
+      <span class="meta-separator">•</span>
+      <span class="post-reading-time">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        6 мин
+      </span>
+    
+  </div>
+
+  
+    <div class="post-tags">
+      
+        <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+      
+    </div>
+  
+</div>
+
+      </header>
+
+      <div class="post-content-main">
+        <img src="/images/runes/old/2.png" width="512" height="512">
+<h2 id="историческое-значение">Историческое значение</h2>
+<p>Руна Уруз означает «тур» — дикий бык, который водился в древних лесах Северной Европы. Это животное было значительно крупнее и агрессивнее домашнего скота, его невозможно было приручить или контролировать. Тур символизировал первичную, неконтролируемую силу природы — ту, что предшествует любой культуре и порядку.</p>
+<p>В скандинавской культуре тур воспринимался как воплощение мощи, выносливости и жизненной энергии. Охота на тура была испытанием для самых смелых воинов, а его рога использовались в ритуальных практиках как символ силы и защиты. Уруз — это не приручённый бык Феху, не скот как мерило богатства. Это зверь, который живёт по своим законам и не признаёт человеческих правил.</p>
+<p>Эта руна связана с до-культурным состоянием силы — тем, что предшествует порядку. Это энергия, которая была до богов, до космоса, до структуры. В мифологическом плане Уруз соотносится с первозданным хаосом — не разрушительным, а созидательным, тем, из которого рождается всё новое. Это «сырая энергия», которую нельзя полностью контролировать, но можно направить. Пытаться подавить Уруз бесполезно — она всё равно прорвётся. Но можно оседлать её, как ездовое животное, и использовать для движения вперёд.</p>
+<p>В древнескандинавских сагах описаны берсерки — воины, которые входили в состояние неистовой силы. Их связывают с энергией Уруз. Это не агрессия в чистом виде, а выход животной, инстинктивной мощи, которая делает человека неуязвимым для боли и страха на время боя.</p>
+<h2 id="проявление-силы">Проявление силы</h2>
+<p>Уруз проявляется тремя основными способами.</p>
+<p>Первое — физическая сила и здоровье. Руна пробуждает жизненную энергию, укрепляет иммунитет, ускоряет восстановление после болезни. Она особенно эффективна при хронической усталости, анемии, истощении. Уруз буквально «включает» тело, возвращает ему способность сопротивляться.</p>
+<p>Второе — восстановление. Уруз работает как энергетический регенератор. Там, где был упадок, появляется подъём. Там, где была болезнь, начинается выздоровление. Там, где был слом, начинается сращивание. Эта руна не просто даёт силу — она восстанавливает то, что было утрачено: мышечную массу после длительного постельного режима, волю после депрессии, интерес к жизни после потерь.</p>
+<p>Третье — прорыв через сопротивление. Уруз помогает преодолевать препятствия любой природы: физические барьеры, административные преграды, психологические блоки, чужие запреты. Эта руна — таран, который выбивает закрытые двери. Но важно понимать: Уруз не разрушает аккуратно. Она может повредить то, что находится рядом с целью. Поэтому применять её нужно с осторожностью и только тогда, когда другие средства не работают.</p>
+<p>Уруз также даёт выносливость — способность долго идти к цели, не сдаваясь. Это не быстрая энергия Соулу, а долгая, глубокая сила, которая питается из внутренних источников. Человек под знаком Уруз может работать больше, отдыхать меньше и восстанавливаться быстрее, чем другие.</p>
+<h2 id="применение-в-ставах">Применение в ставах</h2>
+<p>Уруз — руна лечения, усиления тела и энергетического восстановления. Её редко используют в «бытовых» ставах на деньги или удачу — её стихия это кризисные состояния, болезни, слабость.</p>
+<p>Связка Уруз с Беркана. Сочетание этих двух рун создаёт формулу исцеления. Уруз даёт грубую силу для борьбы с болезнью — поднимает температуру, активирует иммунитет, заставляет тело сражаться. Беркана, в свою очередь, отвечает за мягкое восстановление, рост новых клеток, заживление тканей. Вместе они работают как две фазы лечения: сначала жёсткое подавление болезни, потом нежное восстановление. Эта связка особенно эффективна при инфекциях, воспалениях, послеоперационном восстановлении.</p>
+<p>Связка Уруз с Тейваз. Здесь Уруз даёт силу, а Тейваз — направление и дисциплину. Вместе они работают на победу через силу в конфликте, судебной тяжбе, спортивном состязании. Уруз без Тейваз может привести к разрушению — сила ударит хаотично. Тейваз без Уруз может остаться просто идеей без реализации. Вместе они создают формулу «сила, направленная на цель».</p>
+<p>Уруз также используется в ставах на:</p>
+<p>Поднятие после болезни — особенно хронической, затяжной.</p>
+<p>Энергетическую подпитку — когда человек истощён работой, учебой, стрессом.</p>
+<p>Преодоление страха — Уруз не убирает страх, но даёт силу действовать вопреки ему.</p>
+<p>Важное предупреждение: Уруз может быть опасна для людей с высоким давлением, эпилепсией или психическими расстройствами. Она резко повышает общий энергетический тонус, что может спровоцировать криз. Также не рекомендуется использовать Уруз при острых воспалениях с высокой температурой — руна может усилить воспалительный процесс.</p>
+<h2 id="мантика">Мантика</h2>
+<p>Прямое положение Уруз говорит о шансе, который требует силы. Руна выпадает в моменты, когда перед человеком открывается возможность, но для её реализации нужно приложить значительные усилия. Это может быть смена работы, переезд, начало сложного проекта, признание в любви, требующее смелости.</p>
+<p>Также прямое положение указывает на наличие внутреннего ресурса — человек сильнее, чем думает. Уруз как бы говорит: «У тебя есть всё необходимое. Не бойся». Это руна уверенности и решительности.</p>
+<p>В медицинских раскладах прямое положение Уруз — очень хороший знак, предвещающий выздоровление, особенно если предыдущий расклад показывал болезнь. Руна говорит, что кризис миновал и организм начал восстанавливаться.</p>
+<p>Перевёрнутое положение предупреждает о слабости, потере энергии, упадке сил. Человек истощён — физически, эмоционально или духовно. Перевёрнутая Уруз может говорить о хронической болезни, которая не лечится, о затяжной депрессии, о периоде, когда на всё не хватает сил.</p>
+<p>Также перевёрнутое положение указывает на то, что человек не использует свои возможности. Сила есть, но она заблокирована страхами, сомнениями, неправильными установками. Руна советует найти внутреннего «быка» и выпустить его на волю, перестать себя ограничивать.</p>
+<h2 id="да--нет">Да / Нет</h2>
+<p>Руна отвечает «Да», если у спрашивающего есть сила действовать. Это не простое согласие, а вызов: «Да, но ты должен вложить усилия». Если человек слаб или не готов бороться, ответ превращается в «Нет — сначала восстанови силы».</p>
+<p>В вопросах о здоровье Уруз отвечает «Да» на выздоровление, но добавляет: «Процесс будет долгим и потребует терпения».</p>
+<h2 id="практика-активации">Практика активации</h2>
+<p>Активация Уруз требует работы с телом, а не только с воображением. Это руна, которую нужно пропустить через мышцы, через дыхание, через животные инстинкты.</p>
+<p>Шаг первый. Встаньте или сядьте с прямой спиной. Лучше встать — энергия Уруз любит вертикальное положение, связь с землёй через ноги. Ноги поставьте на ширину плеч, колени слегка согните. Почувствуйте землю под ступнями.</p>
+<p>Шаг второй. Возьмите руну в левую руку (если вы правша) или положите её на область солнечного сплетения. Сделайте несколько глубоких вдохов животом, представляя, как с каждым вдохом вы втягиваете силу из земли через ступни вверх, к руне.</p>
+<p>Шаг третий. Начните дышать быстрее и резче — короткий шумный вдох носом, резкий выдох ртом. Это дыхание активирует животную энергию. Продолжайте 1–2 минуты.</p>
+<p>Шаг четвёртый. Проговорите формулу активации громко, рычаще, чувствуя вибрацию в груди: «Уруз — сила, что во мне пробуждается». Можно повторить 3 или 9 раз.</p>
+<p>Шаг пятый. Визуализируйте мощного тура — дикого быка с огромными рогами. Представьте, как его сила вливается в вас через руки, грудь, позвоночник. Почувствуйте, как мышцы наполняются энергией, как поднимается температура тела, как учащается пульс. Это нормальная реакция на активацию Уруз.</p>
+<p>Шаг шестой. Побудьте в этом состоянии несколько минут. Затем сделайте 3 медленных глубоких вдоха и выдоха, возвращая дыхание в норму.</p>
+<h2 id="деактивация">Деактивация</h2>
+<p>Уруз — одна из рун, которые требуют обязательной и тщательной деактивации. Если оставить её активной, избыток энергии может привести к бессоннице, тревожности, агрессии, физическому перевозбуждению.</p>
+<p>Основной способ деактивации — заземление. Встаньте босиком на землю (или хотя бы на пол, но лучше на натуральное покрытие). Положите руки на бёдра ладонями вниз. Сделайте глубокий вдох, а на выдохе представьте, как лишняя энергия уходит из вашего тела в землю — через ноги, через пятки, через позвоночник.</p>
+<p>Визуализация: представьте, что вы дикий бык, который закончил бег и теперь медленно остывает, опускается на траву, закрывает глаза. Энергия уходит из мышц, дыхание становится ровным, пульс замедляется.</p>
+<p>Вербальная формула деактивации: «Сила уходит в землю. Уруз возвращается в покой».</p>
+<p>Физическая деактивация: если руна была нарисована на бумаге или дереве, её можно закопать в землю на 3 дня или сжечь, а пепел развеять.</p>
+<p>Признаки, что деактивация не удалась: спустя час после практики вы чувствуете возбуждение, вам сложно усидеть на месте, пульс выше обычного, мысли скачут. В этом случае повторите заземление — лягте на пол, положите руки на живот и дышите медленно, выдыхая дольше, чем вдыхаете.</p>
+<p><a href="/runes/" class="btn btn-sm">Вернуться к рунам Старшего Футарка</a></p>
+
+      </div>
+
+      
+        <footer class="post-footer">
+          <div class="post-tags-footer">
+            <span class="tags-label">Теги:</span>
+            
+              <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+            
+          </div>
+        </footer>
+      
+
+      
+
+
+<section class="related-posts" aria-label="Похожие публикации">
+  <h2 class="related-posts-title">Похожие публикации</h2>
+  <ul class="related-posts-list">
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/algiz/" class="related-post-link">
+        <strong>Algiz (Альгиз)</strong>
+        <span> Историческое значение Руна Альгиз — это руна защиты, но не пассивной, не той, которая просто отражает удар. Это живая …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/ansuz/" class="related-post-link">
+        <strong>Ansuz (Ансуз)</strong>
+        <span> Историческое значение Руна Ансуз — это руна богов, прежде всего связанная с Одином как носителем речи, знания и …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/berkano/" class="related-post-link">
+        <strong>Berkano (Беркана)</strong>
+        <span> Историческое значение Руна Беркана означает «берёза» — дерево, которое в древней Скандинавии считалось священным для …</span>
+      </a>
+    </li>
+    
+  </ul>
+</section>
+
+
+
+      <nav class="post-navigation" aria-label="Post navigation">
+        
+          <a
+            href="/oldfuthark/wunjo/"
+            class="nav-link nav-prev"
+            aria-label="Previous post: Wunjo (Вуньо)">
+            <span class="nav-label">Предыдущая</span>
+            <span class="nav-title">Wunjo (Вуньо)</span>
+          </a>
+        
+
+        
+          <a
+            href="/oldfuthark/tiwaz/"
+            class="nav-link nav-next"
+            aria-label="Next post: Tiwaz (Тейваз)">
+            <span class="nav-label">Следующая</span>
+            <span class="nav-title">Tiwaz (Тейваз)</span>
+          </a>
+        
+      </nav>
+    </article>
+
+    
+  <aside class="post-toc" id="post-toc" aria-label="Содержание">
+    <button
+      class="toc-toggle"
+      id="toc-toggle"
+      aria-expanded="true"
+      aria-controls="toc-content"
+      aria-label="Показать/скрыть содержание">
+      <svg
+        class="toc-burger-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <span class="toc-toggle-text">Содержание</span>
+      <svg
+        class="toc-chevron-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+    <div class="toc-content" id="toc-content">
+      <nav class="toc-nav" aria-label="Содержание">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#историческое-значение">Историческое значение</a></li>
+        <li><a href="#проявление-силы">Проявление силы</a></li>
+        <li><a href="#применение-в-ставах">Применение в ставах</a></li>
+        <li><a href="#мантика">Мантика</a></li>
+        <li><a href="#да--нет">Да / Нет</a></li>
+        <li><a href="#практика-активации">Практика активации</a></li>
+        <li><a href="#деактивация">Деактивация</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </nav>
+    </div>
+  </aside>
+
+
+  </div>
+
+    </main>
+
+    <footer>
+      <footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-text">
+      &copy;
+      
+      2024-2026
+      
+      Northern Call.
+      
+        Сделано с любовью и верой в Óðinn
+      
+    </p>
+    
+  </div>
+</footer>
+
+    </footer>
+
+    <div id="search-modal" class="search-modal" aria-hidden="true" role="dialog" aria-label="Поиск" data-no-results="Ничего не найдено">
+  <div class="search-modal-backdrop" id="search-modal-backdrop"></div>
+  <div class="search-modal-container">
+    <div class="search-input-wrapper">
+      <svg class="search-input-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input"
+        placeholder="Поиск..."
+        autocomplete="off"
+        aria-label="Поиск">
+      <button class="search-input-clear" id="search-input-clear" aria-label="Очистить поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+        </svg>
+      </button>
+      <button class="search-modal-close" id="search-modal-close" aria-label="Закрыть поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+    
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu-content">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-title">Меню</span>
+      <button
+        id="mobile-menu-close"
+        class="mobile-menu-close"
+        aria-label="Закрыть меню"
+        type="button">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile navigation">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+    </nav>
+    <div class="mobile-menu-footer">
+      <button id="mobile-search-toggle" class="mobile-search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+        <span>Поиск</span>
+      </button>
+      
+  
+  
+  
+
+
+      <button class="theme-toggle" aria-label="Сменить тему" type="button">
+        <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+        <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+    
+
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Наверх" type="button">
+  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.137938305a4255a5ce0531471a42b4448c4adb05e04052a70000719c0704d082.js" defer></script>
+
+  </body>
+</html>

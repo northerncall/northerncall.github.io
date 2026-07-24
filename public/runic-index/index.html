@@ -1,0 +1,2027 @@
+<!doctype html>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="/css/custom.css">
+<html lang="ru-RU" class="h-full">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="ru-RU">
+<meta name="theme-color" content="#BD5FFF">
+<script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+  
+  (function(){var t=sessionStorage.getItem('mana_pt');if(t){document.documentElement.setAttribute('data-page-enter',t);sessionStorage.removeItem('mana_pt');}})();
+  
+  window.MANA_SEARCH_INDEX_URL = '\/index.json';
+  
+  window.MANA_LANG_PREFIXES = ['en','ru'];
+</script>
+<title>Руны Старшего Футарка | Северный Зов</title>
+<meta
+  name="description"
+  content="
+    Изучение рун Старшего Футарка, их значения, силы и практики.
+  
+  ">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/runic-index/">
+
+
+<link rel="alternate" hreflang="en-US" href="http://localhost:1313/en/runes/">
+<link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/runic-index/"><link rel="alternate" hreflang="x-default" href="http://localhost:1313/en/runes/">
+    
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Руны Старшего Футарка | Северный Зов">
+<meta property="og:description" content="Изучение рун Старшего Футарка, их значения, силы и практики.">
+<meta property="og:url" content="http://localhost:1313/runic-index/">
+<meta property="og:site_name" content="Северный Зов"><meta property="og:image" content="http://localhost:1313/images/runes.jpeg">
+  <meta property="og:image:alt" content="Руны Старшего Футарка | Северный Зов">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630"><meta property="article:published_time" content="2026-03-20T00:00:00Z">
+  <meta
+    property="article:modified_time"
+    content="2026-03-20T00:00:00Z">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Руны Старшего Футарка | Северный Зов">
+<meta name="twitter:description" content="Изучение рун Старшего Футарка, их значения, силы и практики."><meta name="twitter:image" content="http://localhost:1313/images/runes.jpeg">
+  <meta name="twitter:image:alt" content="Руны Старшего Футарка | Северный Зов">
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'">
+<noscript>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</noscript>
+
+<link rel="stylesheet" href="/css/theme.min.d0bca60e6c836b64f7352464f89fe19f9b9db0eabc5b829f9aa967d8924dd6b4.css" integrity="sha256-0LymDmyDa2T3NSRk&#43;J/hn5udsOq8W4Kfmqln2JJN1rQ=">
+
+
+  <link
+    rel="stylesheet"
+    href="/css/syntax-dark.min.b01037e5609e6260b74d6fcdd6d5131e8dcbc4d46d6ef4bfbe5a60bdfc1a9f30.css"
+    integrity="sha256-sBA35WCeYmC3TW/N1tUTHo3LxNRtbvS/vlpgvfwanzA="
+    id="syntax-dark-theme"
+    class="syntax-theme">
+  <link
+    rel="stylesheet"
+    href="/css/syntax-light.min.9602bc2fcef52b4c62e05eae14b48ba428e114f116e993e504d83ed5a3aeda98.css"
+    integrity="sha256-lgK8L871K0xi4F6uFLSLpCjhFPEW6ZPlBNg&#43;1aOu2pg="
+    id="syntax-light-theme"
+    class="syntax-theme"
+    disabled><script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+
+    const syntaxDark = document.getElementById("syntax-dark-theme");
+    const syntaxLight = document.getElementById("syntax-light-theme");
+
+    if (theme === "light") {
+      if (syntaxDark) syntaxDark.disabled = true;
+      if (syntaxLight) syntaxLight.disabled = false;
+    } else {
+      if (syntaxDark) syntaxDark.disabled = false;
+      if (syntaxLight) syntaxLight.disabled = true;
+    }
+
+    
+    const observer = new MutationObserver(() => {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      if (currentTheme === "light") {
+        if (syntaxDark) syntaxDark.disabled = true;
+        if (syntaxLight) syntaxLight.disabled = false;
+      } else {
+        if (syntaxDark) syntaxDark.disabled = false;
+        if (syntaxLight) syntaxLight.disabled = true;
+      }
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+  })();
+</script>
+
+
+
+
+<link rel="stylesheet" href="/css/bundle.min.6aba317260578ac017656f5b2e8ed1f7c52d1819d1e57ae87b8266ea5620da75.css" integrity="sha256-aroxcmBXisAXZW9bLo7R98UtGBnR5Xroe4Jm6lYg2nU=">
+
+
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+
+
+  
+
+
+
+
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <a href="#main-content" class="skip-to-main" aria-label="Перейти к основному содержимому"
+      >Перейти к основному содержимому</a
+    >
+    <header class="sticky-header">
+      <div class="header-container">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+  <div class="header-content">
+    <div class="header-logo">
+      <a href="/" class="logo-link" aria-label="Home - Северный Зов">
+        Северный Зов
+      </a>
+    </div>
+
+    
+    <button 
+      id="mobile-menu-toggle" 
+      class="mobile-menu-toggle" 
+      aria-label="Открыть меню" 
+      aria-expanded="false"
+      type="button">
+      <span class="hamburger-icon">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
+    </button>
+
+    <div class="header-menu">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runic-index/"
+        class="menu-link active">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+
+      <button id="search-toggle" class="search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </button>
+
+      
+  
+  
+  
+    <div class="language-switcher">
+      <button
+        class="language-switcher-toggle"
+        type="button"
+        aria-label="Язык"
+        aria-expanded="false"
+        aria-haspopup="true">
+        <svg class="language-switcher-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+        </svg>
+        <span class="language-switcher-label">Язык</span>
+      </button>
+      <div class="language-switcher-dropdown" aria-hidden="true">
+        <ul class="language-switcher-list" role="listbox">
+          
+            
+              <li role="option">
+                <a href="/en/runes/" class="language-switcher-link" hreflang="en">
+                  English
+                </a>
+              </li>
+            
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Сменить тему" type="button">
+  <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+  </svg>
+  <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+  </svg>
+</button>
+
+    </div>
+  </div>
+</nav>
+
+      </div>
+      <div class="reading-progress-bar" aria-hidden="true"></div>
+    </header>
+
+    <main id="main-content" class="flex-1" role="main">
+        <div class="bg"></div>
+      
+  <article class="about-page">
+    <header class="about-header">
+      <div class="about-page-info">
+        <h1 class="about-page-name">
+          <span class="list-title-line2">РУНЫ СТАРШЕГО ФУТАРКА</span>
+        </h1>
+        
+      </div>
+    </header>
+    <div class="single-post-wrapper">
+    <article class="single-post">
+      
+
+
+
+
+  <div class="post-image-single">
+    <img
+      src="/images/runes.jpeg"
+      alt="
+        Изучение рун Старшего Футарка, их значения, силы и практики.
+      "
+      loading="eager"
+      width="1200"
+      height="630">
+  </div>
+
+
+      <div class="post-content-main">
+        
+
+
+
+
+
+
+
+
+
+
+<div class="alert alert-info" >
+  <div class="alert-header" >
+    <span class="alert-icon">
+      
+      
+      <svg style="width: 1.25em; height: 1.25em; vertical-align: text-bottom; margin-right: 0.2rem;"
+  class="admonition-favicon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
+  stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="10"></circle>
+  <line x1="12" y1="16" x2="12" y2="12"></line>
+  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+</svg>
+      
+      
+    </span>
+    <span class="alert-title">
+      
+      Информация
+      
+    </span>
+    
+  </div>
+  <div class="alert-content" id="alert-0" >
+    <p>Последнее обновление: 20.03.2026</p>
+  </div>
+</div>
+<hr>
+<h2 id="-краткое-историческое-описание-старшего-футарка">📜 Краткое историческое описание Старшего Футарка</h2>
+<p>Старший Футарк — древнейшая руническая система, сформировавшаяся приблизительно во II–III веках н.э. на территории Северной Европы среди германских племен. Он состоит из 24 рун и использовался как в бытовых целях (надписи, обозначения), так и в сакральной практике.</p>
+<p>Название «Футарк» происходит от первых шести рун: Fehu, Uruz, Thurisaz, Ansuz, Raidho, Kenaz.</p>
+<p>Руны вырезались на камне, дереве, металле, оружии и предметах быта. Но важно понимать: они не были просто буквами. Даже в самых ранних находках руны уже несут символическую и магическую нагрузку.</p>
+<p>Старший Футарк со временем трансформировался в другие системы (Младший Футарк, англосаксонские руны), но именно он считается базовой и наиболее «чистой» формой рунической традиции.</p>
+<hr>
+<h2 id="-краткое-мифологическое-описание">🧿 Краткое мифологическое описание</h2>
+<p>Согласно северной традиции, руны не были придуманы людьми.</p>
+<p>Они были открыты через жертву Одина. Девять дней и ночей он висел на мировом древе Иггдрасиль, пронзенный копьем, без пищи и воды, находясь между жизнью и смертью. В этом состоянии он «увидел» руны — не как символы, а как <strong>силы, лежащие в основе мироздания</strong>.</p>
+<p>Таким образом, руны — это не алфавит в привычном смысле. Это:</p>
+<ul>
+<li>принципы реальности</li>
+<li>энергетические структуры</li>
+<li>архетипические силы</li>
+</ul>
+<p>Каждая руна — это не знак, а <strong>живая формула</strong>, отражающая определённый аспект бытия: движение, разрушение, рост, смерть, цикл, поток и т.д.</p>
+<hr>
+<h2 id="важное-наставление-практику">Важное наставление практику</h2>
+<p>Каждую руну необходимо изучать не только умом, но и «душой» — через собственную энергию.</p>
+<p>Это означает:</p>
+<ul>
+<li>смотреть на руну и наблюдать внутренние ощущения</li>
+<li>проживать её состояние (например, Isa — как остановку, Uruz — как силу)</li>
+<li>работать с дыханием и телом</li>
+<li>отслеживать, как руна проявляется в реальности</li>
+</ul>
+<p>Любой текст, даже самый подробный, — это лишь <strong>начальная точка</strong>.</p>
+<p>Реальное знание приходит, когда:</p>
+<ul>
+<li>руна начинает «откликаться»</li>
+<li>её состояние становится узнаваемым внутри</li>
+<li>её сила начинает проявляться в практике</li>
+</ul>
+<p>Старший Футарк — это не просто система символов.</p>
+<p>Это инструмент:</p>
+<ul>
+<li>познания себя</li>
+<li>взаимодействия с миром</li>
+<li>изменения реальности</li>
+</ul>
+<p>Но только при одном условии:</p>
+<p><strong>если практик выходит за пределы текста и начинает работать с рунами как с живыми силами.</strong></p>
+<hr>
+<h2 id="-1-ᚠ-fehu-феху">🔥 1. ᚠ Fehu (Феху)</h2>
+<img src="/images/runes/old/1.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Fé<br>
+<strong>Транскрипция:</strong> [feː]</p>
+<hr>
+<p>Феху — первая руна старшего футарка. Её значение — скот, движимое богатство, мобильная ценность. В древней Скандинавии скот был мерилом благосостояния, который можно пересчитать, обменять или потерять. Поэтому Феху обозначает не статичное золото, а богатство в движении: текущие деньги, товары, доходы, гонорары.</p>
+<h2 id="подробнее-о-руне-феху"><a href="/ru/runes/fehu/">Подробнее о руне Феху</a></h2>
+<h2 id="-2-ᚢ-uruz-уруз">🔥 2. ᚢ Uruz (Уруз)</h2>
+<img src="/images/runes/old/2.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Úr<br>
+<strong>Транскрипция:</strong> [uːr]</p>
+<hr>
+<h3 id="-историческое-значение">📜 Историческое значение</h3>
+<p>Úr — это тур (дикий бык), символ первичной, неконтролируемой силы природы. В скандинавской культуре тур был воплощением мощи, выносливости и жизненной энергии.</p>
+<p>Эта руна связана с до-культурным состоянием силы — тем, что предшествует порядку. Это <strong>сырая энергия</strong>, которую нельзя контролировать, но можно направить.</p>
+<hr>
+<h3 id="-проявление-силы">⚡ Проявление силы</h3>
+<ul>
+<li>физическая сила</li>
+<li>восстановление</li>
+<li>прорыв через сопротивление</li>
+</ul>
+<hr>
+<h3 id="-в-ставах">🧬 В ставах</h3>
+<p>Используется для:</p>
+<ul>
+<li>лечения</li>
+<li>усиления тела</li>
+<li>энергетического восстановления</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Uruz + Berkano → исцеление</li>
+<li>Uruz + Tiwaz → победа через силу</li>
+</ul>
+<hr>
+<h3 id="-мантика">🔮 Мантика</h3>
+<p>Прямое: шанс, сила<br>
+Перевернутое: слабость, потеря энергии</p>
+<hr>
+<h3 id="-да--нет">☯ Да / Нет</h3>
+<p><strong>Да</strong>, если есть сила действовать.</p>
+<hr>
+<h3 id="-активация">🜂 Активация</h3>
+<ul>
+<li>Дыхание через тело</li>
+<li>Визуализация животной силы</li>
+<li>Проговаривание:<br>
+<em>&ldquo;Úr — сила, что во мне пробуждается&rdquo;</em></li>
+</ul>
+<hr>
+<h3 id="-деактивация">❄ Деактивация</h3>
+<ul>
+<li>&ldquo;заземление&rdquo; (ладони на землю)</li>
+<li>сброс энергии через дыхание</li>
+</ul>
+<hr>
+<h2 id="-3-ᚦ-thurisaz-турисаз">🔥 3. ᚦ Thurisaz (Турисаз)</h2>
+<img src="/images/runes/old/3.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Þurs<br>
+<strong>Транскрипция:</strong> [θurs]</p>
+<hr>
+<h3 id="-историческое-значение-1">📜 Историческое значение</h3>
+<p>Þurs — это великан (турс), представитель хаотических сил, стоящих за пределами упорядоченного космоса богов. В мифологии это силы разрушения, но также и силы, необходимые для трансформации.</p>
+<p>Эта руна связана с Мьёльниром — молотом Тора, как инструментом защиты и разрушения.</p>
+<hr>
+<h3 id="-проявление-силы-1">⚡ Проявление силы</h3>
+<ul>
+<li>разрушение препятствий</li>
+<li>агрессивная защита</li>
+<li>удар</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-1">🧬 В ставах</h3>
+<p>Используется:</p>
+<ul>
+<li>в защитных ставах</li>
+<li>в ставах на отсечение</li>
+<li>в магии нападения</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Thurisaz + Algiz → активная защита</li>
+<li>Thurisaz + Hagalaz → разрушение</li>
+</ul>
+<hr>
+<h3 id="-мантика-1">🔮 Мантика</h3>
+<p>Прямое: конфликт, защита<br>
+Перевернутое: скрытая угроза</p>
+<hr>
+<h3 id="-да--нет-1">☯ Да / Нет</h3>
+<p><strong>Нет</strong>, либо &ldquo;опасно&rdquo;.</p>
+<hr>
+<h3 id="-активация-1">🜂 Активация</h3>
+<ul>
+<li>резкий выдох</li>
+<li>концентрация на агрессии</li>
+<li>формула:<br>
+<em>&ldquo;Þurs — защита через силу&rdquo;</em></li>
+</ul>
+<hr>
+<h3 id="-деактивация-1">❄ Деактивация</h3>
+<ul>
+<li>обязательна!</li>
+<li>иначе энергия остается активной</li>
+</ul>
+<p>Метод:</p>
+<ul>
+<li>провести рукой по руне</li>
+<li>сказать:<br>
+<em>&ldquo;Сила завершена, удар остановлен&rdquo;</em></li>
+</ul>
+<hr>
+<h2 id="-4-ᚨ-ansuz-ансуз">🔥 4. ᚨ Ansuz (Ансуз)</h2>
+<img src="/images/runes/old/4.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Áss<br>
+<strong>Транскрипция:</strong> [aːs]</p>
+<hr>
+<h3 id="-историческое-значение-2">📜 Историческое значение</h3>
+<p>Áss — это руна богов, прежде всего связанная с Одином как носителем речи, знания и сакрального вдохновения. В древнескандинавской культуре слово не было просто звуком — оно было <strong>носителем силы</strong>, способным изменять реальность.</p>
+<p>Ansuz — это проявление <strong>логоса</strong>, сакрального слова, через которое боги взаимодействуют с миром людей. Через нее передаются откровения, рунические знания, гальдр.</p>
+<hr>
+<h3 id="-проявление-силы-2">⚡ Проявление силы</h3>
+<ul>
+<li>передача знаний</li>
+<li>озарения</li>
+<li>получение сигналов от духов и богов</li>
+</ul>
+<hr>
+<h3 id="-применение-в-ставах">🧬 Применение в ставах</h3>
+<p>Используется для:</p>
+<ul>
+<li>магии речи</li>
+<li>влияния через слово</li>
+<li>получения информации</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Ansuz + Kenaz → раскрытие знаний</li>
+<li>Ansuz + Laguz → интуитивные откровения</li>
+</ul>
+<hr>
+<h3 id="-мантика-2">🔮 Мантика</h3>
+<p>Прямое: важная информация, совет, откровение<br>
+Перевернутое: ложь, манипуляция</p>
+<hr>
+<h3 id="-да--нет-2">☯ Да / Нет</h3>
+<p><strong>Да</strong>, если слушать.</p>
+<hr>
+<h3 id="-активация-2">🜂 Активация</h3>
+<ul>
+<li>чтение гальдра (протяжное &ldquo;Аааансуз&rdquo;)</li>
+<li>концентрация на горле</li>
+<li>формула:<br>
+<em>&ldquo;Áss — слово силы, говори через меня&rdquo;</em></li>
+</ul>
+<hr>
+<h3 id="-деактивация-2">❄ Деактивация</h3>
+<ul>
+<li>замолчать, остановить внутренний диалог</li>
+<li>визуализировать угасание звука</li>
+</ul>
+<hr>
+<h2 id="-5-ᚱ-raidho-райдо">🔥 5. ᚱ Raidho (Райдо)</h2>
+<img src="/images/runes/old/5.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Reið<br>
+<strong>Транскрипция:</strong> [reið]</p>
+<hr>
+<h3 id="-историческое-значение-3">📜 Историческое значение</h3>
+<p>Reið — это не просто дорога, а <strong>правильное движение по судьбе</strong>. В древности путешествие было сакральным актом, связанным с инициацией.</p>
+<p>Raidho отражает космический порядок движения — как движение солнца, как путь шамана между мирами.</p>
+<hr>
+<h3 id="-проявление-силы-3">⚡ Проявление силы</h3>
+<ul>
+<li>выравнивание пути</li>
+<li>запуск процессов</li>
+<li>синхронизация с судьбой</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-2">🧬 В ставах</h3>
+<p>Используется:</p>
+<ul>
+<li>для дорог</li>
+<li>для правильного исхода дел</li>
+<li>для управления процессами</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Raidho + Jera → правильный цикл</li>
+<li>Raidho + Ehwaz → движение вперед</li>
+</ul>
+<hr>
+<h3 id="-мантика-3">🔮 Мантика</h3>
+<p>Прямое: путь открыт<br>
+Перевернутое: сбой, задержка</p>
+<hr>
+<h3 id="-да--нет-3">☯ Да / Нет</h3>
+<p><strong>Да</strong>, если путь выбран правильно.</p>
+<hr>
+<h3 id="-активация-3">🜂 Активация</h3>
+<ul>
+<li>представить дорогу</li>
+<li>&ldquo;войти&rdquo; в поток движения</li>
+<li>формула:<br>
+<em>&ldquo;Reið — веди меня по верному пути&rdquo;</em></li>
+</ul>
+<hr>
+<h3 id="-деактивация-3">❄ Деактивация</h3>
+<ul>
+<li>остановка визуализации движения</li>
+<li>фиксация состояния</li>
+</ul>
+<hr>
+<h2 id="-6-ᚲ-kenaz-кеназ">🔥 6. ᚲ Kenaz (Кеназ)</h2>
+<img src="/images/runes/old/6.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Kaun<br>
+<strong>Транскрипция:</strong> [kɑun]</p>
+<hr>
+<h3 id="-историческое-значение-4">📜 Историческое значение</h3>
+<p>Kaun — это факел, огонь знания. В северной традиции огонь — это не только тепло, но и <strong>сознание, раскрывающее скрытое</strong>.</p>
+<p>Это руна ремесленников, магов и тех, кто работает с трансформацией.</p>
+<hr>
+<h3 id="-проявление-силы-4">⚡ Проявление силы</h3>
+<ul>
+<li>освещение</li>
+<li>раскрытие</li>
+<li>трансформация</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-3">🧬 В ставах</h3>
+<ul>
+<li>обучение</li>
+<li>магические практики</li>
+<li>диагностика</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Kenaz + Ansuz → знание</li>
+<li>Kenaz + Perthro → раскрытие тайны</li>
+</ul>
+<hr>
+<h3 id="-мантика-4">🔮 Мантика</h3>
+<p>Прямое: ясность<br>
+Перевернутое: потеря направления</p>
+<hr>
+<h3 id="-да--нет-4">☯ Да / Нет</h3>
+<p><strong>Да</strong></p>
+<hr>
+<h3 id="-активация-4">🜂 Активация</h3>
+<ul>
+<li>визуализация огня</li>
+<li>концентрация в области третьего глаза</li>
+</ul>
+<hr>
+<h3 id="-деактивация-4">❄ Деактивация</h3>
+<ul>
+<li>&ldquo;затушить&rdquo; огонь</li>
+<li>выдох</li>
+</ul>
+<hr>
+<h2 id="-7-ᚷ-gebo-гебо">🔥 7. ᚷ Gebo (Гебо)</h2>
+<img src="/images/runes/old/7.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Gjöf<br>
+<strong>Транскрипция:</strong> [gjœv]</p>
+<hr>
+<h3 id="-историческое-значение-5">📜 Историческое значение</h3>
+<p>Gjöf — дар. В северной культуре обмен дарами был священным актом, создающим связи между людьми и богами.</p>
+<hr>
+<h3 id="-проявление-силы-5">⚡ Проявление силы</h3>
+<ul>
+<li>баланс</li>
+<li>союз</li>
+<li>обмен</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-4">🧬 В ставах</h3>
+<ul>
+<li>отношения</li>
+<li>договоры</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Gebo + Wunjo → гармония</li>
+<li>Gebo + Mannaz → партнерство</li>
+</ul>
+<hr>
+<h3 id="-мантика-5">🔮 Мантика</h3>
+<p>Союз, обмен</p>
+<hr>
+<h3 id="-да--нет-5">☯ Да / Нет</h3>
+<p><strong>Да</strong></p>
+<hr>
+<h3 id="-активация-5">🜂 Активация</h3>
+<ul>
+<li>визуализация обмена энергией</li>
+</ul>
+<hr>
+<h3 id="-деактивация-5">❄ Деактивация</h3>
+<ul>
+<li>разрыв энергетической связи</li>
+</ul>
+<hr>
+<h2 id="-8-ᚹ-wunjo-вуньо">🔥 8. ᚹ Wunjo (Вуньо)</h2>
+<img src="/images/runes/old/8.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Vinr<br>
+<strong>Транскрипция:</strong> [vinr]</p>
+<hr>
+<h3 id="-историческое-значение-6">📜 Историческое значение</h3>
+<p>Руна радости и гармонии внутри рода.</p>
+<hr>
+<h3 id="-проявление-силы-6">⚡ Проявление силы</h3>
+<ul>
+<li>счастье</li>
+<li>баланс</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-5">🧬 В ставах</h3>
+<ul>
+<li>гармонизация</li>
+</ul>
+<hr>
+<h3 id="-мантика-6">🔮 Мантика</h3>
+<p>радость / разочарование</p>
+<hr>
+<h3 id="-да--нет-6">☯ Да / Нет</h3>
+<p>Да</p>
+<hr>
+<h3 id="-активация-6">🜂 Активация</h3>
+<ul>
+<li>через эмоции</li>
+</ul>
+<hr>
+<h3 id="-деактивация-6">❄ Деактивация</h3>
+<ul>
+<li>успокоение</li>
+</ul>
+<hr>
+<h2 id="-9-ᚺ-hagalaz-хагалаз">🔥 9. ᚺ Hagalaz (Хагалаз)</h2>
+<img src="/images/runes/old/9.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Hagall<br>
+<strong>Транскрипция:</strong> [hɑgɑlː]</p>
+<hr>
+<h3 id="-историческое-значение-7">📜 Историческое значение</h3>
+<p>Hagall — это град, разрушительная сила природы, которая приходит внезапно и ломает устоявшееся. В скандинавской традиции град воспринимался не только как бедствие, но как <strong>очищающая сила</strong>, которая уничтожает слабое, чтобы дать место новому.</p>
+<p>Это руна неконтролируемых сил Утгарда — внешнего хаоса, который вторгается в упорядоченный мир.</p>
+<hr>
+<h3 id="-проявление-силы-7">⚡ Проявление силы</h3>
+<ul>
+<li>разрушение старых структур</li>
+<li>внезапные изменения</li>
+<li>очищение через кризис</li>
+</ul>
+<p>Hagalaz — это не зло, а <strong>инструмент радикальной трансформации</strong>.</p>
+<hr>
+<h3 id="-применение-в-ставах-1">🧬 Применение в ставах</h3>
+<p>Используется для:</p>
+<ul>
+<li>полного разрушения ситуации</li>
+<li>выхода из тупика</li>
+<li>снятия застоя</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Hagalaz + Thurisaz → жесткое разрушение</li>
+<li>Hagalaz + Nauthiz → кризис для роста</li>
+<li>Hagalaz + Dagaz → разрушение → перерождение</li>
+</ul>
+<p>⚠️ Опасность:<br>
+неуправляемая руна — может разрушить больше, чем нужно.</p>
+<hr>
+<h3 id="-мантика-7">🔮 Мантика</h3>
+<p>Прямое: кризис, разрушение<br>
+Перевернутое: неизбежность</p>
+<hr>
+<h3 id="-да--нет-7">☯ Да / Нет</h3>
+<p><strong>Нет</strong>, но с потенциалом трансформации.</p>
+<hr>
+<h3 id="-активация-7">🜂 Активация</h3>
+<ul>
+<li>резкий выдох</li>
+<li>визуализация разрушения структуры</li>
+<li>формула:<br>
+<em>&ldquo;Hagall — разрушь ложное, очисти путь&rdquo;</em></li>
+</ul>
+<hr>
+<h3 id="-деактивация-7">❄ Деактивация</h3>
+<ul>
+<li>обязательна</li>
+<li>визуализировать стабилизацию</li>
+<li>проговорить:<br>
+<em>&ldquo;Разрушение завершено, структура восстановлена&rdquo;</em></li>
+</ul>
+<hr>
+<h2 id="-10-ᚾ-nauthiz-наутиз">🔥 10. ᚾ Nauthiz (Наутиз)</h2>
+<img src="/images/runes/old/10.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Nauðr<br>
+<strong>Транскрипция:</strong> [nɔuðr]</p>
+<hr>
+<h3 id="-историческое-значение-8">📜 Историческое значение</h3>
+<p>Nauðr — это нужда, давление, необходимость. В северной традиции это сила, которая заставляет человека развиваться через ограничения.</p>
+<p>Это руна судьбы как давления, которое нельзя игнорировать.</p>
+<hr>
+<h3 id="-проявление-силы-8">⚡ Проявление силы</h3>
+<ul>
+<li>ограничение</li>
+<li>принуждение</li>
+<li>внутренняя трансформация</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-6">🧬 В ставах</h3>
+<p>Используется для:</p>
+<ul>
+<li>контроля</li>
+<li>принуждения</li>
+<li>дисциплины</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Nauthiz + Isa → жесткая блокировка</li>
+<li>Nauthiz + Uruz → давление → сила</li>
+</ul>
+<hr>
+<h3 id="-мантика-8">🔮 Мантика</h3>
+<p>Прямое: трудности<br>
+Перевернутое: ослабление</p>
+<hr>
+<h3 id="-да--нет-8">☯ Да / Нет</h3>
+<p><strong>Нет</strong></p>
+<hr>
+<h3 id="-активация-8">🜂 Активация</h3>
+<ul>
+<li>концентрация на напряжении</li>
+<li>удержание состояния</li>
+</ul>
+<hr>
+<h3 id="-деактивация-8">❄ Деактивация</h3>
+<ul>
+<li>расслабление</li>
+<li>сброс напряжения</li>
+</ul>
+<hr>
+<h2 id="-11-ᛁ-isa-иса">🔥 11. ᛁ Isa (Иса)</h2>
+<img src="/images/runes/old/11.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Íss<br>
+<strong>Транскрипция:</strong> [iːs]</p>
+<hr>
+<h3 id="-историческое-значение-9">📜 Историческое значение</h3>
+<p>Íss — лед, абсолютная неподвижность. Это руна остановки, концентрации и фиксации.</p>
+<hr>
+<h3 id="-проявление-силы-9">⚡ Проявление силы</h3>
+<ul>
+<li>остановка процессов</li>
+<li>заморозка</li>
+<li>фиксация</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-7">🧬 В ставах</h3>
+<ul>
+<li>блокировка</li>
+<li>стабилизация</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Isa + Nauthiz → контроль</li>
+<li>Isa + Algiz → защитный барьер</li>
+</ul>
+<hr>
+<h3 id="-мантика-9">🔮 Мантика</h3>
+<p>застой</p>
+<hr>
+<h3 id="-да--нет-9">☯ Да / Нет</h3>
+<p><strong>Нет</strong></p>
+<hr>
+<h3 id="-активация-9">🜂 Активация</h3>
+<ul>
+<li>полная остановка</li>
+<li>концентрация</li>
+</ul>
+<hr>
+<h3 id="-деактивация-9">❄ Деактивация</h3>
+<ul>
+<li>движение</li>
+<li>тепло</li>
+</ul>
+<hr>
+<h2 id="-12-ᛃ-jera-йера">🔥 12. ᛃ Jera (Йера)</h2>
+<img src="/images/runes/old/12.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Ár<br>
+<strong>Транскрипция:</strong> [aːr]</p>
+<hr>
+<h3 id="-историческое-значение-10">📜 Историческое значение</h3>
+<p>Ár — год, урожай. Это цикл, завершение и награда за усилия.</p>
+<hr>
+<h3 id="-проявление-силы-10">⚡ Проявление силы</h3>
+<ul>
+<li>цикличность</li>
+<li>результат</li>
+<li>справедливый итог</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-8">🧬 В ставах</h3>
+<ul>
+<li>получение результата</li>
+<li>стабилизация процессов</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Jera + Fehu → доход</li>
+<li>Jera + Raidho → правильный цикл</li>
+</ul>
+<hr>
+<h3 id="-мантика-10">🔮 Мантика</h3>
+<p>успех</p>
+<hr>
+<h3 id="-да--нет-10">☯ Да / Нет</h3>
+<p><strong>Да</strong>, но не сразу.</p>
+<hr>
+<h3 id="-активация-10">🜂 Активация</h3>
+<ul>
+<li>визуализация цикла</li>
+</ul>
+<hr>
+<h3 id="-деактивация-10">❄ Деактивация</h3>
+<ul>
+<li>завершение намерения</li>
+</ul>
+<hr>
+<h2 id="-13-ᛇ-eihwaz-эйваз">🔥 13. ᛇ Eihwaz (Эйваз)</h2>
+<img src="/images/runes/old/13.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Ýr<br>
+<strong>Транскрипция:</strong> [yːr]</p>
+<hr>
+<h3 id="-историческое-значение-11">📜 Историческое значение</h3>
+<p>Связана с мировым древом и осью миров.</p>
+<hr>
+<h3 id="-проявление-силы-11">⚡ Проявление силы</h3>
+<ul>
+<li>защита</li>
+<li>связь миров</li>
+<li>трансформация</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-9">🧬 В ставах</h3>
+<ul>
+<li>магическая защита</li>
+<li>работа с духами</li>
+</ul>
+<hr>
+<h3 id="-мантика-11">🔮 Мантика</h3>
+<p>трансформация</p>
+<hr>
+<h3 id="-да--нет-11">☯ Да / Нет</h3>
+<p><strong>Да</strong></p>
+<hr>
+<h3 id="-активация-11">🜂 Активация</h3>
+<ul>
+<li>визуализация оси</li>
+</ul>
+<hr>
+<h3 id="-деактивация-11">❄ Деактивация</h3>
+<ul>
+<li>заземление</li>
+</ul>
+<hr>
+<h2 id="-14-ᛈ-perthro-пертро">🔥 14. ᛈ Perthro (Пертро)</h2>
+<img src="/images/runes/old/14.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Perþro<br>
+<strong>Транскрипция:</strong> [perθro]</p>
+<hr>
+<h3 id="-историческое-значение-12">📜 Историческое значение</h3>
+<p>Perþro — одна из самых загадочных рун футарка. Её связывают с игральной чашей, жребием, судьбой и тайной, скрытой за завесой. В археологических и лингвистических исследованиях нет однозначного перевода, но в магической традиции она рассматривается как <strong>руна сокрытого знания и судьбы как процесса раскрытия</strong>.</p>
+<p>Это не просто &ldquo;судьба&rdquo;, а <strong>механизм её разворачивания</strong> — то, что скрыто до момента проявления.</p>
+<p>Perthro тесно связана с шаманскими практиками, в которых знание приходит не напрямую, а через символ, сон, случай или откровение.</p>
+<hr>
+<h3 id="-проявление-силы-12">⚡ Проявление силы</h3>
+<ul>
+<li>раскрытие скрытого</li>
+<li>доступ к тайным знаниям</li>
+<li>активация судьбоносных процессов</li>
+<li>работа с вероятностями</li>
+</ul>
+<p>Perthro — это руна &ldquo;вскрытия&rdquo; реальности.</p>
+<hr>
+<h3 id="-применение-в-ставах-2">🧬 Применение в ставах</h3>
+<p>Используется для:</p>
+<ul>
+<li>мантики и предсказаний</li>
+<li>раскрытия обмана</li>
+<li>поиска скрытых факторов</li>
+<li>работы с судьбой</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Perthro + Ansuz → получение откровения</li>
+<li>Perthro + Kenaz → раскрытие тайны</li>
+<li>Perthro + Laguz → работа через интуицию</li>
+<li>Perthro + Eihwaz → шаманские практики</li>
+</ul>
+<p>⚠️ Важно:<br>
+Perthro может открывать то, к чему человек не готов.</p>
+<hr>
+<h3 id="-мантика-12">🔮 Мантика</h3>
+<p>Прямое: тайна, судьба, скрытый фактор<br>
+Перевернутое: блок, закрытая информация</p>
+<hr>
+<h3 id="-да--нет-12">☯ Да / Нет</h3>
+<p><strong>Неизвестно / скрыто</strong> — ответ еще не проявлен.</p>
+<hr>
+<h3 id="-активация-12">🜂 Активация</h3>
+<ol>
+<li>Сесть в спокойном состоянии</li>
+<li>Сконцентрироваться на вопросе</li>
+<li>Визуализировать закрытый сосуд</li>
+<li>Проговорить:<br>
+<em>&ldquo;Perþro — открой скрытое, покажи истину&rdquo;</em></li>
+<li>Отпустить контроль</li>
+</ol>
+<hr>
+<h3 id="-деактивация-12">❄ Деактивация</h3>
+<ul>
+<li>закрыть &ldquo;сосуд&rdquo; в визуализации</li>
+<li>сказать:<br>
+<em>&ldquo;Тайна закрыта, знание завершено&rdquo;</em></li>
+<li>обязательно заземлиться</li>
+</ul>
+<hr>
+<h2 id="-15-ᛉ-algiz-альгиз">🔥 15. ᛉ Algiz (Альгиз)</h2>
+<img src="/images/runes/old/15.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Algiz<br>
+<strong>Транскрипция:</strong> [algiz]</p>
+<hr>
+<h3 id="-историческое-значение-13">📜 Историческое значение</h3>
+<p>Algiz — руна защиты, связанная с образом поднятых рук, рогов лося или защитного жеста. В северной традиции это символ <strong>связи с высшими силами и защиты через эту связь</strong>.</p>
+<p>Её можно рассматривать как канал между человеком и божественным уровнем, через который приходит защита.</p>
+<hr>
+<h3 id="-проявление-силы-13">⚡ Проявление силы</h3>
+<ul>
+<li>защита</li>
+<li>усиление интуиции</li>
+<li>предупреждение об опасности</li>
+<li>подключение к высшим силам</li>
+</ul>
+<p>Algiz — это не просто щит, а <strong>живая система защиты</strong>.</p>
+<hr>
+<h3 id="-применение-в-ставах-3">🧬 Применение в ставах</h3>
+<p>Используется для:</p>
+<ul>
+<li>защиты от негативных воздействий</li>
+<li>создания магического щита</li>
+<li>усиления чувствительности</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Algiz + Tiwaz → защита в бою</li>
+<li>Algiz + Isa → жесткий барьер</li>
+<li>Algiz + Othala → защита рода</li>
+<li>Algiz + Laguz → защита через интуицию</li>
+</ul>
+<p>⚠️ Важно:<br>
+Algiz усиливает чувствительность — может сделать человека более уязвимым к перегрузке.</p>
+<hr>
+<h3 id="-мантика-13">🔮 Мантика</h3>
+<p>Прямое: защита, помощь<br>
+Перевернутое: уязвимость, потеря защиты</p>
+<hr>
+<h3 id="-да--нет-13">☯ Да / Нет</h3>
+<p><strong>Да</strong>, при наличии защиты.</p>
+<hr>
+<h3 id="-активация-13">🜂 Активация</h3>
+<ol>
+<li>Встать или сесть прямо</li>
+<li>Поднять руки вверх (как форма руны)</li>
+<li>Почувствовать поток сверху</li>
+<li>Проговорить:<br>
+<em>&ldquo;Algiz — защита высших сил со мной&rdquo;</em></li>
+</ol>
+<hr>
+<h3 id="-деактивация-13">❄ Деактивация</h3>
+<ul>
+<li>опустить руки</li>
+<li>закрыть поток</li>
+<li>сказать:<br>
+<em>&ldquo;Связь закрыта, защита завершена&rdquo;</em></li>
+</ul>
+<hr>
+<h2 id="-16-ᛋ-sowilo-соулу">🔥 16. ᛋ Sowilo (Соулу)</h2>
+<img src="/images/runes/old/16.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Sól<br>
+<strong>Транскрипция:</strong> [soːl]</p>
+<hr>
+<h3 id="-историческое-значение-14">📜 Историческое значение</h3>
+<p>Sól — солнце, источник жизни и победы. В северной мифологии солнце движется по небу, преследуемое волком, что символизирует постоянную борьбу света и тьмы.</p>
+<p>Sowilo — это руна <strong>чистой жизненной силы и победы</strong>, энергии, которая не знает преград.</p>
+<hr>
+<h3 id="-проявление-силы-14">⚡ Проявление силы</h3>
+<ul>
+<li>успех</li>
+<li>победа</li>
+<li>максимальная энергия</li>
+<li>ясность пути</li>
+</ul>
+<p>Это одна из самых мощных рун футарка.</p>
+<hr>
+<h3 id="-применение-в-ставах-4">🧬 Применение в ставах</h3>
+<p>Используется для:</p>
+<ul>
+<li>достижения целей</li>
+<li>усиления энергии</li>
+<li>победы в делах</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Sowilo + Tiwaz → победа</li>
+<li>Sowilo + Fehu → успех в деньгах</li>
+<li>Sowilo + Kenaz → ясность</li>
+</ul>
+<p>⚠️ Важно:<br>
+избыток Sowilo может привести к &ldquo;перегоранию&rdquo;.</p>
+<hr>
+<h3 id="-мантика-14">🔮 Мантика</h3>
+<p>Прямое: успех, победа<br>
+Перевернутое: отсутствует</p>
+<hr>
+<h3 id="-да--нет-14">☯ Да / Нет</h3>
+<p><strong>Да</strong>, однозначно.</p>
+<hr>
+<h3 id="-активация-14">🜂 Активация</h3>
+<ol>
+<li>Визуализировать солнце</li>
+<li>Почувствовать тепло в теле</li>
+<li>Проговорить:<br>
+<em>&ldquo;Sól — сила победы во мне&rdquo;</em></li>
+</ol>
+<hr>
+<h3 id="-деактивация-14">❄ Деактивация</h3>
+<ul>
+<li>&ldquo;погасить&rdquo; свет до мягкого состояния</li>
+<li>сказать:<br>
+<em>&ldquo;Свет стабилизирован&rdquo;</em></li>
+</ul>
+<hr>
+<h2 id="-17-ᛏ-tiwaz-тейваз">🔥 17. ᛏ Tiwaz (Тейваз)</h2>
+<img src="/images/runes/old/17.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Týr<br>
+<strong>Транскрипция:</strong> [tyːr]</p>
+<hr>
+<h3 id="-историческое-значение-15">📜 Историческое значение</h3>
+<p>Týr — бог закона, жертвы и справедливости. Он отдал свою руку волку Фенриру ради сохранения космического порядка. Это делает Tiwaz руной <strong>жертвы ради высшей цели</strong>.</p>
+<p>В древнескандинавском обществе честь и слово были выше жизни — и именно это отражает Tiwaz.</p>
+<hr>
+<h3 id="-проявление-силы-15">⚡ Проявление силы</h3>
+<ul>
+<li>направленная воля</li>
+<li>победа через дисциплину</li>
+<li>жертва ради результата</li>
+</ul>
+<hr>
+<h3 id="-применение-в-ставах-5">🧬 Применение в ставах</h3>
+<p>Используется для:</p>
+<ul>
+<li>победы в конфликтах</li>
+<li>судебных дел</li>
+<li>укрепления воли</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Tiwaz + Uruz → сила + воля</li>
+<li>Tiwaz + Sowilo → победа</li>
+<li>Tiwaz + Raidho → правильное решение</li>
+</ul>
+<hr>
+<h3 id="-мантика-15">🔮 Мантика</h3>
+<p>Прямое: победа, справедливость<br>
+Перевернутое: поражение, потеря силы</p>
+<hr>
+<h3 id="-да--нет-15">☯ Да / Нет</h3>
+<p><strong>Да</strong>, если готов к жертве.</p>
+<hr>
+<h3 id="-активация-15">🜂 Активация</h3>
+<ul>
+<li>концентрация на цели</li>
+<li>поднятие руки вверх (жест Тюра)</li>
+<li>формула:<br>
+<em>&ldquo;Týr — веди меня к победе через правду&rdquo;</em></li>
+</ul>
+<hr>
+<h3 id="-деактивация-15">❄ Деактивация</h3>
+<ul>
+<li>опустить руку</li>
+<li>отпустить намерение</li>
+</ul>
+<hr>
+<h2 id="-18-ᛒ-berkano-беркана">🔥 18. ᛒ Berkano (Беркана)</h2>
+<img src="/images/runes/old/18.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Bjarkan<br>
+<strong>Транскрипция:</strong> [bjɑrkɑn]</p>
+<hr>
+<h3 id="-историческое-значение-16">📜 Историческое значение</h3>
+<p>Bjarkan — береза, дерево возрождения. Символ женской силы, плодородия и начала нового цикла.</p>
+<p>Это руна роста через заботу и мягкость, а не через силу.</p>
+<hr>
+<h3 id="-проявление-силы-16">⚡ Проявление силы</h3>
+<ul>
+<li>рост</li>
+<li>исцеление</li>
+<li>рождение нового</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-10">🧬 В ставах</h3>
+<p>Используется для:</p>
+<ul>
+<li>лечения</li>
+<li>восстановления</li>
+<li>женской магии</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Berkano + Uruz → лечение</li>
+<li>Berkano + Laguz → интуитивное исцеление</li>
+</ul>
+<hr>
+<h3 id="-мантика-16">🔮 Мантика</h3>
+<p>Прямое: рост<br>
+Перевернутое: блок</p>
+<hr>
+<h3 id="-да--нет-16">☯ Да / Нет</h3>
+<p><strong>Да</strong></p>
+<hr>
+<h3 id="-активация-16">🜂 Активация</h3>
+<ul>
+<li>мягкое дыхание</li>
+<li>визуализация роста</li>
+</ul>
+<hr>
+<h3 id="-деактивация-16">❄ Деактивация</h3>
+<ul>
+<li>завершение цикла</li>
+</ul>
+<hr>
+<h2 id="-19-ᛖ-ehwaz-эваз">🔥 19. ᛖ Ehwaz (Эваз)</h2>
+<img src="/images/runes/old/19.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Eh<br>
+<strong>Транскрипция:</strong> [e]</p>
+<hr>
+<h3 id="-историческое-значение-17">📜 Историческое значение</h3>
+<p>Лошадь — символ движения и союза человека с силой.</p>
+<hr>
+<h3 id="-проявление-силы-17">⚡ Проявление силы</h3>
+<ul>
+<li>движение</li>
+<li>синергия</li>
+<li>партнерство</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-11">🧬 В ставах</h3>
+<ul>
+<li>ускорение процессов</li>
+<li>работа в паре</li>
+</ul>
+<hr>
+<h3 id="-мантика-17">🔮 Мантика</h3>
+<p>движение / конфликт</p>
+<hr>
+<h3 id="-да--нет-17">☯ Да / Нет</h3>
+<p><strong>Да</strong></p>
+<hr>
+<h3 id="-активация-17">🜂 Активация</h3>
+<ul>
+<li>визуализация движения</li>
+</ul>
+<hr>
+<h3 id="-деактивация-17">❄ Деактивация</h3>
+<ul>
+<li>остановка</li>
+</ul>
+<hr>
+<h2 id="-20-ᛗ-mannaz-манназ">🔥 20. ᛗ Mannaz (Манназ)</h2>
+<img src="/images/runes/old/20.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Maðr<br>
+<strong>Транскрипция:</strong> [maðr]</p>
+<hr>
+<h3 id="-историческое-значение-18">📜 Историческое значение</h3>
+<p>Человек как носитель сознания и связи с богами.</p>
+<hr>
+<h3 id="-проявление-силы-18">⚡ Проявление силы</h3>
+<ul>
+<li>разум</li>
+<li>социальные связи</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-12">🧬 В ставах</h3>
+<ul>
+<li>работа с личностью</li>
+<li>влияние на людей</li>
+</ul>
+<hr>
+<h3 id="-мантика-18">🔮 Мантика</h3>
+<p>человек / эго</p>
+<hr>
+<h3 id="-да--нет-18">☯ Да / Нет</h3>
+<p><strong>Да</strong></p>
+<hr>
+<h3 id="-активация-18">🜂 Активация</h3>
+<ul>
+<li>осознание себя</li>
+</ul>
+<hr>
+<h3 id="-деактивация-18">❄ Деактивация</h3>
+<ul>
+<li>отпускание эго</li>
+</ul>
+<hr>
+<h2 id="-21-ᛚ-laguz-лагуз">🔥 21. ᛚ Laguz (Лагуз)</h2>
+<img src="/images/runes/old/21.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Lögr<br>
+<strong>Транскрипция:</strong> [lœgr]</p>
+<hr>
+<h3 id="-историческое-значение-19">📜 Историческое значение</h3>
+<p>Вода как поток и глубина бессознательного.</p>
+<hr>
+<h3 id="-проявление-силы-19">⚡ Проявление силы</h3>
+<ul>
+<li>интуиция</li>
+<li>поток</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-13">🧬 В ставах</h3>
+<ul>
+<li>работа с эмоциями</li>
+<li>магия сновидений</li>
+</ul>
+<hr>
+<h3 id="-мантика-19">🔮 Мантика</h3>
+<p>поток / блок</p>
+<hr>
+<h3 id="-да--нет-19">☯ Да / Нет</h3>
+<p><strong>Да</strong></p>
+<hr>
+<h3 id="-активация-19">🜂 Активация</h3>
+<ul>
+<li>визуализация воды</li>
+</ul>
+<hr>
+<h3 id="-деактивация-19">❄ Деактивация</h3>
+<ul>
+<li>фиксация</li>
+</ul>
+<hr>
+<h2 id="-22-ᛜ-ingwaz-ингваз">🔥 22. ᛜ Ingwaz (Ингваз)</h2>
+<img src="/images/runes/old/22.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Yngvi<br>
+<strong>Транскрипция:</strong> [yŋvi]</p>
+<hr>
+<h3 id="-историческое-значение-20">📜 Историческое значение</h3>
+<p>Связана с богом плодородия и внутренним накоплением силы.</p>
+<hr>
+<h3 id="-проявление-силы-20">⚡ Проявление силы</h3>
+<ul>
+<li>накопление</li>
+<li>потенциал</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-14">🧬 В ставах</h3>
+<ul>
+<li>завершение</li>
+<li>подготовка</li>
+</ul>
+<hr>
+<h3 id="-мантика-20">🔮 Мантика</h3>
+<p>потенциал</p>
+<hr>
+<h3 id="-да--нет-20">☯ Да / Нет</h3>
+<p><strong>Да</strong></p>
+<hr>
+<h3 id="-активация-20">🜂 Активация</h3>
+<ul>
+<li>концентрация энергии</li>
+</ul>
+<hr>
+<h3 id="-деактивация-20">❄ Деактивация</h3>
+<ul>
+<li>высвобождение</li>
+</ul>
+<hr>
+<h2 id="-23-ᛞ-dagaz-дагаз">🔥 23. ᛞ Dagaz (Дагаз)</h2>
+<img src="/images/runes/old/23.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Dagr<br>
+<strong>Транскрипция:</strong> [dɑgr]</p>
+<hr>
+<h3 id="-историческое-значение-21">📜 Историческое значение</h3>
+<p>День — переход от тьмы к свету.</p>
+<hr>
+<h3 id="-проявление-силы-21">⚡ Проявление силы</h3>
+<ul>
+<li>прорыв</li>
+<li>трансформация</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-15">🧬 В ставах</h3>
+<ul>
+<li>резкие изменения</li>
+</ul>
+<hr>
+<h3 id="-мантика-21">🔮 Мантика</h3>
+<p>прорыв</p>
+<hr>
+<h3 id="-да--нет-21">☯ Да / Нет</h3>
+<p><strong>Да</strong></p>
+<hr>
+<h3 id="-активация-21">🜂 Активация</h3>
+<ul>
+<li>визуализация света</li>
+</ul>
+<hr>
+<h3 id="-деактивация-21">❄ Деактивация</h3>
+<ul>
+<li>стабилизация</li>
+</ul>
+<hr>
+<h2 id="-24-ᛟ-othala-одал">🔥 24. ᛟ Othala (Одал)</h2>
+<img src="/images/runes/old/24.png" width="512" height="512">
+<p><strong>Old Norse:</strong> Óðal<br>
+<strong>Транскрипция:</strong> [oːðɑl]</p>
+<hr>
+<h3 id="-историческое-значение-22">📜 Историческое значение</h3>
+<p>Родовая земля, наследие, связь с предками.</p>
+<hr>
+<h3 id="-проявление-силы-22">⚡ Проявление силы</h3>
+<ul>
+<li>род</li>
+<li>защита рода</li>
+<li>наследие</li>
+</ul>
+<hr>
+<h3 id="-в-ставах-16">🧬 В ставах</h3>
+<ul>
+<li>родовая магия</li>
+<li>защита дома</li>
+</ul>
+<p>Связки:</p>
+<ul>
+<li>Othala + Algiz → защита рода</li>
+<li>Othala + Fehu → родовой достаток</li>
+</ul>
+<hr>
+<h3 id="-мантика-22">🔮 Мантика</h3>
+<p>наследие / утрата</p>
+<hr>
+<h3 id="-да--нет-22">☯ Да / Нет</h3>
+<p><strong>Да</strong></p>
+<hr>
+<h3 id="-активация-22">🜂 Активация</h3>
+<ul>
+<li>обращение к предкам</li>
+<li>формула:<br>
+<em>&ldquo;Óðal — сила рода во мне&rdquo;</em></li>
+</ul>
+<hr>
+<h3 id="-деактивация-22">❄ Деактивация</h3>
+<ul>
+<li>благодарность предкам</li>
+<li>закрытие канала</li>
+</ul>
+<hr>
+
+      </div>
+
+      
+      </nav>
+    </article>
+    
+  <aside class="post-toc" id="post-toc" aria-label="Содержание">
+    <button
+      class="toc-toggle"
+      id="toc-toggle"
+      aria-expanded="true"
+      aria-controls="toc-content"
+      aria-label="Показать/скрыть содержание">
+      <svg
+        class="toc-burger-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <span class="toc-toggle-text">Содержание</span>
+      <svg
+        class="toc-chevron-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+    <div class="toc-content" id="toc-content">
+      <nav class="toc-nav" aria-label="Содержание">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#-краткое-историческое-описание-старшего-футарка">📜 Краткое историческое описание Старшего Футарка</a></li>
+        <li><a href="#-краткое-мифологическое-описание">🧿 Краткое мифологическое описание</a></li>
+        <li><a href="#важное-наставление-практику">Важное наставление практику</a></li>
+        <li><a href="#-1-ᚠ-fehu-феху">🔥 1. ᚠ Fehu (Феху)</a></li>
+        <li><a href="#подробнее-о-руне-феху">Подробнее о руне Феху</a></li>
+        <li><a href="#-2-ᚢ-uruz-уруз">🔥 2. ᚢ Uruz (Уруз)</a>
+          <ul>
+            <li><a href="#-историческое-значение">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах">🧬 В ставах</a></li>
+            <li><a href="#-мантика">🔮 Мантика</a></li>
+            <li><a href="#-да--нет">☯ Да / Нет</a></li>
+            <li><a href="#-активация">🜂 Активация</a></li>
+            <li><a href="#-деактивация">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-3-ᚦ-thurisaz-турисаз">🔥 3. ᚦ Thurisaz (Турисаз)</a>
+          <ul>
+            <li><a href="#-историческое-значение-1">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-1">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-1">🧬 В ставах</a></li>
+            <li><a href="#-мантика-1">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-1">☯ Да / Нет</a></li>
+            <li><a href="#-активация-1">🜂 Активация</a></li>
+            <li><a href="#-деактивация-1">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-4-ᚨ-ansuz-ансуз">🔥 4. ᚨ Ansuz (Ансуз)</a>
+          <ul>
+            <li><a href="#-историческое-значение-2">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-2">⚡ Проявление силы</a></li>
+            <li><a href="#-применение-в-ставах">🧬 Применение в ставах</a></li>
+            <li><a href="#-мантика-2">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-2">☯ Да / Нет</a></li>
+            <li><a href="#-активация-2">🜂 Активация</a></li>
+            <li><a href="#-деактивация-2">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-5-ᚱ-raidho-райдо">🔥 5. ᚱ Raidho (Райдо)</a>
+          <ul>
+            <li><a href="#-историческое-значение-3">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-3">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-2">🧬 В ставах</a></li>
+            <li><a href="#-мантика-3">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-3">☯ Да / Нет</a></li>
+            <li><a href="#-активация-3">🜂 Активация</a></li>
+            <li><a href="#-деактивация-3">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-6-ᚲ-kenaz-кеназ">🔥 6. ᚲ Kenaz (Кеназ)</a>
+          <ul>
+            <li><a href="#-историческое-значение-4">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-4">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-3">🧬 В ставах</a></li>
+            <li><a href="#-мантика-4">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-4">☯ Да / Нет</a></li>
+            <li><a href="#-активация-4">🜂 Активация</a></li>
+            <li><a href="#-деактивация-4">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-7-ᚷ-gebo-гебо">🔥 7. ᚷ Gebo (Гебо)</a>
+          <ul>
+            <li><a href="#-историческое-значение-5">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-5">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-4">🧬 В ставах</a></li>
+            <li><a href="#-мантика-5">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-5">☯ Да / Нет</a></li>
+            <li><a href="#-активация-5">🜂 Активация</a></li>
+            <li><a href="#-деактивация-5">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-8-ᚹ-wunjo-вуньо">🔥 8. ᚹ Wunjo (Вуньо)</a>
+          <ul>
+            <li><a href="#-историческое-значение-6">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-6">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-5">🧬 В ставах</a></li>
+            <li><a href="#-мантика-6">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-6">☯ Да / Нет</a></li>
+            <li><a href="#-активация-6">🜂 Активация</a></li>
+            <li><a href="#-деактивация-6">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-9-ᚺ-hagalaz-хагалаз">🔥 9. ᚺ Hagalaz (Хагалаз)</a>
+          <ul>
+            <li><a href="#-историческое-значение-7">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-7">⚡ Проявление силы</a></li>
+            <li><a href="#-применение-в-ставах-1">🧬 Применение в ставах</a></li>
+            <li><a href="#-мантика-7">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-7">☯ Да / Нет</a></li>
+            <li><a href="#-активация-7">🜂 Активация</a></li>
+            <li><a href="#-деактивация-7">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-10-ᚾ-nauthiz-наутиз">🔥 10. ᚾ Nauthiz (Наутиз)</a>
+          <ul>
+            <li><a href="#-историческое-значение-8">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-8">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-6">🧬 В ставах</a></li>
+            <li><a href="#-мантика-8">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-8">☯ Да / Нет</a></li>
+            <li><a href="#-активация-8">🜂 Активация</a></li>
+            <li><a href="#-деактивация-8">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-11-ᛁ-isa-иса">🔥 11. ᛁ Isa (Иса)</a>
+          <ul>
+            <li><a href="#-историческое-значение-9">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-9">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-7">🧬 В ставах</a></li>
+            <li><a href="#-мантика-9">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-9">☯ Да / Нет</a></li>
+            <li><a href="#-активация-9">🜂 Активация</a></li>
+            <li><a href="#-деактивация-9">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-12-ᛃ-jera-йера">🔥 12. ᛃ Jera (Йера)</a>
+          <ul>
+            <li><a href="#-историческое-значение-10">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-10">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-8">🧬 В ставах</a></li>
+            <li><a href="#-мантика-10">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-10">☯ Да / Нет</a></li>
+            <li><a href="#-активация-10">🜂 Активация</a></li>
+            <li><a href="#-деактивация-10">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-13-ᛇ-eihwaz-эйваз">🔥 13. ᛇ Eihwaz (Эйваз)</a>
+          <ul>
+            <li><a href="#-историческое-значение-11">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-11">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-9">🧬 В ставах</a></li>
+            <li><a href="#-мантика-11">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-11">☯ Да / Нет</a></li>
+            <li><a href="#-активация-11">🜂 Активация</a></li>
+            <li><a href="#-деактивация-11">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-14-ᛈ-perthro-пертро">🔥 14. ᛈ Perthro (Пертро)</a>
+          <ul>
+            <li><a href="#-историческое-значение-12">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-12">⚡ Проявление силы</a></li>
+            <li><a href="#-применение-в-ставах-2">🧬 Применение в ставах</a></li>
+            <li><a href="#-мантика-12">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-12">☯ Да / Нет</a></li>
+            <li><a href="#-активация-12">🜂 Активация</a></li>
+            <li><a href="#-деактивация-12">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-15-ᛉ-algiz-альгиз">🔥 15. ᛉ Algiz (Альгиз)</a>
+          <ul>
+            <li><a href="#-историческое-значение-13">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-13">⚡ Проявление силы</a></li>
+            <li><a href="#-применение-в-ставах-3">🧬 Применение в ставах</a></li>
+            <li><a href="#-мантика-13">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-13">☯ Да / Нет</a></li>
+            <li><a href="#-активация-13">🜂 Активация</a></li>
+            <li><a href="#-деактивация-13">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-16-ᛋ-sowilo-соулу">🔥 16. ᛋ Sowilo (Соулу)</a>
+          <ul>
+            <li><a href="#-историческое-значение-14">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-14">⚡ Проявление силы</a></li>
+            <li><a href="#-применение-в-ставах-4">🧬 Применение в ставах</a></li>
+            <li><a href="#-мантика-14">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-14">☯ Да / Нет</a></li>
+            <li><a href="#-активация-14">🜂 Активация</a></li>
+            <li><a href="#-деактивация-14">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-17-ᛏ-tiwaz-тейваз">🔥 17. ᛏ Tiwaz (Тейваз)</a>
+          <ul>
+            <li><a href="#-историческое-значение-15">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-15">⚡ Проявление силы</a></li>
+            <li><a href="#-применение-в-ставах-5">🧬 Применение в ставах</a></li>
+            <li><a href="#-мантика-15">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-15">☯ Да / Нет</a></li>
+            <li><a href="#-активация-15">🜂 Активация</a></li>
+            <li><a href="#-деактивация-15">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-18-ᛒ-berkano-беркана">🔥 18. ᛒ Berkano (Беркана)</a>
+          <ul>
+            <li><a href="#-историческое-значение-16">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-16">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-10">🧬 В ставах</a></li>
+            <li><a href="#-мантика-16">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-16">☯ Да / Нет</a></li>
+            <li><a href="#-активация-16">🜂 Активация</a></li>
+            <li><a href="#-деактивация-16">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-19-ᛖ-ehwaz-эваз">🔥 19. ᛖ Ehwaz (Эваз)</a>
+          <ul>
+            <li><a href="#-историческое-значение-17">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-17">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-11">🧬 В ставах</a></li>
+            <li><a href="#-мантика-17">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-17">☯ Да / Нет</a></li>
+            <li><a href="#-активация-17">🜂 Активация</a></li>
+            <li><a href="#-деактивация-17">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-20-ᛗ-mannaz-манназ">🔥 20. ᛗ Mannaz (Манназ)</a>
+          <ul>
+            <li><a href="#-историческое-значение-18">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-18">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-12">🧬 В ставах</a></li>
+            <li><a href="#-мантика-18">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-18">☯ Да / Нет</a></li>
+            <li><a href="#-активация-18">🜂 Активация</a></li>
+            <li><a href="#-деактивация-18">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-21-ᛚ-laguz-лагуз">🔥 21. ᛚ Laguz (Лагуз)</a>
+          <ul>
+            <li><a href="#-историческое-значение-19">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-19">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-13">🧬 В ставах</a></li>
+            <li><a href="#-мантика-19">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-19">☯ Да / Нет</a></li>
+            <li><a href="#-активация-19">🜂 Активация</a></li>
+            <li><a href="#-деактивация-19">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-22-ᛜ-ingwaz-ингваз">🔥 22. ᛜ Ingwaz (Ингваз)</a>
+          <ul>
+            <li><a href="#-историческое-значение-20">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-20">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-14">🧬 В ставах</a></li>
+            <li><a href="#-мантика-20">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-20">☯ Да / Нет</a></li>
+            <li><a href="#-активация-20">🜂 Активация</a></li>
+            <li><a href="#-деактивация-20">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-23-ᛞ-dagaz-дагаз">🔥 23. ᛞ Dagaz (Дагаз)</a>
+          <ul>
+            <li><a href="#-историческое-значение-21">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-21">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-15">🧬 В ставах</a></li>
+            <li><a href="#-мантика-21">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-21">☯ Да / Нет</a></li>
+            <li><a href="#-активация-21">🜂 Активация</a></li>
+            <li><a href="#-деактивация-21">❄ Деактивация</a></li>
+          </ul>
+        </li>
+        <li><a href="#-24-ᛟ-othala-одал">🔥 24. ᛟ Othala (Одал)</a>
+          <ul>
+            <li><a href="#-историческое-значение-22">📜 Историческое значение</a></li>
+            <li><a href="#-проявление-силы-22">⚡ Проявление силы</a></li>
+            <li><a href="#-в-ставах-16">🧬 В ставах</a></li>
+            <li><a href="#-мантика-22">🔮 Мантика</a></li>
+            <li><a href="#-да--нет-22">☯ Да / Нет</a></li>
+            <li><a href="#-активация-22">🜂 Активация</a></li>
+            <li><a href="#-деактивация-22">❄ Деактивация</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </nav>
+    </div>
+  </aside>
+
+
+  </div>
+  </article>
+
+    </main>
+
+    <footer>
+      <footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-text">
+      &copy;
+      
+      2024-2026
+      
+      Northern Call.
+      
+        Сделано с любовью и верой в Óðinn
+      
+    </p>
+    
+  </div>
+</footer>
+
+    </footer>
+
+    <div id="search-modal" class="search-modal" aria-hidden="true" role="dialog" aria-label="Поиск" data-no-results="Ничего не найдено">
+  <div class="search-modal-backdrop" id="search-modal-backdrop"></div>
+  <div class="search-modal-container">
+    <div class="search-input-wrapper">
+      <svg class="search-input-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input"
+        placeholder="Поиск..."
+        autocomplete="off"
+        aria-label="Поиск">
+      <button class="search-input-clear" id="search-input-clear" aria-label="Очистить поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+        </svg>
+      </button>
+      <button class="search-modal-close" id="search-modal-close" aria-label="Закрыть поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+    
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu-content">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-title">Меню</span>
+      <button
+        id="mobile-menu-close"
+        class="mobile-menu-close"
+        aria-label="Закрыть меню"
+        type="button">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile navigation">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runic-index/"
+        class="menu-link active">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+    </nav>
+    <div class="mobile-menu-footer">
+      <button id="mobile-search-toggle" class="mobile-search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+        <span>Поиск</span>
+      </button>
+      
+  
+  
+  
+    <div class="language-switcher">
+      <button
+        class="language-switcher-toggle"
+        type="button"
+        aria-label="Язык"
+        aria-expanded="false"
+        aria-haspopup="true">
+        <svg class="language-switcher-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+        </svg>
+        <span class="language-switcher-label">Язык</span>
+      </button>
+      <div class="language-switcher-dropdown" aria-hidden="true">
+        <ul class="language-switcher-list" role="listbox">
+          
+            
+              <li role="option">
+                <a href="/en/runes/" class="language-switcher-link" hreflang="en">
+                  English
+                </a>
+              </li>
+            
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+      <button class="theme-toggle" aria-label="Сменить тему" type="button">
+        <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+        <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+    
+
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Наверх" type="button">
+  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.137938305a4255a5ce0531471a42b4448c4adb05e04052a70000719c0704d082.js" defer></script>
+
+  </body>
+</html>

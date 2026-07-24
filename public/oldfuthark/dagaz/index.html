@@ -1,0 +1,738 @@
+<!doctype html>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="/css/custom.css">
+<html lang="ru-RU" class="h-full">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="ru-RU">
+<meta name="theme-color" content="#BD5FFF">
+<script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+  
+  (function(){var t=sessionStorage.getItem('mana_pt');if(t){document.documentElement.setAttribute('data-page-enter',t);sessionStorage.removeItem('mana_pt');}})();
+  
+  window.MANA_SEARCH_INDEX_URL = '\/index.json';
+  
+  window.MANA_LANG_PREFIXES = ['en','ru'];
+</script>
+<title>Dagaz (Дагаз) | Северный Зов</title>
+<meta
+  name="description"
+  content="
+     Историческое значение Руна Дагаз означает «день» — не просто время между восходом и закатом, а момент перехода от тьмы к свету, от неведения к знанию, от …
+  
+  ">
+
+
+  <meta name="keywords" content="руны старшего футарка">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/oldfuthark/dagaz/">
+
+
+<link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/oldfuthark/dagaz/">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Dagaz (Дагаз) | Северный Зов">
+<meta property="og:description" content=" Историческое значение Руна Дагаз означает «день» — не просто время между восходом и закатом, а момент перехода от тьмы к свету, от неведения к знанию, от …">
+<meta property="og:url" content="http://localhost:1313/oldfuthark/dagaz/">
+<meta property="og:site_name" content="Северный Зов"><meta property="article:published_time" content="2024-01-01T00:00:00Z">
+  <meta
+    property="article:modified_time"
+    content="2024-01-01T00:00:00Z"><meta property="article:section" content="руны старшего футарка"><meta property="article:tag" content="руны старшего футарка">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dagaz (Дагаз) | Северный Зов">
+<meta name="twitter:description" content=" Историческое значение Руна Дагаз означает «день» — не просто время между восходом и закатом, а момент перехода от тьмы к свету, от неведения к знанию, от …">
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'">
+<noscript>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</noscript>
+
+<link rel="stylesheet" href="/css/theme.min.d0bca60e6c836b64f7352464f89fe19f9b9db0eabc5b829f9aa967d8924dd6b4.css" integrity="sha256-0LymDmyDa2T3NSRk&#43;J/hn5udsOq8W4Kfmqln2JJN1rQ=">
+
+
+  <link
+    rel="stylesheet"
+    href="/css/syntax-dark.min.b01037e5609e6260b74d6fcdd6d5131e8dcbc4d46d6ef4bfbe5a60bdfc1a9f30.css"
+    integrity="sha256-sBA35WCeYmC3TW/N1tUTHo3LxNRtbvS/vlpgvfwanzA="
+    id="syntax-dark-theme"
+    class="syntax-theme">
+  <link
+    rel="stylesheet"
+    href="/css/syntax-light.min.9602bc2fcef52b4c62e05eae14b48ba428e114f116e993e504d83ed5a3aeda98.css"
+    integrity="sha256-lgK8L871K0xi4F6uFLSLpCjhFPEW6ZPlBNg&#43;1aOu2pg="
+    id="syntax-light-theme"
+    class="syntax-theme"
+    disabled><script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+
+    const syntaxDark = document.getElementById("syntax-dark-theme");
+    const syntaxLight = document.getElementById("syntax-light-theme");
+
+    if (theme === "light") {
+      if (syntaxDark) syntaxDark.disabled = true;
+      if (syntaxLight) syntaxLight.disabled = false;
+    } else {
+      if (syntaxDark) syntaxDark.disabled = false;
+      if (syntaxLight) syntaxLight.disabled = true;
+    }
+
+    
+    const observer = new MutationObserver(() => {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      if (currentTheme === "light") {
+        if (syntaxDark) syntaxDark.disabled = true;
+        if (syntaxLight) syntaxLight.disabled = false;
+      } else {
+        if (syntaxDark) syntaxDark.disabled = false;
+        if (syntaxLight) syntaxLight.disabled = true;
+      }
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+  })();
+</script>
+
+
+
+
+<link rel="stylesheet" href="/css/bundle.min.6aba317260578ac017656f5b2e8ed1f7c52d1819d1e57ae87b8266ea5620da75.css" integrity="sha256-aroxcmBXisAXZW9bLo7R98UtGBnR5Xroe4Jm6lYg2nU=">
+
+
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+
+
+  
+
+
+
+
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <a href="#main-content" class="skip-to-main" aria-label="Перейти к основному содержимому"
+      >Перейти к основному содержимому</a
+    >
+    <header class="sticky-header">
+      <div class="header-container">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+  <div class="header-content">
+    <div class="header-logo">
+      <a href="/" class="logo-link" aria-label="Home - Северный Зов">
+        Северный Зов
+      </a>
+    </div>
+
+    
+    <button 
+      id="mobile-menu-toggle" 
+      class="mobile-menu-toggle" 
+      aria-label="Открыть меню" 
+      aria-expanded="false"
+      type="button">
+      <span class="hamburger-icon">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
+    </button>
+
+    <div class="header-menu">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+
+      <button id="search-toggle" class="search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </button>
+
+      
+  
+  
+  
+
+
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Сменить тему" type="button">
+  <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+  </svg>
+  <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+  </svg>
+</button>
+
+    </div>
+  </div>
+</nav>
+
+      </div>
+      <div class="reading-progress-bar" aria-hidden="true"></div>
+    </header>
+
+    <main id="main-content" class="flex-1" role="main">
+        <div class="bg"></div>
+      
+  <div class="single-post-wrapper">
+    <article class="single-post">
+      
+
+
+
+
+
+
+
+      <header class="post-header">
+        
+
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/" itemprop="item"><span itemprop="name">Главная</span></a>
+      <meta itemprop="position" content="1" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/posts/" itemprop="item"><span itemprop="name">Публикации</span></a>
+      <meta itemprop="position" content="2" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name" class="breadcrumb-current">Dagaz (Дагаз)</span>
+      <meta itemprop="position" content="3" />
+    </li>
+  </ol>
+</nav>
+
+
+        <h1 class="post-title-main">Dagaz (Дагаз)</h1>
+
+        
+
+        <div class="post-meta">
+  <div class="post-meta-info">
+    <time datetime="2024-01-01T00:00:00Z" class="post-date">
+      <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+      </svg>
+      1 января 2024 г.
+    </time>
+
+    <span class="meta-separator">•</span>
+
+    
+      <span class="post-word-count">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        1385 слов
+      </span>
+    
+
+    
+      <span class="meta-separator">•</span>
+      <span class="post-reading-time">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        7 мин
+      </span>
+    
+  </div>
+
+  
+    <div class="post-tags">
+      
+        <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+      
+    </div>
+  
+</div>
+
+      </header>
+
+      <div class="post-content-main">
+        <img src="/images/runes/old/23.png" width="512" height="512">
+<h2 id="историческое-значение">Историческое значение</h2>
+<p>Руна Дагаз означает «день» — не просто время между восходом и закатом, а момент перехода от тьмы к свету, от неведения к знанию, от смерти к жизни. В древней Скандинавии день был не просто частью суток. Он был чудом. Полярная ночь могла длиться неделями, и каждый рассвет воспринимался как победа света над тьмой, жизни над смертью. Дагаз — это руна этого рассвета. Внезапного, яркого, бесповоротного.</p>
+<p>В северной мифологии день олицетворял бог Дагр, сын Ночи и Деллинга (Рассвета). Он мчался по небу на коне Скинфакси, грива которого сияла так ярко, что освещала весь мир. Дагаз — это руна, которая не знает постепенности. Она говорит о прорыве, о радикальной смене, о моменте, когда всё становится другим. И назад дороги нет.</p>
+<p>Форма руны — симметричная, похожая на бабочку или песочные часы. Два треугольника, соединённые вершинами. Это знак равновесия, перехода, зеркальности. То, что было вверху, становится внизу. Ночь превращается в день. Старое умирает — рождается новое. Дагаз — это руна трансформации, которая происходит не постепенно, а скачком. Как куколка становится бабочкой. Как гусеница перестаёт существовать — и появляется нечто совершенно иное.</p>
+<p>Дагаз — одна из немногих рун, у которой нет перевёрнутого положения. Её симметрия означает, что свет побеждает тьму не иногда, а всегда. Может быть, не сегодня. Может быть, не завтра. Но в конечном счёте — всегда. Дагаз — это руна надежды, но не наивной («всё будет хорошо, потому что я так хочу»), а той, которая выстрадана. Той, которая приходит после долгой ночи.</p>
+<p>В рунических надписях Дагаз встречается редко — её использовали в самых важных случаях. На победных камнях, на надгробиях великих воинов, на жертвенных алтарях. Это руна, которую не наносят на бытовые предметы. Она слишком сильна.</p>
+<p>Дагаз — седьмая руна третьего атта и предпоследняя во всём футарке. После Ингваз (накопление потенциала) идёт Дагаз — прорыв этого потенциала наружу. Потому что накопленное должно когда-то проявиться. Семя прорастает. Ребёнок рождается. Свет наступает.</p>
+<h2 id="проявление-силы">Проявление силы</h2>
+<p>Дагаз проявляется тремя основными способами.</p>
+<p>Первое — прорыв и внезапное изменение. Дагаз приносит в жизнь человека радикальные перемены. Не постепенные, не плавные, а резкие — как удар молнии, как рассвет после полярной ночи. Человек просыпается однажды утром и понимает, что он больше не тот, кем был вчера. Или мир вокруг него изменился, и он должен меняться вместе с ним. Дагаз не спрашивает разрешения. Она приходит и делает. Твоя задача — не сопротивляться, а принять.</p>
+<p>Второе — трансформация сознания. Дагаз меняет не внешние обстоятельства, а внутреннее состояние. Человек вдруг видит то, чего не видел раньше. Понимает то, чего не понимал. Прощает то, чего не мог простить. Это может быть духовное пробуждение, психотерапевтический инсайт, религиозное обращение. Дагаз — это руна, которая разрывает завесу. Не постепенно, а одним движением. Тьма рассеивается — и ты стоишь на солнце, щурясь и удивляясь, как ты мог жить в потёмках.</p>
+<p>Третье — переход через границу. Самый мощный уровень Дагаз. Руна помогает перейти через границу между жизнью и смертью, между реальностью и сном, между миром людей и миром духов. Это руна шаманских путешествий, когда ты умираешь в одном мире и рождаешься в другом. Дагаз — это дверь. Не коридор, не тоннель, а именно дверь: была стена — стало отверстие, был тупик — стал проход. Шаг — и ты по ту сторону.</p>
+<p>Дагаз также связана с понятием «просветления» — не буддийского (хотя похоже), а северного. Просветление как внезапное понимание: «я — это не только тело, не только ум, не только судьба. Я — свет, который был, есть и будет. И тьма меня не объемлет».</p>
+<h2 id="применение-в-ставах">Применение в ставах</h2>
+<p>Дагаз используется для резких изменений, для трансформации, для прорыва через тупик, для шаманских путешествий.</p>
+<p>Связка Дагаз с Хагалаз. Это формула разрушения, которое ведёт к перерождению. Хагалаз ломает старые формы, Дагаз создаёт новые. Вместе они работают как «выжженное поле, которое засеивают заново». Используется в ставах на выход из затяжного кризиса, на переживание тяжёлой потери, на смену жизненного сценария. Предупреждение: процесс может быть очень болезненным. Вы теряете то, что было, и не имеете ничего, кроме надежды. Но надежда Дагаз сильнее страха.</p>
+<p>Связка Дагаз с Соулу. Это формула максимального света. Соулу даёт победу и энергию, Дагаз — трансформацию и обновление. Вместе они работают как «солнечный удар»: темнота исчезает, остаётся только свет. Используется в ставах на избавление от депрессии, на выход из духовного кризиса, на обретение смысла жизни.</p>
+<p>Связка Дагаз с Эйваз. Это формула шаманского перехода. Эйваз даёт ось и устойчивость, Дагаз — рывок через границу. Вместе они работают как «стрела, выпущенная из лука»: ты летишь в другой мир, не боясь потеряться. Используется в ставах на медитацию, на путешествия в нижний мир, на общение с умершими.</p>
+<p>Связка Дагаз с Лагуз. Это формула очищения через трансформацию. Лагуз смывает старое, Дагаз даёт новое. Вместе они работают как «крещение»: смерть для прошлого — рождение для будущего. Используется в ставах на избавление от навязчивых мыслей, на лечение психических расстройств, на переживание травмы.</p>
+<p>Важное предупреждение: Дагаз может вызвать дезориентацию. Человек теряет почву под ногами, не понимает, где он, кто он, куда идёт. Это нормально для процесса трансформации. Но если вы не готовы к временной потере контроля — не используйте Дагаз. Она для смелых.</p>
+<h2 id="мантика">Мантика</h2>
+<p>Прямое положение Дагаз говорит о прорыве, трансформации, рассвете. Руна выпадает в моменты, когда жизнь человека меняется раз и навсегда. Не бойся. Даже если сейчас темно, рассвет близко.</p>
+<p>Прямая Дагаз также может означать, что человеку нужно принять перемены, даже если они болезненны. Сопротивление бесполезно. Лучше плыть по течению — оно вынесет к свету.</p>
+<p>В раскладах на отношения прямая Дагаз — знак перехода на новый уровень. Пара либо расстаётся (и это правильно), либо женится (и это правильно). Третьего не дано. Руна не терпит полумер.</p>
+<p>В раскладах на здоровье прямая Дагаз говорит о переломном моменте в болезни. Либо выздоровление (после затяжного кризиса), либо уход (после долгой борьбы). В любом случае, страдания закончатся.</p>
+<p>Перевёрнутого положения у Дагаз не существует. Однако в некоторых традициях выпадение Дагаз в любом положении интерпретируют как «задержку рассвета». Рассвет будет, но не сейчас. Причины — внутренние блоки, страхи, нежелание меняться. Руна советует работать над собой, убирать препятствия. Свет не может пробиться сквозь закрытые ставни. Открой их.</p>
+<h2 id="да--нет">Да / Нет</h2>
+<p>Дагаз отвечает «Да» на вопросы о переменах, прорыве, надежде. «Изменится ли моя жизнь?» — Да. «Увижу ли я свет?» — Да. «Стоит ли мне идти на риск?» — Да, если ты готов к трансформации.</p>
+<p>На вопросы о сохранении статус-кво Дагаз отвечает «Нет». «Останется ли всё как прежде?» — Нет. «Можно ли мне ничего не менять?» — Нет.</p>
+<h2 id="практика-активации">Практика активации</h2>
+<p>Активация Дагаз требует света. Лучше всего — на рассвете, когда первый луч солнца касается земли. Но можно и при яркой лампе — главное, чтобы источник света был мощным.</p>
+<p>Шаг первый. Начертите руну на жёлтом, золотом или белом материале. Идеальный носитель — янтарь, золотая фольга, белая глина. Не используйте тёмные цвета — они гасят энергию Дагаз.</p>
+<p>Шаг второй. Встаньте лицом к востоку (или к источнику света). Поднимите руну на уровень глаз. Почувствуйте, как свет касается руны, проникает в неё, зажигает изнутри.</p>
+<p>Шаг третий. Закройте глаза. Представьте, что вы стоите на пороге. За вами — ночь, холод, страх. Перед вами — дверь. Вы не знаете, что за ней. Но вы знаете, что за ней свет.</p>
+<p>Шаг четвёртый. Проговорите формулу активации громко, ясно, как приказ: «Дагаз — свет, что приходит после тьмы».</p>
+<p>Шаг пятый. Визуализируйте, как дверь открывается. Свет бьёт в глаза — сначала ослепляющий, почти болезненный. Но потом глаза привыкают, и вы видите новый мир. Или старый мир, но новыми глазами. Разницы нет. Главное — вы перешли.</p>
+<p>Шаг шестой. Побудьте в этом состоянии 3–5 минут. Не дольше — Дагаз выжигает. Если приходят образы рассвета, солнца, открытых дверей, детей, выходящих из тьмы — запомните их.</p>
+<h2 id="деактивация">Деактивация</h2>
+<p>Деактивация Дагаз — это закрытие двери. Вы перешли. Теперь дверь можно закрыть — свет останется с вами.</p>
+<p>Шаг первый. Медленно откройте глаза. Посмотрите вокруг. Мир изменился? Или вы изменились? Почувствуйте разницу.</p>
+<p>Шаг второй. Произнесите формулу деактивации: «Переход совершён. Дагаз возвращается в покой».</p>
+<p>Шаг третий. Физическая деактивация: если руна была на временном носителе (бумага, глина), разбейте её или сожгите на рассвете. Если на постоянном (янтарь, металл), положите на подоконник на три дня, чтобы свет «выветрился».</p>
+<p>Шаг четвёртый. Съешьте что-нибудь тёплое и сытное. Вы сожгли много энергии. Восстановитесь.</p>
+<p>Признаки неудачной деактивации: чувство, что вы застряли на пороге, не можете войти или выйти. Кошмары о темноте и свете. Внезапные панические атаки. Это значит, переход не завершён. Повторите активацию и деактивацию, но с конкретным действием в реальном мире: например, переставьте мебель в комнате, смените работу, сделайте то, что давно откладывали. Дагаз требует не только внутреннего, но и внешнего изменения.</p>
+<p><a href="/runes/" class="btn btn-sm">Вернуться к рунам Старшего Футарка</a></p>
+
+      </div>
+
+      
+        <footer class="post-footer">
+          <div class="post-tags-footer">
+            <span class="tags-label">Теги:</span>
+            
+              <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+            
+          </div>
+        </footer>
+      
+
+      
+
+
+<section class="related-posts" aria-label="Похожие публикации">
+  <h2 class="related-posts-title">Похожие публикации</h2>
+  <ul class="related-posts-list">
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/algiz/" class="related-post-link">
+        <strong>Algiz (Альгиз)</strong>
+        <span> Историческое значение Руна Альгиз — это руна защиты, но не пассивной, не той, которая просто отражает удар. Это живая …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/ansuz/" class="related-post-link">
+        <strong>Ansuz (Ансуз)</strong>
+        <span> Историческое значение Руна Ансуз — это руна богов, прежде всего связанная с Одином как носителем речи, знания и …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/berkano/" class="related-post-link">
+        <strong>Berkano (Беркана)</strong>
+        <span> Историческое значение Руна Беркана означает «берёза» — дерево, которое в древней Скандинавии считалось священным для …</span>
+      </a>
+    </li>
+    
+  </ul>
+</section>
+
+
+
+      <nav class="post-navigation" aria-label="Post navigation">
+        
+          <a
+            href="/oldfuthark/ehwaz/"
+            class="nav-link nav-prev"
+            aria-label="Previous post: Ehwaz (Эваз)">
+            <span class="nav-label">Предыдущая</span>
+            <span class="nav-title">Ehwaz (Эваз)</span>
+          </a>
+        
+
+        
+          <a
+            href="/oldfuthark/berkano/"
+            class="nav-link nav-next"
+            aria-label="Next post: Berkano (Беркана)">
+            <span class="nav-label">Следующая</span>
+            <span class="nav-title">Berkano (Беркана)</span>
+          </a>
+        
+      </nav>
+    </article>
+
+    
+  <aside class="post-toc" id="post-toc" aria-label="Содержание">
+    <button
+      class="toc-toggle"
+      id="toc-toggle"
+      aria-expanded="true"
+      aria-controls="toc-content"
+      aria-label="Показать/скрыть содержание">
+      <svg
+        class="toc-burger-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <span class="toc-toggle-text">Содержание</span>
+      <svg
+        class="toc-chevron-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+    <div class="toc-content" id="toc-content">
+      <nav class="toc-nav" aria-label="Содержание">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#историческое-значение">Историческое значение</a></li>
+        <li><a href="#проявление-силы">Проявление силы</a></li>
+        <li><a href="#применение-в-ставах">Применение в ставах</a></li>
+        <li><a href="#мантика">Мантика</a></li>
+        <li><a href="#да--нет">Да / Нет</a></li>
+        <li><a href="#практика-активации">Практика активации</a></li>
+        <li><a href="#деактивация">Деактивация</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </nav>
+    </div>
+  </aside>
+
+
+  </div>
+
+    </main>
+
+    <footer>
+      <footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-text">
+      &copy;
+      
+      2024-2026
+      
+      Northern Call.
+      
+        Сделано с любовью и верой в Óðinn
+      
+    </p>
+    
+  </div>
+</footer>
+
+    </footer>
+
+    <div id="search-modal" class="search-modal" aria-hidden="true" role="dialog" aria-label="Поиск" data-no-results="Ничего не найдено">
+  <div class="search-modal-backdrop" id="search-modal-backdrop"></div>
+  <div class="search-modal-container">
+    <div class="search-input-wrapper">
+      <svg class="search-input-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input"
+        placeholder="Поиск..."
+        autocomplete="off"
+        aria-label="Поиск">
+      <button class="search-input-clear" id="search-input-clear" aria-label="Очистить поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+        </svg>
+      </button>
+      <button class="search-modal-close" id="search-modal-close" aria-label="Закрыть поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+    
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu-content">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-title">Меню</span>
+      <button
+        id="mobile-menu-close"
+        class="mobile-menu-close"
+        aria-label="Закрыть меню"
+        type="button">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile navigation">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+    </nav>
+    <div class="mobile-menu-footer">
+      <button id="mobile-search-toggle" class="mobile-search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+        <span>Поиск</span>
+      </button>
+      
+  
+  
+  
+
+
+      <button class="theme-toggle" aria-label="Сменить тему" type="button">
+        <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+        <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+    
+
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Наверх" type="button">
+  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.137938305a4255a5ce0531471a42b4448c4adb05e04052a70000719c0704d082.js" defer></script>
+
+  </body>
+</html>

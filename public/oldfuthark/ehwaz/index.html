@@ -1,0 +1,739 @@
+<!doctype html>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="/css/custom.css">
+<html lang="ru-RU" class="h-full">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="ru-RU">
+<meta name="theme-color" content="#BD5FFF">
+<script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+  
+  (function(){var t=sessionStorage.getItem('mana_pt');if(t){document.documentElement.setAttribute('data-page-enter',t);sessionStorage.removeItem('mana_pt');}})();
+  
+  window.MANA_SEARCH_INDEX_URL = '\/index.json';
+  
+  window.MANA_LANG_PREFIXES = ['en','ru'];
+</script>
+<title>Ehwaz (Эваз) | Северный Зов</title>
+<meta
+  name="description"
+  content="
+     Историческое значение Руна Эваз означает «лошадь» — одно из самых почитаемых животных в скандинавской культуре. Конь был не просто транспортом. Он был …
+  
+  ">
+
+
+  <meta name="keywords" content="руны старшего футарка">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/oldfuthark/ehwaz/">
+
+
+<link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/oldfuthark/ehwaz/">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Ehwaz (Эваз) | Северный Зов">
+<meta property="og:description" content=" Историческое значение Руна Эваз означает «лошадь» — одно из самых почитаемых животных в скандинавской культуре. Конь был не просто транспортом. Он был …">
+<meta property="og:url" content="http://localhost:1313/oldfuthark/ehwaz/">
+<meta property="og:site_name" content="Северный Зов"><meta property="article:published_time" content="2024-01-01T00:00:00Z">
+  <meta
+    property="article:modified_time"
+    content="2024-01-01T00:00:00Z"><meta property="article:section" content="руны старшего футарка"><meta property="article:tag" content="руны старшего футарка">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ehwaz (Эваз) | Северный Зов">
+<meta name="twitter:description" content=" Историческое значение Руна Эваз означает «лошадь» — одно из самых почитаемых животных в скандинавской культуре. Конь был не просто транспортом. Он был …">
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'">
+<noscript>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</noscript>
+
+<link rel="stylesheet" href="/css/theme.min.d0bca60e6c836b64f7352464f89fe19f9b9db0eabc5b829f9aa967d8924dd6b4.css" integrity="sha256-0LymDmyDa2T3NSRk&#43;J/hn5udsOq8W4Kfmqln2JJN1rQ=">
+
+
+  <link
+    rel="stylesheet"
+    href="/css/syntax-dark.min.b01037e5609e6260b74d6fcdd6d5131e8dcbc4d46d6ef4bfbe5a60bdfc1a9f30.css"
+    integrity="sha256-sBA35WCeYmC3TW/N1tUTHo3LxNRtbvS/vlpgvfwanzA="
+    id="syntax-dark-theme"
+    class="syntax-theme">
+  <link
+    rel="stylesheet"
+    href="/css/syntax-light.min.9602bc2fcef52b4c62e05eae14b48ba428e114f116e993e504d83ed5a3aeda98.css"
+    integrity="sha256-lgK8L871K0xi4F6uFLSLpCjhFPEW6ZPlBNg&#43;1aOu2pg="
+    id="syntax-light-theme"
+    class="syntax-theme"
+    disabled><script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+
+    const syntaxDark = document.getElementById("syntax-dark-theme");
+    const syntaxLight = document.getElementById("syntax-light-theme");
+
+    if (theme === "light") {
+      if (syntaxDark) syntaxDark.disabled = true;
+      if (syntaxLight) syntaxLight.disabled = false;
+    } else {
+      if (syntaxDark) syntaxDark.disabled = false;
+      if (syntaxLight) syntaxLight.disabled = true;
+    }
+
+    
+    const observer = new MutationObserver(() => {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      if (currentTheme === "light") {
+        if (syntaxDark) syntaxDark.disabled = true;
+        if (syntaxLight) syntaxLight.disabled = false;
+      } else {
+        if (syntaxDark) syntaxDark.disabled = false;
+        if (syntaxLight) syntaxLight.disabled = true;
+      }
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+  })();
+</script>
+
+
+
+
+<link rel="stylesheet" href="/css/bundle.min.6aba317260578ac017656f5b2e8ed1f7c52d1819d1e57ae87b8266ea5620da75.css" integrity="sha256-aroxcmBXisAXZW9bLo7R98UtGBnR5Xroe4Jm6lYg2nU=">
+
+
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+
+
+  
+
+
+
+
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <a href="#main-content" class="skip-to-main" aria-label="Перейти к основному содержимому"
+      >Перейти к основному содержимому</a
+    >
+    <header class="sticky-header">
+      <div class="header-container">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+  <div class="header-content">
+    <div class="header-logo">
+      <a href="/" class="logo-link" aria-label="Home - Северный Зов">
+        Северный Зов
+      </a>
+    </div>
+
+    
+    <button 
+      id="mobile-menu-toggle" 
+      class="mobile-menu-toggle" 
+      aria-label="Открыть меню" 
+      aria-expanded="false"
+      type="button">
+      <span class="hamburger-icon">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
+    </button>
+
+    <div class="header-menu">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+
+      <button id="search-toggle" class="search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </button>
+
+      
+  
+  
+  
+
+
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Сменить тему" type="button">
+  <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+  </svg>
+  <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+  </svg>
+</button>
+
+    </div>
+  </div>
+</nav>
+
+      </div>
+      <div class="reading-progress-bar" aria-hidden="true"></div>
+    </header>
+
+    <main id="main-content" class="flex-1" role="main">
+        <div class="bg"></div>
+      
+  <div class="single-post-wrapper">
+    <article class="single-post">
+      
+
+
+
+
+
+
+
+      <header class="post-header">
+        
+
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/" itemprop="item"><span itemprop="name">Главная</span></a>
+      <meta itemprop="position" content="1" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/posts/" itemprop="item"><span itemprop="name">Публикации</span></a>
+      <meta itemprop="position" content="2" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name" class="breadcrumb-current">Ehwaz (Эваз)</span>
+      <meta itemprop="position" content="3" />
+    </li>
+  </ol>
+</nav>
+
+
+        <h1 class="post-title-main">Ehwaz (Эваз)</h1>
+
+        
+
+        <div class="post-meta">
+  <div class="post-meta-info">
+    <time datetime="2024-01-01T00:00:00Z" class="post-date">
+      <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+      </svg>
+      1 января 2024 г.
+    </time>
+
+    <span class="meta-separator">•</span>
+
+    
+      <span class="post-word-count">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        1501 слов
+      </span>
+    
+
+    
+      <span class="meta-separator">•</span>
+      <span class="post-reading-time">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        8 мин
+      </span>
+    
+  </div>
+
+  
+    <div class="post-tags">
+      
+        <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+      
+    </div>
+  
+</div>
+
+      </header>
+
+      <div class="post-content-main">
+        <img src="/images/runes/old/19.png" width="512" height="512">
+<h2 id="историческое-значение">Историческое значение</h2>
+<p>Руна Эваз означает «лошадь» — одно из самых почитаемых животных в скандинавской культуре. Конь был не просто транспортом. Он был соратником, другом, символом статуса и священным животным, посвящённым Одину и Фрейру. Скандинавский конь мог пройти там, где не пройдёт человек — через болота, горы, леса. Он чувствовал дорогу, даже когда её не было видно. Он был верен седоку до смерти.</p>
+<p>Эваз — это руна постепенного движения, верности и партнёрства. Она не про скорость (как Соулу) и не про волю (как Тейваз). Она про совместный путь. Конь и всадник двигаются как единое целое. Они дышат в одном ритме, думают в одном направлении, доверяют друг другу без слов. Эваз — это руна таких отношений: деловых, любовных, дружеских, магических. Отношений, где два существа становятся одним.</p>
+<p>В древности конь был настолько ценен, что его не продавали за деньги — только обменивали на другого коня или на землю. Потерять коня было катастрофой, потому что без коня ты не мог ни пахать, ни воевать, ни путешествовать. Эваз — это руна взаимозависимости. Она напоминает, что в одиночку человек слаб. В паре — силён. Но только если пара настоящая, а не формальная.</p>
+<p>В рунических надписях Эваз часто встречается на конской упряжи, на сёдлах, на коновязях. Её вырезали, чтобы конь не хромал, чтобы не боялся врага, чтобы выигрывал скачки. Также её вырезали на свадебных амулетах, потому что брак — это тоже союз двух, как всадника и коня.</p>
+<p>Эваз — третья руна третьего атта. После Берканы (рост и исцеление) идёт Эваз — движение вперёд, в паре, к цели. Потому что одного роста мало. Нужно ещё куда-то идти. И идти лучше с тем, кому доверяешь.</p>
+<h2 id="проявление-силы">Проявление силы</h2>
+<p>Эваз проявляется тремя основными способами.</p>
+<p>Первое — движение вперёд. Эваз помогает двигаться тогда, когда хочется стоять. Человек под её действием находит в себе силы сделать шаг — даже если шаг маленький, даже если страшно, даже если не знаешь, куда идти. Эваз не дарит крыльев. Она дарит копыта — твёрдые, надёжные, которые переставляются одна за другой. Дорога в тысячу миль начинается с первого шага. Эваз — этот первый шаг.</p>
+<p>Второе — синергия и партнёрство. Эваз улучшает любые отношения, где двое работают на общий результат. Это могут быть супруги, бизнес-партнёры, друзья, соавторы, ученик и учитель. Под действием Эваз исчезает конкуренция, исчезает зависть, исчезает желание перетянуть одеяло на себя. Остаётся только общее дело и общая радость от него. Эваз — это руна, которая говорит: «Мы — команда. И вместе мы сильнее, чем порознь».</p>
+<p>Третье — верность и доверие. Самый глубокий уровень Эваз. Руна укрепляет верность — не ту, которая держится на страхе (не уйдёшь, потому что некуда), а ту, которая держится на доверии. Человек под действием Эваз становится надёжным партнёром. На него можно положиться в трудную минуту. Он не предаст, не бросит, не обманет. И он ждёт того же от другого. Если другой не отвечает взаимностью, Эваз может разорвать отношения — потому что ложное партнёрство хуже одиночества.</p>
+<p>Эваз также связана с шаманскими путешествиями. Конь — традиционное животное-проводник в нижний мир. Шаман «садится на коня» и отправляется в путь. Эваз — это руна, которая помогает найти такого проводника и не потерять его по дороге. Это руна доверия к тому, кто ведёт.</p>
+<h2 id="применение-в-ставах">Применение в ставах</h2>
+<p>Эваз используется для ускорения процессов, для работы в паре, для гармонизации отношений, для помощи в путешествиях.</p>
+<p>Связка Эваз с Райдо. Это формула движения вперёд по правильному пути. Райдо даёт направление, Эваз — способность идти по этому направлению не сбиваясь. Вместе они работают как надёжный конь, который сам знает дорогу: вы сидите в седле и не дёргаете поводья. Используется в ставах на путешествия, на смену места жительства, на начало нового этапа жизни. Хороша для тех, кто боится перемен, но знает, что они нужны.</p>
+<p>Связка Эваз с Гебо. Это формула счастливого партнёрства. Гебо даёт обмен и равновесие, Эваз — движение в одном направлении. Вместе они работают как команда, которая не только ладит, но и достигает целей. Используется в ставах на брак, на деловое партнёрство, на творческий союз. Предупреждение: не работает, если один из партнёров не заинтересован в общем результате.</p>
+<p>Связка Эваз с Ансуз. Это формула эффективного обучения. Ансуз даёт знание, Эваз — способность применить это знание на практике. Вместе они работают как мастер и подмастерье: учитель передаёт навыки, ученик их осваивает и движется дальше. Используется в ставах на обучение, на передачу традиции, на наставничество. Хороша для тех, кто учит других (учителя, тренеры, родители) и для тех, кто учится сам.</p>
+<p>Связка Эваз с Соулу. Это формула быстрого рывка. Соулу даёт скорость и победу, Эваз — устойчивость и верность курсу. Вместе они работают как скаковая лошадь, которая несётся к финишу и не сворачивает. Используется в ставах на соревнования, на конкурсы, на любые ситуации, где нужна не только скорость, но и точность.</p>
+<p>Важное предупреждение: Эваз не работает, если человек не готов доверять. Если вы контролёр, который всё делает сам и не делегирует, — Эваз будет бесполезна. Она требует, чтобы вы отпустили поводья хоть немного. Позволили другому везти. Руна учит доверию. А доверие — это больно для тех, кого предавали. Но без доверия нет партнёрства.</p>
+<h2 id="мантика">Мантика</h2>
+<p>Прямое положение Эваз говорит о движении, партнёрстве, доверии. Руна выпадает в моменты, когда человеку нужно куда-то идти, но он не один. С ним есть тот, кто поддержит, поможет, поведёт. Вопрос не в том, идти или не идти. Вопрос в том, готов ли ты довериться своему коню.</p>
+<p>Прямая Эваз также может означать, что человеку нужно найти партнёра — в бизнесе, в творчестве, в жизни. Он слишком долго был один, и это его истощило. Руна советует открыться, протянуть руку, позволить другому войти в его жизнь.</p>
+<p>В раскладах на отношения прямая Эваз — отличный знак. Отношения динамичные, живые, они движутся куда-то. Если выпала Эваз, значит, пара проходит очередной этап — может быть, переезд, свадьба, рождение ребёнка. Если человек одинок, руна говорит о скорой встрече.</p>
+<p>В раскладах на здоровье прямая Эваз говорит о восстановлении подвижности. Если человек был обездвижен (болезнь, травма, депрессия), руна предвещает, что он скоро встанет и пойдёт. Буквально или метафорически.</p>
+<p>Перевёрнутое положение Эваз говорит о конфликте, разрыве, несовместимости. Партнёры тянут в разные стороны. Конь и всадник ссорятся, и никто не уступает. Перевёрнутая Эваз предупреждает: если так пойдёт дальше, вы оба упадёте в пропасть.</p>
+<p>В перевёрнутом положении руна также может означать, что человек не доверяет своему партнёру (или партнёр — ему). И это недоверие разрушает отношения. Руна советует либо восстановить доверие (честным разговором, совместным делом, терапией), либо расстаться. Третьего не дано.</p>
+<h2 id="да--нет">Да / Нет</h2>
+<p>Эваз отвечает «Да» на вопросы, связанные с движением и партнёрством. «Стоит ли мне менять работу?» — Да, если у тебя есть поддержка. «Получится ли у нас совместный проект?» — Да, если вы оба готовы работать. «Стоит ли мне довериться этому человеку?» — Да, если твоя интуиция не против.</p>
+<p>На вопросы, где человек рассчитывает только на себя, Эваз отвечает «Нет». «Справлюсь ли я сам?» — Нет, попроси помощи.</p>
+<h2 id="практика-активации">Практика активации</h2>
+<p>Активация Эваз требует движения. Нельзя сидеть на месте — руна не сработает. Лучше всего проводить её во время прогулки, пробежки, поездки на лошади (если есть возможность). Но можно и дома — главное, чтобы тело двигалось.</p>
+<p>Шаг первый. Начертите руну на коричневом, сером или белом материале. Идеальный носитель — конский волос (если есть доступ), дерево (ясень, дуб), кожа. Не используйте металл — он слишком жёсткий для Эваз.</p>
+<p>Шаг второй. Если есть возможность, выйдите на улицу. Найдите ровную дорожку — в парке, в лесу, во дворе. Встаньте в начале дорожки. Руну положите в карман или держите в левой руке.</p>
+<p>Шаг третий. Начните идти. Не спеша, но и не останавливаясь. Каждый шаг — один вдох или один выдох. Почувствуйте, как ваши ноги сами находят дорогу. Вы не думаете, куда поставить ступню — тело знает. Это и есть доверие.</p>
+<p>Шаг четвёртый. Проговорите формулу активации на ходу, в ритме шагов: «Эваз — веди меня вперёд».</p>
+<p>Шаг пятый. Визуализируйте, что вы едете на коне. Вы не управляете им — вы сидите и смотрите по сторонам. Конь сам знает, куда идти. Он умнее, чем кажется. Он чувствует ямы, обходит препятствия, находит броды. Ваша задача — не мешать ему. Отпустите поводья.</p>
+<p>Шаг шестой. Продолжайте идти 10–15 минут. Не ставьте цели — куда идти, зачем идти. Просто идите. Эваз сама приведёт вас туда, куда нужно. Если вам захочется повернуть направо или налево — поворачивайте. Это конь выбирает путь.</p>
+<h2 id="деактивация">Деактивация</h2>
+<p>Деактивация Эваз — это остановка. Конь устал, ему нужен отдых. Вы спешиваетесь.</p>
+<p>Шаг первый. Остановитесь. Почувствуйте, как земля перестаёт убегать из-под ног. Вы стоите — и это хорошо. Конь тоже стоит, фыркает, трясёт гривой.</p>
+<p>Шаг второй. Поблагодарите своего невидимого коня. Скажите вслух или мысленно: «Спасибо, что вёз. Теперь отдохни».</p>
+<p>Шаг третий. Произнесите формулу деактивации: «Путь завершён. Эваз возвращается в покой».</p>
+<p>Шаг четвёртый. Физическая деактивация: если руна была на временном носителе (бумага, лист), развейте её по ветру. Если на постоянном (кожа, дерево), положите в тёмное место на неделю. Не храните Эваз на виду — её энергия будет побуждать вас куда-то бежать.</p>
+<p>Шаг пятый. Отдохните. Сядьте на скамейку, на траву, на камень. Посидите 5–10 минут, никуда не двигаясь. Эваз требует отдыха после работы.</p>
+<p>Признаки неудачной деактивации: вы не можете усидеть на месте, вас тянет куда-то идти, вы чувствуете беспокойство в ногах. Это значит, конь не отпустил. Повторите деактивацию и съешьте что-нибудь тяжёлое (мясо, хлеб) — это заземляет энергию движения.</p>
+<p><a href="/runes/" class="btn btn-sm">Вернуться к рунам Старшего Футарка</a></p>
+
+      </div>
+
+      
+        <footer class="post-footer">
+          <div class="post-tags-footer">
+            <span class="tags-label">Теги:</span>
+            
+              <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+            
+          </div>
+        </footer>
+      
+
+      
+
+
+<section class="related-posts" aria-label="Похожие публикации">
+  <h2 class="related-posts-title">Похожие публикации</h2>
+  <ul class="related-posts-list">
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/algiz/" class="related-post-link">
+        <strong>Algiz (Альгиз)</strong>
+        <span> Историческое значение Руна Альгиз — это руна защиты, но не пассивной, не той, которая просто отражает удар. Это живая …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/ansuz/" class="related-post-link">
+        <strong>Ansuz (Ансуз)</strong>
+        <span> Историческое значение Руна Ансуз — это руна богов, прежде всего связанная с Одином как носителем речи, знания и …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/berkano/" class="related-post-link">
+        <strong>Berkano (Беркана)</strong>
+        <span> Историческое значение Руна Беркана означает «берёза» — дерево, которое в древней Скандинавии считалось священным для …</span>
+      </a>
+    </li>
+    
+  </ul>
+</section>
+
+
+
+      <nav class="post-navigation" aria-label="Post navigation">
+        
+          <a
+            href="/oldfuthark/eihwaz/"
+            class="nav-link nav-prev"
+            aria-label="Previous post: Eihwaz (Эйваз)">
+            <span class="nav-label">Предыдущая</span>
+            <span class="nav-title">Eihwaz (Эйваз)</span>
+          </a>
+        
+
+        
+          <a
+            href="/oldfuthark/dagaz/"
+            class="nav-link nav-next"
+            aria-label="Next post: Dagaz (Дагаз)">
+            <span class="nav-label">Следующая</span>
+            <span class="nav-title">Dagaz (Дагаз)</span>
+          </a>
+        
+      </nav>
+    </article>
+
+    
+  <aside class="post-toc" id="post-toc" aria-label="Содержание">
+    <button
+      class="toc-toggle"
+      id="toc-toggle"
+      aria-expanded="true"
+      aria-controls="toc-content"
+      aria-label="Показать/скрыть содержание">
+      <svg
+        class="toc-burger-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <span class="toc-toggle-text">Содержание</span>
+      <svg
+        class="toc-chevron-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+    <div class="toc-content" id="toc-content">
+      <nav class="toc-nav" aria-label="Содержание">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#историческое-значение">Историческое значение</a></li>
+        <li><a href="#проявление-силы">Проявление силы</a></li>
+        <li><a href="#применение-в-ставах">Применение в ставах</a></li>
+        <li><a href="#мантика">Мантика</a></li>
+        <li><a href="#да--нет">Да / Нет</a></li>
+        <li><a href="#практика-активации">Практика активации</a></li>
+        <li><a href="#деактивация">Деактивация</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </nav>
+    </div>
+  </aside>
+
+
+  </div>
+
+    </main>
+
+    <footer>
+      <footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-text">
+      &copy;
+      
+      2024-2026
+      
+      Northern Call.
+      
+        Сделано с любовью и верой в Óðinn
+      
+    </p>
+    
+  </div>
+</footer>
+
+    </footer>
+
+    <div id="search-modal" class="search-modal" aria-hidden="true" role="dialog" aria-label="Поиск" data-no-results="Ничего не найдено">
+  <div class="search-modal-backdrop" id="search-modal-backdrop"></div>
+  <div class="search-modal-container">
+    <div class="search-input-wrapper">
+      <svg class="search-input-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input"
+        placeholder="Поиск..."
+        autocomplete="off"
+        aria-label="Поиск">
+      <button class="search-input-clear" id="search-input-clear" aria-label="Очистить поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+        </svg>
+      </button>
+      <button class="search-modal-close" id="search-modal-close" aria-label="Закрыть поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+    
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu-content">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-title">Меню</span>
+      <button
+        id="mobile-menu-close"
+        class="mobile-menu-close"
+        aria-label="Закрыть меню"
+        type="button">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile navigation">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+    </nav>
+    <div class="mobile-menu-footer">
+      <button id="mobile-search-toggle" class="mobile-search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+        <span>Поиск</span>
+      </button>
+      
+  
+  
+  
+
+
+      <button class="theme-toggle" aria-label="Сменить тему" type="button">
+        <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+        <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+    
+
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Наверх" type="button">
+  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.137938305a4255a5ce0531471a42b4448c4adb05e04052a70000719c0704d082.js" defer></script>
+
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Общее on Северный Зов</title>
+    <link>http://localhost:1313/categories/%D0%BE%D0%B1%D1%89%D0%B5%D0%B5/</link>
+    <description>Recent content in Общее on Северный Зов</description>
+    <generator>Hugo</generator>
+    <language>ru-RU</language>
+    <lastBuildDate>Wed, 01 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%D0%BE%D0%B1%D1%89%D0%B5%D0%B5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Осознанные сновидения</title>
+      <link>http://localhost:1313/posts/lucid_dreams/</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/lucid_dreams/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

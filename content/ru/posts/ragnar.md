@@ -3,6 +3,7 @@ title: Рагнар Лодброк
 date: 2026-03-11
 categories: [Легенды, Скандинавия]
 tags: [легенды, скандинавия]
+image: "/images/posts/ragnar.png"
 ---
 # Рагнар Лодброк
 

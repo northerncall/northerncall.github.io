@@ -1,0 +1,737 @@
+<!doctype html>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="/css/custom.css">
+<html lang="ru-RU" class="h-full">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="ru-RU">
+<meta name="theme-color" content="#BD5FFF">
+<script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+  
+  (function(){var t=sessionStorage.getItem('mana_pt');if(t){document.documentElement.setAttribute('data-page-enter',t);sessionStorage.removeItem('mana_pt');}})();
+  
+  window.MANA_SEARCH_INDEX_URL = '\/index.json';
+  
+  window.MANA_LANG_PREFIXES = ['en','ru'];
+</script>
+<title>Laguz (Лагуз) | Северный Зов</title>
+<meta
+  name="description"
+  content="
+     Историческое значение Руна Лагуз означает «вода» — не стоячая, а текучая. Озеро, река, ручей, поток. В древней Скандинавии вода была не просто стихией — она …
+  
+  ">
+
+
+  <meta name="keywords" content="руны старшего футарка">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/oldfuthark/laguz/">
+
+
+<link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/oldfuthark/laguz/">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Laguz (Лагуз) | Северный Зов">
+<meta property="og:description" content=" Историческое значение Руна Лагуз означает «вода» — не стоячая, а текучая. Озеро, река, ручей, поток. В древней Скандинавии вода была не просто стихией — она …">
+<meta property="og:url" content="http://localhost:1313/oldfuthark/laguz/">
+<meta property="og:site_name" content="Северный Зов"><meta property="article:published_time" content="2024-01-01T00:00:00Z">
+  <meta
+    property="article:modified_time"
+    content="2024-01-01T00:00:00Z"><meta property="article:section" content="руны старшего футарка"><meta property="article:tag" content="руны старшего футарка">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Laguz (Лагуз) | Северный Зов">
+<meta name="twitter:description" content=" Историческое значение Руна Лагуз означает «вода» — не стоячая, а текучая. Озеро, река, ручей, поток. В древней Скандинавии вода была не просто стихией — она …">
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'">
+<noscript>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</noscript>
+
+<link rel="stylesheet" href="/css/theme.min.d0bca60e6c836b64f7352464f89fe19f9b9db0eabc5b829f9aa967d8924dd6b4.css" integrity="sha256-0LymDmyDa2T3NSRk&#43;J/hn5udsOq8W4Kfmqln2JJN1rQ=">
+
+
+  <link
+    rel="stylesheet"
+    href="/css/syntax-dark.min.b01037e5609e6260b74d6fcdd6d5131e8dcbc4d46d6ef4bfbe5a60bdfc1a9f30.css"
+    integrity="sha256-sBA35WCeYmC3TW/N1tUTHo3LxNRtbvS/vlpgvfwanzA="
+    id="syntax-dark-theme"
+    class="syntax-theme">
+  <link
+    rel="stylesheet"
+    href="/css/syntax-light.min.9602bc2fcef52b4c62e05eae14b48ba428e114f116e993e504d83ed5a3aeda98.css"
+    integrity="sha256-lgK8L871K0xi4F6uFLSLpCjhFPEW6ZPlBNg&#43;1aOu2pg="
+    id="syntax-light-theme"
+    class="syntax-theme"
+    disabled><script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+
+    const syntaxDark = document.getElementById("syntax-dark-theme");
+    const syntaxLight = document.getElementById("syntax-light-theme");
+
+    if (theme === "light") {
+      if (syntaxDark) syntaxDark.disabled = true;
+      if (syntaxLight) syntaxLight.disabled = false;
+    } else {
+      if (syntaxDark) syntaxDark.disabled = false;
+      if (syntaxLight) syntaxLight.disabled = true;
+    }
+
+    
+    const observer = new MutationObserver(() => {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      if (currentTheme === "light") {
+        if (syntaxDark) syntaxDark.disabled = true;
+        if (syntaxLight) syntaxLight.disabled = false;
+      } else {
+        if (syntaxDark) syntaxDark.disabled = false;
+        if (syntaxLight) syntaxLight.disabled = true;
+      }
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+  })();
+</script>
+
+
+
+
+<link rel="stylesheet" href="/css/bundle.min.6aba317260578ac017656f5b2e8ed1f7c52d1819d1e57ae87b8266ea5620da75.css" integrity="sha256-aroxcmBXisAXZW9bLo7R98UtGBnR5Xroe4Jm6lYg2nU=">
+
+
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+
+
+  
+
+
+
+
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <a href="#main-content" class="skip-to-main" aria-label="Перейти к основному содержимому"
+      >Перейти к основному содержимому</a
+    >
+    <header class="sticky-header">
+      <div class="header-container">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+  <div class="header-content">
+    <div class="header-logo">
+      <a href="/" class="logo-link" aria-label="Home - Северный Зов">
+        Северный Зов
+      </a>
+    </div>
+
+    
+    <button 
+      id="mobile-menu-toggle" 
+      class="mobile-menu-toggle" 
+      aria-label="Открыть меню" 
+      aria-expanded="false"
+      type="button">
+      <span class="hamburger-icon">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
+    </button>
+
+    <div class="header-menu">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+
+      <button id="search-toggle" class="search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </button>
+
+      
+  
+  
+  
+
+
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Сменить тему" type="button">
+  <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+  </svg>
+  <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+  </svg>
+</button>
+
+    </div>
+  </div>
+</nav>
+
+      </div>
+      <div class="reading-progress-bar" aria-hidden="true"></div>
+    </header>
+
+    <main id="main-content" class="flex-1" role="main">
+        <div class="bg"></div>
+      
+  <div class="single-post-wrapper">
+    <article class="single-post">
+      
+
+
+
+
+
+
+
+      <header class="post-header">
+        
+
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/" itemprop="item"><span itemprop="name">Главная</span></a>
+      <meta itemprop="position" content="1" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/posts/" itemprop="item"><span itemprop="name">Публикации</span></a>
+      <meta itemprop="position" content="2" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name" class="breadcrumb-current">Laguz (Лагуз)</span>
+      <meta itemprop="position" content="3" />
+    </li>
+  </ol>
+</nav>
+
+
+        <h1 class="post-title-main">Laguz (Лагуз)</h1>
+
+        
+
+        <div class="post-meta">
+  <div class="post-meta-info">
+    <time datetime="2024-01-01T00:00:00Z" class="post-date">
+      <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+      </svg>
+      1 января 2024 г.
+    </time>
+
+    <span class="meta-separator">•</span>
+
+    
+      <span class="post-word-count">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        1367 слов
+      </span>
+    
+
+    
+      <span class="meta-separator">•</span>
+      <span class="post-reading-time">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        7 мин
+      </span>
+    
+  </div>
+
+  
+    <div class="post-tags">
+      
+        <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+      
+    </div>
+  
+</div>
+
+      </header>
+
+      <div class="post-content-main">
+        <img src="/images/runes/old/21.png" width="512" height="512">
+<h2 id="историческое-значение">Историческое значение</h2>
+<p>Руна Лагуз означает «вода» — не стоячая, а текучая. Озеро, река, ручей, поток. В древней Скандинавии вода была не просто стихией — она была границей между мирами. Река отделяла землю живых от земли мёртвых. Море отделяло Мидгард от Утгарда. Источник Мимира, из которого Один испил мудрости, тоже был водой. Лагуз — это руна потока жизни, бессознательного, интуиции, памяти, которая течёт глубже слов.</p>
+<p>Вода в северной традиции ассоциировалась с женским началом — принимающим, питающим, скрывающим. Фрейя, богиня любви и смерти, плакала золотыми слезами, и они становились водой. Ран, богиня морских глубин, затягивала моряков в свои сети. Вода — это и жизнь, и смерть, и очищение, и утопление. Лагуз — это руна, которая напоминает: нельзя полностью контролировать воду. Её можно направлять, но не останавливать.</p>
+<p>В рунических надписях Лагуз часто встречается на кораблях, на вёслах, на парусах. Её вырезали, чтобы море было спокойным, чтобы шторм обошёл стороной, чтобы путешественник вернулся домой. Также её вырезали на кубках и чашах — как символ ритуального напитка, который даёт силу и мудрость.</p>
+<p>Лагуз — пятая руна третьего атта, но фактически четвертая с конца во всём футарке. После Манназ (человек разумный) идёт Лагуз — то, что глубже разума. Эмоции, интуиция, подсознание. То, что течёт под землёй, пока мы строим города на поверхности.</p>
+<h2 id="проявление-силы">Проявление силы</h2>
+<p>Лагуз проявляется тремя основными способами.</p>
+<p>Первое — интуиция и подсознание. Лагуз пробуждает способность чувствовать — не умом, а телом, не логикой, а предчувствием. Человек под её действием начинает «знать» то, откуда он не мог знать. Он чувствует, кто врёт, а кто говорит правду. Чувствует, куда идти, даже если карта говорит обратное. Чувствует опасность за версту. Лагуз — это руна, которая соединяет сознание с огромным подводным айсбергом подсознательного. Внизу — клады, сокровища, тайны. Но там же — чудовища и утопленники.</p>
+<p>Второе — поток, течение. Лагуз помогает плыть по течению жизни, не сопротивляясь, не гребя против. Это не пассивность. Это мудрость: знать, когда нужно грести, а когда — просто держаться на воде. Человек под действием Лагуз перестаёт ломиться в закрытые двери. Он ищет обходные пути. Или ждёт, пока дверь откроется сама. Течение всё равно приведёт его туда, куда нужно — если он не будет бороться с ним.</p>
+<p>Третье — очищение и обновление. Самый мощный уровень Лагуз. Вода смывает грязь — физическую и энергетическую. Лагуз — это руна очищения от порчи, сглаза, наговоров. От старых обид, от чужих влияний, от навязчивых мыслей. Она не сжигает, как огонь. Она вымывает. Мягко, но настойчиво. После очищения Лагуз человек чувствует себя свежим, лёгким, обновлённым. Как после весеннего ливня или купания в проруби.</p>
+<p>Лагуз также связана со снами. Вода — это образ сновидений, где реальность течёт, переливается, меняет форму. Лагуз помогает запоминать сны, понимать их смысл, использовать их для магии. Сон под покровительством Лагуз — не просто отдых мозга, а путешествие в иные миры.</p>
+<h2 id="применение-в-ставах">Применение в ставах</h2>
+<p>Лагуз используется для работы с эмоциями, для магии сновидений, для очищения, для развития интуиции, для помощи путешественникам (особенно по воде).</p>
+<p>Связка Лагуз с Ансуз. Это формула интуитивных откровений. Лагуз даёт поток образов и предчувствий, Ансуз — способность сформулировать их в слова. Вместе они работают как внутренний голос, который говорит чётко и понятно. Используется в ставах на развитие ясновидения, на получение ответов от духов, на толкование снов. Предупреждение: не всем нравится то, что говорит внутренний голос. Будьте готовы к правде.</p>
+<p>Связка Лагуз с Беркана. Это формула интуитивного исцеления. Лагуз даёт чувствование проблемы, Беркана — мягкое восстановление. Вместе они работают как заботливые руки врача, который не только лечит симптомы, но и чувствует причину болезни. Используется в ставах на целительство, на женское здоровье, на восстановление после родов.</p>
+<p>Связка Лагуз с Эйваз. Это формула шаманских путешествий. Лагуз даёт поток, который уносит в нижний мир, Эйваз — ось, за которую можно держаться, чтобы не потеряться. Вместе они работают как лодка и весло: ты плывёшь, но не тонешь. Используется в ставах на общение с духами предков, на работу с умершими, на получение родовых тайн.</p>
+<p>Связка Лагуз с Лагуз. Да, руна может усиливать саму себя. Две Лагуз рядом — это мощный поток, который смывает всё на своём пути. Используется для экстренного очищения от порчи, для прорыва через эмоциональные блоки, для выхода из затяжной депрессии. Предупреждение: может вызвать временную потерю ориентации — человека «уносит течением». После такого очищения нужна руна заземления (Иса, Одал, Йера).</p>
+<p>Важное предупреждение: Лагуз может усилить эмоциональную нестабильность. Если у человека есть склонность к депрессии, паническим атакам, истерикам — Лагуз может вызвать обострение. Она не для всех. Людям с неустойчивой психикой лучше использовать другие руны для очищения и интуиции.</p>
+<h2 id="мантика">Мантика</h2>
+<p>Прямое положение Лагуз говорит о потоке, интуиции, очищении. Руна выпадает в периоды, когда нужно слушать не голову, а сердце. Ответ уже есть внутри — не нужно искать его снаружи. Просто затихни и услышь.</p>
+<p>Прямая Лагуз также может означать, что человеку нужно очиститься — от старых обид, от чужих влияний, от грязи, которую он накопил. Принять душ, искупаться в реке, поплавать в море — буквально или символически.</p>
+<p>В раскладах на отношения прямая Лагуз говорит о глубоких, настоящих чувствах. Не о страсти, не о долге, а о чувствах — любви, нежности, привязанности. Если отношения только начинаются, руна обещает, что они будут глубокими. Если отношения в кризисе — они пройдут его, если партнёры смогут говорить о чувствах, а не о претензиях.</p>
+<p>В раскладах на здоровье прямая Лагуз указывает на необходимость пить больше воды. Многие болезни происходят от обезвоживания на клеточном уровне. Также руна может указывать на лечение водой — плавание, душ, ванны, баня.</p>
+<p>Перевёрнутое положение Лагуз говорит о блоке, застое, подавленных эмоциях. Человек «пересох», потерял контакт с интуицией, не чувствует себя. Он живёт умом, а тело и душа — в загоне. Перевёрнутая Лагуз — это плотина, которая перекрыла реку. За плотиной накапливается мусор.</p>
+<p>В перевёрнутом положении руна также может означать опасность, связанную с водой — наводнение, шторм, утопление. Будьте осторожны в путешествиях по воде. И в прямом, и в переносном смысле.</p>
+<h2 id="да--нет">Да / Нет</h2>
+<p>Лагуз отвечает «Да» на вопросы, связанные с интуицией, очищением, чувствами. «Стоит ли мне довериться своему чутью?» — Да. «Поможет ли мне вода?» — Да. «Правильно ли я чувствую?» — Да, если ты честен с собой.</p>
+<p>На вопросы, где человек пытается обойти свои чувства, Лагуз отвечает «Нет». «Можно ли мне не обращать внимания на эту тревогу?» — Нет. «Стоит ли мне подавить эмоции?» — Нет, они всё равно вылезут.</p>
+<h2 id="практика-активации">Практика активации</h2>
+<p>Активация Лагуз требует воды. Лучше всего — у естественного водоёма: реки, озера, моря. Но можно и дома — главное, чтобы была вода в чаше.</p>
+<p>Шаг первый. Начертите руну на синем, зелёном или белом материале. Идеальный носитель — ракушка, кусок дерева, прибитый к берегу, галька, отшлифованная водой. Не используйте металл — он тонет.</p>
+<p>Шаг второй. Подойдите к воде. Встаньте так, чтобы вы видели течение (даже если вода стоячая, представьте, что она течёт). Положите руну на левую ладонь. Правую руку опустите в воду — или просто смочите, если водоёма нет.</p>
+<p>Шаг третий. Закройте глаза. Почувствуйте, как вода касается вашей кожи. Прохладная, живая, подвижная. Она смывает всё, что налипло — чужую энергию, чужие мысли, чужие слова. Вы становитесь чище. Легче. Свежее.</p>
+<p>Шаг четвёртый. Проговорите формулу активации тихо, как будто обращаясь к реке: «Лагуз — поток, что течёт через меня».</p>
+<p>Шаг пятый. Визуализируйте, как от руны к воде тянется синяя нить. Вода поднимается, обволакивает руну, забирает её энергию. И возвращается обратно — чистая, светлая, обновлённая. Вы и вода — одно. Вы течёте туда, куда нужно. Вы не сопротивляетесь.</p>
+<p>Шаг шестой. Побудьте в этом состоянии 5–10 минут. Если приходят образы рек, озёр, дождя, слёз — запомните их. Лагуз говорит через воду. Слушайте.</p>
+<h2 id="деактивация">Деактивация</h2>
+<p>Деактивация Лагуз — это выход из воды. Вы возвращаетесь на берег.</p>
+<p>Шаг первый. Выйдите из воды (или уберите руку из чаши). Почувствуйте, как вода стекает с вас, возвращается в реку, озеро, море. Вы оставляете ей свои печали. Она уносит их.</p>
+<p>Шаг второй. Произнесите формулу деактивации: «Поток завершён. Лагуз возвращается в покой».</p>
+<p>Шаг третий. Физическая деактивация: если руна была на временном носителе (бумага, лист), опустите её в воду и позвольте уплыть или раствориться. Если на постоянном (камень, ракушка), прополощите его в проточной воде и высушите на солнце.</p>
+<p>Шаг четвёртый. Вытритесь насухо. Полотенце — символ возвращения в мир земли. Почувствуйте себя твёрдым, сухим, устойчивым.</p>
+<p>Признаки неудачной деактивации: вы чувствуете себя «мокрым» даже на суше, вас укачивает, вы теряете равновесие, вам снятся сны о наводнениях и потопах. Это значит, течение не отпустило. Повторите деактивацию и съешьте что-нибудь солёное — соль заземляет водную энергию.</p>
+<p><a href="/runes/" class="btn btn-sm">Вернуться к рунам Старшего Футарка</a></p>
+
+      </div>
+
+      
+        <footer class="post-footer">
+          <div class="post-tags-footer">
+            <span class="tags-label">Теги:</span>
+            
+              <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+            
+          </div>
+        </footer>
+      
+
+      
+
+
+<section class="related-posts" aria-label="Похожие публикации">
+  <h2 class="related-posts-title">Похожие публикации</h2>
+  <ul class="related-posts-list">
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/algiz/" class="related-post-link">
+        <strong>Algiz (Альгиз)</strong>
+        <span> Историческое значение Руна Альгиз — это руна защиты, но не пассивной, не той, которая просто отражает удар. Это живая …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/ansuz/" class="related-post-link">
+        <strong>Ansuz (Ансуз)</strong>
+        <span> Историческое значение Руна Ансуз — это руна богов, прежде всего связанная с Одином как носителем речи, знания и …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/berkano/" class="related-post-link">
+        <strong>Berkano (Беркана)</strong>
+        <span> Историческое значение Руна Беркана означает «берёза» — дерево, которое в древней Скандинавии считалось священным для …</span>
+      </a>
+    </li>
+    
+  </ul>
+</section>
+
+
+
+      <nav class="post-navigation" aria-label="Post navigation">
+        
+          <a
+            href="/oldfuthark/mannaz/"
+            class="nav-link nav-prev"
+            aria-label="Previous post: Mannaz (Манназ)">
+            <span class="nav-label">Предыдущая</span>
+            <span class="nav-title">Mannaz (Манназ)</span>
+          </a>
+        
+
+        
+          <a
+            href="/oldfuthark/kenaz/"
+            class="nav-link nav-next"
+            aria-label="Next post: Kenaz (Кеназ)">
+            <span class="nav-label">Следующая</span>
+            <span class="nav-title">Kenaz (Кеназ)</span>
+          </a>
+        
+      </nav>
+    </article>
+
+    
+  <aside class="post-toc" id="post-toc" aria-label="Содержание">
+    <button
+      class="toc-toggle"
+      id="toc-toggle"
+      aria-expanded="true"
+      aria-controls="toc-content"
+      aria-label="Показать/скрыть содержание">
+      <svg
+        class="toc-burger-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <span class="toc-toggle-text">Содержание</span>
+      <svg
+        class="toc-chevron-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+    <div class="toc-content" id="toc-content">
+      <nav class="toc-nav" aria-label="Содержание">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#историческое-значение">Историческое значение</a></li>
+        <li><a href="#проявление-силы">Проявление силы</a></li>
+        <li><a href="#применение-в-ставах">Применение в ставах</a></li>
+        <li><a href="#мантика">Мантика</a></li>
+        <li><a href="#да--нет">Да / Нет</a></li>
+        <li><a href="#практика-активации">Практика активации</a></li>
+        <li><a href="#деактивация">Деактивация</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </nav>
+    </div>
+  </aside>
+
+
+  </div>
+
+    </main>
+
+    <footer>
+      <footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-text">
+      &copy;
+      
+      2024-2026
+      
+      Northern Call.
+      
+        Сделано с любовью и верой в Óðinn
+      
+    </p>
+    
+  </div>
+</footer>
+
+    </footer>
+
+    <div id="search-modal" class="search-modal" aria-hidden="true" role="dialog" aria-label="Поиск" data-no-results="Ничего не найдено">
+  <div class="search-modal-backdrop" id="search-modal-backdrop"></div>
+  <div class="search-modal-container">
+    <div class="search-input-wrapper">
+      <svg class="search-input-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input"
+        placeholder="Поиск..."
+        autocomplete="off"
+        aria-label="Поиск">
+      <button class="search-input-clear" id="search-input-clear" aria-label="Очистить поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+        </svg>
+      </button>
+      <button class="search-modal-close" id="search-modal-close" aria-label="Закрыть поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+    
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu-content">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-title">Меню</span>
+      <button
+        id="mobile-menu-close"
+        class="mobile-menu-close"
+        aria-label="Закрыть меню"
+        type="button">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile navigation">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+    </nav>
+    <div class="mobile-menu-footer">
+      <button id="mobile-search-toggle" class="mobile-search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+        <span>Поиск</span>
+      </button>
+      
+  
+  
+  
+
+
+      <button class="theme-toggle" aria-label="Сменить тему" type="button">
+        <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+        <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+    
+
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Наверх" type="button">
+  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.137938305a4255a5ce0531471a42b4448c4adb05e04052a70000719c0704d082.js" defer></script>
+
+  </body>
+</html>

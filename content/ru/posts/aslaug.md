@@ -3,7 +3,7 @@ title: Аслауг
 date: 2026-03-11
 categories: [Легенды, Скандинавия]
 tags: [легенды, скандинавия]
-image: "/images/aslaug.jpg"
+image: "/images/posts/aslaug.png"
 ---
 ## Аслауг
 

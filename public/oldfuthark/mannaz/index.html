@@ -1,0 +1,738 @@
+<!doctype html>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="/css/custom.css">
+<html lang="ru-RU" class="h-full">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="ru-RU">
+<meta name="theme-color" content="#BD5FFF">
+<script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+  
+  (function(){var t=sessionStorage.getItem('mana_pt');if(t){document.documentElement.setAttribute('data-page-enter',t);sessionStorage.removeItem('mana_pt');}})();
+  
+  window.MANA_SEARCH_INDEX_URL = '\/index.json';
+  
+  window.MANA_LANG_PREFIXES = ['en','ru'];
+</script>
+<title>Mannaz (Манназ) | Северный Зов</title>
+<meta
+  name="description"
+  content="
+     Историческое значение Руна Манназ означает «человек». Но не отдельный индивид, а человека как часть рода, общины, человечества в целом. В древней Скандинавии …
+  
+  ">
+
+
+  <meta name="keywords" content="руны старшего футарка">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/oldfuthark/mannaz/">
+
+
+<link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/oldfuthark/mannaz/">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Mannaz (Манназ) | Северный Зов">
+<meta property="og:description" content=" Историческое значение Руна Манназ означает «человек». Но не отдельный индивид, а человека как часть рода, общины, человечества в целом. В древней Скандинавии …">
+<meta property="og:url" content="http://localhost:1313/oldfuthark/mannaz/">
+<meta property="og:site_name" content="Северный Зов"><meta property="article:published_time" content="2024-01-01T00:00:00Z">
+  <meta
+    property="article:modified_time"
+    content="2024-01-01T00:00:00Z"><meta property="article:section" content="руны старшего футарка"><meta property="article:tag" content="руны старшего футарка">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mannaz (Манназ) | Северный Зов">
+<meta name="twitter:description" content=" Историческое значение Руна Манназ означает «человек». Но не отдельный индивид, а человека как часть рода, общины, человечества в целом. В древней Скандинавии …">
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'">
+<noscript>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</noscript>
+
+<link rel="stylesheet" href="/css/theme.min.d0bca60e6c836b64f7352464f89fe19f9b9db0eabc5b829f9aa967d8924dd6b4.css" integrity="sha256-0LymDmyDa2T3NSRk&#43;J/hn5udsOq8W4Kfmqln2JJN1rQ=">
+
+
+  <link
+    rel="stylesheet"
+    href="/css/syntax-dark.min.b01037e5609e6260b74d6fcdd6d5131e8dcbc4d46d6ef4bfbe5a60bdfc1a9f30.css"
+    integrity="sha256-sBA35WCeYmC3TW/N1tUTHo3LxNRtbvS/vlpgvfwanzA="
+    id="syntax-dark-theme"
+    class="syntax-theme">
+  <link
+    rel="stylesheet"
+    href="/css/syntax-light.min.9602bc2fcef52b4c62e05eae14b48ba428e114f116e993e504d83ed5a3aeda98.css"
+    integrity="sha256-lgK8L871K0xi4F6uFLSLpCjhFPEW6ZPlBNg&#43;1aOu2pg="
+    id="syntax-light-theme"
+    class="syntax-theme"
+    disabled><script>
+  
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+
+    const syntaxDark = document.getElementById("syntax-dark-theme");
+    const syntaxLight = document.getElementById("syntax-light-theme");
+
+    if (theme === "light") {
+      if (syntaxDark) syntaxDark.disabled = true;
+      if (syntaxLight) syntaxLight.disabled = false;
+    } else {
+      if (syntaxDark) syntaxDark.disabled = false;
+      if (syntaxLight) syntaxLight.disabled = true;
+    }
+
+    
+    const observer = new MutationObserver(() => {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      if (currentTheme === "light") {
+        if (syntaxDark) syntaxDark.disabled = true;
+        if (syntaxLight) syntaxLight.disabled = false;
+      } else {
+        if (syntaxDark) syntaxDark.disabled = false;
+        if (syntaxLight) syntaxLight.disabled = true;
+      }
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+  })();
+</script>
+
+
+
+
+<link rel="stylesheet" href="/css/bundle.min.6aba317260578ac017656f5b2e8ed1f7c52d1819d1e57ae87b8266ea5620da75.css" integrity="sha256-aroxcmBXisAXZW9bLo7R98UtGBnR5Xroe4Jm6lYg2nU=">
+
+
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+
+
+  
+
+
+
+
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <a href="#main-content" class="skip-to-main" aria-label="Перейти к основному содержимому"
+      >Перейти к основному содержимому</a
+    >
+    <header class="sticky-header">
+      <div class="header-container">
+        <nav class="header-nav" role="navigation" aria-label="Main navigation">
+  <div class="header-content">
+    <div class="header-logo">
+      <a href="/" class="logo-link" aria-label="Home - Северный Зов">
+        Северный Зов
+      </a>
+    </div>
+
+    
+    <button 
+      id="mobile-menu-toggle" 
+      class="mobile-menu-toggle" 
+      aria-label="Открыть меню" 
+      aria-expanded="false"
+      type="button">
+      <span class="hamburger-icon">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
+    </button>
+
+    <div class="header-menu">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+
+      <button id="search-toggle" class="search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </button>
+
+      
+  
+  
+  
+
+
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Сменить тему" type="button">
+  <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+  </svg>
+  <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+  </svg>
+</button>
+
+    </div>
+  </div>
+</nav>
+
+      </div>
+      <div class="reading-progress-bar" aria-hidden="true"></div>
+    </header>
+
+    <main id="main-content" class="flex-1" role="main">
+        <div class="bg"></div>
+      
+  <div class="single-post-wrapper">
+    <article class="single-post">
+      
+
+
+
+
+
+
+
+      <header class="post-header">
+        
+
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/" itemprop="item"><span itemprop="name">Главная</span></a>
+      <meta itemprop="position" content="1" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/posts/" itemprop="item"><span itemprop="name">Публикации</span></a>
+      <meta itemprop="position" content="2" />
+      <span aria-hidden="true" class="breadcrumb-sep">›</span>
+    </li>
+    
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name" class="breadcrumb-current">Mannaz (Манназ)</span>
+      <meta itemprop="position" content="3" />
+    </li>
+  </ol>
+</nav>
+
+
+        <h1 class="post-title-main">Mannaz (Манназ)</h1>
+
+        
+
+        <div class="post-meta">
+  <div class="post-meta-info">
+    <time datetime="2024-01-01T00:00:00Z" class="post-date">
+      <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+      </svg>
+      1 января 2024 г.
+    </time>
+
+    <span class="meta-separator">•</span>
+
+    
+      <span class="post-word-count">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        1454 слов
+      </span>
+    
+
+    
+      <span class="meta-separator">•</span>
+      <span class="post-reading-time">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        7 мин
+      </span>
+    
+  </div>
+
+  
+    <div class="post-tags">
+      
+        <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+      
+    </div>
+  
+</div>
+
+      </header>
+
+      <div class="post-content-main">
+        <img src="/images/runes/old/20.png" width="512" height="512">
+<h2 id="историческое-значение">Историческое значение</h2>
+<p>Руна Манназ означает «человек». Но не отдельный индивид, а человека как часть рода, общины, человечества в целом. В древней Скандинавии человек не мыслил себя вне коллектива. Его имя, его репутация, его имущество, его долги, его месть — всё это принадлежало не только ему, но и его семье, его родичам. Манназ — это руна, которая напоминает: ты один, но ты не одинок. За тобой стоят те, кто был до тебя, и те, кто будет после.</p>
+<p>В руне Манназ зашифровано представление о человеке как о носителе разума, сознания, воли. Но также и о человеке как о существе социальном, которому для выживания нужны другие люди. Одиночка в лесу умрёт — от голода, холода, болезни или от когтей зверя. Человек в общине выживет. Манназ — это руна взаимопомощи, сотрудничества, передачи знаний от старших к младшим.</p>
+<p>Форма руны — две перевёрнутые буквы «Л», соединённые вместе. Это символ двух людей, стоящих спиной к спине и защищающих друг друга. Или символ человека с распростёртыми руками — готового принять и отдать. Манназ — это не эгоизм и не альтруизм. Это понимание, что моё и твоё переплетены настолько, что их невозможно разделить. Если мне плохо — тебе тоже станет плохо. Если ты победил — я тоже победил.</p>
+<p>В рунических надписях Манназ часто встречается на памятных камнях, которые ставила семья в честь умершего. Её вырезали на родовых алтарях, на дверях общинных домов, на кубках для совместного питья. Это руна, которая скрепляет коллектив.</p>
+<p>Манназ — четвертая руна третьего атта. После Эваз (партнёрство) идёт Манназ — человеческое сообщество, которое шире любой пары. А после Манназ — последние четыре руны футарка, которые завершают систему и готовят выход за пределы человеческого.</p>
+<h2 id="проявление-силы">Проявление силы</h2>
+<p>Манназ проявляется тремя основными способами.</p>
+<p>Первое — разум и интеллект. Манназ активирует аналитические способности человека. Он начинает мыслить яснее, структурировать информацию, находить неожиданные связи между фактами. Эта руна помогает в учёбе, в научной работе, в любой интеллектуальной деятельности. Но с предупреждением: Манназ не даёт знаний из ниоткуда. Она только помогает обработать то, что уже есть. Интеллект без данных — ноль.</p>
+<p>Второе — социальные связи. Манназ улучшает отношения человека с другими людьми — не только близкими, но и дальними. Она помогает находить общий язык с сослуживцами, соседями, случайными попутчиками. Человек под её действием становится более открытым, терпимым, дипломатичным. Он перестаёт видеть в других врагов и начинает видеть союзников. Манназ — это руна, которая строит мосты. Не стены.</p>
+<p>Третье — память рода. Самый глубокий уровень Манназ. Руна открывает доступ к родовой памяти — тем знаниям, которые накопили предки и передали по наследству. Это не мистическая информация (хотя и такая бывает), а скорее архетипы поведения, привычные реакции, таланты и болезни, которые передаются из поколения в поколение. Манназ помогает понять, почему ты поступаешь так, а не иначе. Потому что за тобой — твой род. И его голос звучит в твоей крови.</p>
+<p>Манназ также связана с понятием «чести» — не воинской чести (как у Тейваз), а гражданской. Человек чести держит слово не только перед собой, но и перед обществом. Он платит долги, выполняет обещания, помогает слабым. Манназ — это руна, которая делает человека достойным членом сообщества.</p>
+<h2 id="применение-в-ставах">Применение в ставах</h2>
+<p>Манназ используется для работы с личностью, для влияния на людей, для гармонизации социальных связей, для получения доступа к родовой памяти.</p>
+<p>Связка Манназ с Ансуз. Это формула эффективной коммуникации. Манназ даёт понимание другого человека, Ансуз — способность говорить с ним на его языке. Вместе они работают как «дипломат»: ты находишь нужные слова для любого собеседника, даже если раньше вы были врагами. Используется в ставах на переговоры, на работу с коллективом, на обучение и наставничество.</p>
+<p>Связка Манназ с Гебо. Это формула взаимовыгодного обмена в обществе. Манназ даёт понимание социальных норм, Гебо — умение давать и принимать. Вместе они работают как «честный торговец»: ты не обманываешь других и не даёшь обманывать себя. Используется в ставах на бизнес, на заключение договоров, на отношения с партнёрами.</p>
+<p>Связка Манназ с Лагуз. Это формула доступа к коллективному бессознательному. Манназ даёт связь с родом, Лагуз — поток образов и интуиции. Вместе они работают как «родовое дерево»: ты видишь своих предков, понимаешь их мотивы, чувствуешь их боль и радость. Используется в ставах на восстановление родовых связей, на прощение обид внутри семьи, на поиск своих корней. Предупреждение: может вызвать сильные эмоции — вплоть до слёз и гнева. Будьте готовы.</p>
+<p>Связка Манназ с Одал. Это формула родовой защиты и процветания. Манназ даёт связь с живыми членами рода, Одал — с имуществом и землёй. Вместе они работают как «семейное гнездо»: дом, в котором живёт дружная семья, где есть достаток и уважение. Используется в ставах на защиту семьи, на передачу наследства, на укрепление родовых связей.</p>
+<p>Важное предупреждение: Манназ может вызвать чувство растворения в коллективе. Человек перестаёт понимать, где его желания, а где навязанные обществом. Он становится слишком зависимым от мнения других, теряет индивидуальность. Поэтому Манназ нужно балансировать рунами самости (Тейваз, Соулу, Ансуз), чтобы сохранить свою волю и своё мнение.</p>
+<h2 id="мантика">Мантика</h2>
+<p>Прямое положение Манназ говорит о человеке, разуме, социальных связях. Руна выпадает в вопросах, связанных с отношениями с другими людьми, с интеллектуальной деятельностью, с местом человека в мире. Это руна, которая напоминает: ты не один. Ищи помощи у других. И помогай сам.</p>
+<p>Прямая Манназ также может означать, что человеку нужно проявить человечность — терпимость, милосердие, понимание. Он слишком жёсток, слишком требователен, слишком закрыт. Руна советует открыться миру и принять его несовершенство.</p>
+<p>В раскладах на отношения прямая Манназ говорит о том, что отношения строятся на общих интересах и взаимном уважении. Не на страсти (это к Кеназ), не на привычке (это к Иса), а на уважении. Если выпала Манназ, значит, партнёры видят друг в друге личностей, а не функции.</p>
+<p>В раскладах на здоровье прямая Манназ говорит о том, что болезнь может быть психосоматической — её корни в отношениях с людьми, в неразрешённых конфликтах, в социальном давлении. Руна советует разобраться в своих связях с другими, прежде чем лечить тело.</p>
+<p>Перевёрнутое положение Манназ говорит об эгоизме, гордыне, неспособности работать с другими. Человек зациклен на себе и не замечает других. Или он жертва — слишком зависит от чужого мнения, не имеет своего «я». В любом случае, социальные связи нарушены.</p>
+<p>Перевёрнутая Манназ также может означать конфликт в коллективе, распад семьи, потерю связи с родом. Человек изгой. Или он сам ушёл из общины, но теперь страдает от одиночества. Руна советует вернуться, помириться, восстановить связи.</p>
+<h2 id="да--нет">Да / Нет</h2>
+<p>Манназ отвечает «Да» на вопросы, связанные с общением, сотрудничеством, учёбой. «Стоит ли мне попросить помощи?» — Да. «Поймут ли меня?» — Да, если ты будешь говорить честно. «Примут ли меня в коллектив?» — Да, если ты готов работать на общее благо.</p>
+<p>На вопросы, где человек рассчитывает только на себя или, наоборот, ждёт, что другие всё сделают за него, Манназ отвечает «Нет».</p>
+<h2 id="практика-активации">Практика активации</h2>
+<p>Активация Манназ требует присутствия других людей. Можно активировать в одиночку, но эффективнее — в группе. Хотя бы в паре.</p>
+<p>Шаг первый. Начертите руну на синем, жёлтом или белом материале. Идеальный носитель — древесина ясеня (мировое дерево), глина, шерсть. Можно нарисовать руну на левой ладони (принимающая сторона) или на тыльной стороне правой руки (отдающая).</p>
+<p>Шаг второй. Сядьте напротив другого человека (если активируете в паре) или представьте своего друга, родственника, коллегу (если активируете в одиночку). Важно, чтобы вы чувствовали связь с этим человеком — не обязательно положительную, но реальную.</p>
+<p>Шаг третий. Закройте глаза. Почувствуйте, что вы — не только вы. Вы — часть сети, сотканной из отношений. Каждый ваш предок, каждый друг, каждый враг — узел в этой сети. Когда вы дёргаете за одну нить, откликаются другие.</p>
+<p>Шаг четвёртый. Проговорите формулу активации спокойно, без пафоса: «Манназ — разум, что связывает всех».</p>
+<p>Шаг пятый. Визуализируйте серебристую нить, которая идёт от вашей груди к груди другого человека (или к воображаемому собеседнику). От него — к следующему. От следующего — к следующему. И так до бесконечности. Вы — часть бесконечной сети. Вы не один. И это прекрасно.</p>
+<p>Шаг шестой. Побудьте в этом состоянии 5–10 минут. Если приходят образы людей из прошлого — тех, с кем вы не общались годами, — запомните их. Может быть, вам нужно восстановить контакт. Если приходят образы врагов — возможно, пришло время помириться.</p>
+<h2 id="деактивация">Деактивация</h2>
+<p>Деактивация Манназ — это возвращение в свою шкуру. Вы снова становитесь отдельной личностью, не растворённой в коллективе.</p>
+<p>Шаг первый. Мысленно перережьте серебристые нити, которыми вы связаны с другими людьми. Аккуратно, без боли. Скажите: «Я благодарен за связь. Но сейчас я возвращаюсь в себя».</p>
+<p>Шаг второй. Произнесите формулу деактивации: «Связь завершена. Манназ возвращается в покой».</p>
+<p>Шаг третий. Физическая деактивация: если руна была нанесена на временный носитель (бумага, рука), смойте водой или сожгите. Если на постоянный (камень, дерево), положите в мешочек с другими рунами.</p>
+<p>Шаг четвёртый. Побудьте в одиночестве 10–15 минут. Никаких разговоров, никаких сообщений, никаких соцсетей. Почувствуйте себя собой. Отдельным. Свободным.</p>
+<p>Признаки неудачной деактивации: вы продолжаете чувствовать себя «частью толпы», вам трудно принимать самостоятельные решения, голоса других людей звучат в вашей голове. Сделайте упражнение на отделение: запишите на листе «Я — это я» и сожгите лист. Пепел развейте. Это возвращает вашу личность вам.</p>
+<p><a href="/runes/" class="btn btn-sm">Вернуться к рунам Старшего Футарка</a></p>
+
+      </div>
+
+      
+        <footer class="post-footer">
+          <div class="post-tags-footer">
+            <span class="tags-label">Теги:</span>
+            
+              <a href="/tags/%D1%80%D1%83%D0%BD%D1%8B-%D1%81%D1%82%D0%B0%D1%80%D1%88%D0%B5%D0%B3%D0%BE-%D1%84%D1%83%D1%82%D0%B0%D1%80%D0%BA%D0%B0" class="post-tag">руны старшего футарка</a>
+            
+          </div>
+        </footer>
+      
+
+      
+
+
+<section class="related-posts" aria-label="Похожие публикации">
+  <h2 class="related-posts-title">Похожие публикации</h2>
+  <ul class="related-posts-list">
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/algiz/" class="related-post-link">
+        <strong>Algiz (Альгиз)</strong>
+        <span> Историческое значение Руна Альгиз — это руна защиты, но не пассивной, не той, которая просто отражает удар. Это живая …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/ansuz/" class="related-post-link">
+        <strong>Ansuz (Ансуз)</strong>
+        <span> Историческое значение Руна Ансуз — это руна богов, прежде всего связанная с Одином как носителем речи, знания и …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/oldfuthark/berkano/" class="related-post-link">
+        <strong>Berkano (Беркана)</strong>
+        <span> Историческое значение Руна Беркана означает «берёза» — дерево, которое в древней Скандинавии считалось священным для …</span>
+      </a>
+    </li>
+    
+  </ul>
+</section>
+
+
+
+      <nav class="post-navigation" aria-label="Post navigation">
+        
+          <a
+            href="/oldfuthark/nauthiz/"
+            class="nav-link nav-prev"
+            aria-label="Previous post: Nauthiz (Наутиз)">
+            <span class="nav-label">Предыдущая</span>
+            <span class="nav-title">Nauthiz (Наутиз)</span>
+          </a>
+        
+
+        
+          <a
+            href="/oldfuthark/laguz/"
+            class="nav-link nav-next"
+            aria-label="Next post: Laguz (Лагуз)">
+            <span class="nav-label">Следующая</span>
+            <span class="nav-title">Laguz (Лагуз)</span>
+          </a>
+        
+      </nav>
+    </article>
+
+    
+  <aside class="post-toc" id="post-toc" aria-label="Содержание">
+    <button
+      class="toc-toggle"
+      id="toc-toggle"
+      aria-expanded="true"
+      aria-controls="toc-content"
+      aria-label="Показать/скрыть содержание">
+      <svg
+        class="toc-burger-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <span class="toc-toggle-text">Содержание</span>
+      <svg
+        class="toc-chevron-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+    <div class="toc-content" id="toc-content">
+      <nav class="toc-nav" aria-label="Содержание">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#историческое-значение">Историческое значение</a></li>
+        <li><a href="#проявление-силы">Проявление силы</a></li>
+        <li><a href="#применение-в-ставах">Применение в ставах</a></li>
+        <li><a href="#мантика">Мантика</a></li>
+        <li><a href="#да--нет">Да / Нет</a></li>
+        <li><a href="#практика-активации">Практика активации</a></li>
+        <li><a href="#деактивация">Деактивация</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </nav>
+    </div>
+  </aside>
+
+
+  </div>
+
+    </main>
+
+    <footer>
+      <footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-text">
+      &copy;
+      
+      2024-2026
+      
+      Northern Call.
+      
+        Сделано с любовью и верой в Óðinn
+      
+    </p>
+    
+  </div>
+</footer>
+
+    </footer>
+
+    <div id="search-modal" class="search-modal" aria-hidden="true" role="dialog" aria-label="Поиск" data-no-results="Ничего не найдено">
+  <div class="search-modal-backdrop" id="search-modal-backdrop"></div>
+  <div class="search-modal-container">
+    <div class="search-input-wrapper">
+      <svg class="search-input-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input"
+        placeholder="Поиск..."
+        autocomplete="off"
+        aria-label="Поиск">
+      <button class="search-input-clear" id="search-input-clear" aria-label="Очистить поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+        </svg>
+      </button>
+      <button class="search-modal-close" id="search-modal-close" aria-label="Закрыть поиск">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+    
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu-content">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-title">Меню</span>
+      <button
+        id="mobile-menu-close"
+        class="mobile-menu-close"
+        aria-label="Закрыть меню"
+        type="button">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile navigation">
+      <ul class="menu-list">
+  
+    <li class="menu-item">
+      <a
+        href="/"
+        class="menu-link ">
+        Главная
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/posts/"
+        class="menu-link ">
+        Посты
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/runes/"
+        class="menu-link ">
+        Руны
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/price"
+        class="menu-link ">
+        Услуги
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/about"
+        class="menu-link ">
+        О сайте
+      </a>
+    </li>
+  
+</ul>
+
+    </nav>
+    <div class="mobile-menu-footer">
+      <button id="mobile-search-toggle" class="mobile-search-toggle" aria-label="Поиск" type="button">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+        <span>Поиск</span>
+      </button>
+      
+  
+  
+  
+
+
+      <button class="theme-toggle" aria-label="Сменить тему" type="button">
+        <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+        <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+    
+
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Наверх" type="button">
+  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.137938305a4255a5ce0531471a42b4448c4adb05e04052a70000719c0704d082.js" defer></script>
+
+  </body>
+</html>
