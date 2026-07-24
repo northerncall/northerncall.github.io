@@ -8,7 +8,7 @@ image: "images/banner.png"
     <img src="/images/ylva/profile.jpg" width="400" height="400">
 </div>
 <div style="text-align: center;">
-    <a href="cost_ylva/Ylva/" class="btn btn-sm">Перейти к услугам Ylva</a>
+    <a href="../cost_ylva/Ylva/" class="btn btn-sm">Перейти к услугам Ylva</a>
 </div>
 
 <br>
@@ -17,5 +17,5 @@ image: "images/banner.png"
     <img src="/images/aiden/profile.png" width="400" height="400">
 </div>
 <div style="text-align: center;">
-    <a href="cost_aiden/Aiden/" class="btn btn-sm">Перейти к услугам Aiden</a>
+    <a href="../cost_aiden/Aiden/" class="btn btn-sm">Перейти к услугам Aiden</a>
 </div>

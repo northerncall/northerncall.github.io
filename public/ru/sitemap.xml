@@ -12,6 +12,142 @@
                href="http://localhost:1313/posts/cal2026/"/>
   </url>
   <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/en/categories/"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/categories/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/en/posts/"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/posts/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/en/"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/categories/%D1%88%D0%B0%D0%BC%D0%B0%D0%BD%D0%B8%D0%B7%D0%BC/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/categories/%D1%88%D0%B0%D0%BC%D0%B0%D0%BD%D0%B8%D0%B7%D0%BC/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/shaman_transformation/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/posts/shaman_transformation/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/dialog/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/posts/dialog/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/categories/%D0%BE%D0%B1%D1%89%D0%B5%D0%B5/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/categories/%D0%BE%D0%B1%D1%89%D0%B5%D0%B5/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/lucid_dreams/</loc>
+    <lastmod>2026-07-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/posts/lucid_dreams/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/midsommar/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/posts/midsommar/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/en/tags/"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/tags/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/categories/%D1%81%D0%BA%D0%B0%D0%BD%D0%B4%D0%B8%D0%BD%D0%B0%D0%B2%D0%B8%D1%8F/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/categories/%D1%81%D0%BA%D0%B0%D0%BD%D0%B4%D0%B8%D0%BD%D0%B0%D0%B2%D0%B8%D1%8F/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/%D1%81%D0%BA%D0%B0%D0%BD%D0%B4%D0%B8%D0%BD%D0%B0%D0%B2%D0%B8%D1%8F/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/tags/%D1%81%D0%BA%D0%B0%D0%BD%D0%B4%D0%B8%D0%BD%D0%B0%D0%B2%D0%B8%D1%8F/"/>
+  </url>
+  <url>
     <loc>http://localhost:1313/runes/</loc>
     <lastmod>2026-03-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -26,62 +162,6 @@
                href="http://localhost:1313/runes/"/>
   </url>
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="http://localhost:1313/en/"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="http://localhost:1313/"/>
-  </url>
-  <url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-03-16T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="http://localhost:1313/en/posts/"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="http://localhost:1313/posts/"/>
-  </url>
-  <url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-03-15T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="http://localhost:1313/en/categories/"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="http://localhost:1313/categories/"/>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-03-15T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="http://localhost:1313/en/tags/"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="http://localhost:1313/tags/"/>
-  </url>
-  <url>
     <loc>http://localhost:1313/posts/blot/</loc>
     <lastmod>2026-03-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -90,26 +170,6 @@
                rel="alternate"
                hreflang="ru"
                href="http://localhost:1313/posts/blot/"/>
-  </url>
-  <url>
-    <loc>http://localhost:1313/categories/%D1%81%D0%BA%D0%B0%D0%BD%D0%B4%D0%B8%D0%BD%D0%B0%D0%B2%D0%B8%D1%8F/</loc>
-    <lastmod>2026-03-15T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="http://localhost:1313/categories/%D1%81%D0%BA%D0%B0%D0%BD%D0%B4%D0%B8%D0%BD%D0%B0%D0%B2%D0%B8%D1%8F/"/>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/%D1%81%D0%BA%D0%B0%D0%BD%D0%B4%D0%B8%D0%BD%D0%B0%D0%B2%D0%B8%D1%8F/</loc>
-    <lastmod>2026-03-15T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="http://localhost:1313/tags/%D1%81%D0%BA%D0%B0%D0%BD%D0%B4%D0%B8%D0%BD%D0%B0%D0%B2%D0%B8%D1%8F/"/>
   </url>
   <url>
     <loc>http://localhost:1313/posts/aslaug/</loc>
@@ -180,16 +240,6 @@
                rel="alternate"
                hreflang="ru"
                href="http://localhost:1313/categories/%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D1%8C/"/>
-  </url>
-  <url>
-    <loc>http://localhost:1313/categories/%D1%88%D0%B0%D0%BC%D0%B0%D0%BD%D0%B8%D0%B7%D0%BC/</loc>
-    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="http://localhost:1313/categories/%D1%88%D0%B0%D0%BC%D0%B0%D0%BD%D0%B8%D0%B7%D0%BC/"/>
   </url>
   <url>
     <loc>http://localhost:1313/tags/%D1%88%D0%B0%D0%BC%D0%B0%D0%BD%D0%B8%D0%B7%D0%BC/</loc>
@@ -290,6 +340,16 @@
                rel="alternate"
                hreflang="ru"
                href="http://localhost:1313/cost_aiden/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/cost_ylva/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/cost_ylva/"/>
   </url>
   <url>
     <loc>http://localhost:1313/oldfuthark/dagaz/</loc>
@@ -550,6 +610,16 @@
                rel="alternate"
                hreflang="ru"
                href="http://localhost:1313/cost_aiden/aiden/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/cost_ylva/ylva/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="http://localhost:1313/cost_ylva/ylva/"/>
   </url>
   <url>
     <loc>http://localhost:1313/shop/</loc>
